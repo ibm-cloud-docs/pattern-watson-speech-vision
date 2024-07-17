@@ -1,0 +1,79 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-watson-speech-vision
+    # industry: industry-value
+    use-case: Public cloud
+   # compliance: compliance-value
+    audience: solution
+    content-type: deployment
+    href: /docs/pattern-watson-speech-vision
+    path: pattern-watson-speech-vision
+    description: watson x integration with speech and vision on IBM Cloud.
+    label: watson x integration with speech and vision on IBM Cloud
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture-genai-rag.md
+  - navgroup:
+      id: plan
+      topics:
+      - topicgroup:
+          label: Design considerations
+          topics:
+          - topic: watson-design.md
+            navtitle: ai 
+          - topic: compute-design.md
+            navtitle: Compute
+          - topic: storage-design.md
+            navtitle: Storage
+          - topic: networking-design.md
+            navtitle: Networking
+          - topic: security-design.md
+            navtitle: Security
+          - topic: DevSecOps-architecture.md
+            navtitle: dev_ops
+          - topic: resiliency-design.md
+            navtitle: Resiliency
+          - topic: service-management-design.md
+            navtitle: Service Management
+      - topicgroup:
+          label: Architecture decisions
+          topics:
+          - topic: watson-architecture.md
+            navtitle: ai 
+          - topic: compute-architecture.md
+            navtitle: Compute
+          - topic: storage-architecture.md
+            navtitle: Storage
+          - topic: networking-architecture.md
+            navtitle: Networking
+          - topic: security-architecture.md
+            navtitle: Security
+          - topic: DevSecOps-design.md
+            navtitle: dev_ops
+          - topic: resiliency-architecture.md
+            navtitle: Resiliency         
+          - topic: service-management-architecture.md
+            navtitle: Service Management 
+  - navgroup:
+      id: deploy
+      topics:
+      - topic-7.md
+      - topic-8.md
+  - navgroup:
+      id: reference
+      topics:
+      - references.md
+  - navgroup:
+      id: help
+      topics:
+      - topic: topic-10.md
