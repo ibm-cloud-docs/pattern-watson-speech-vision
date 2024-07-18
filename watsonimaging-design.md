@@ -1,15 +1,10 @@
-
-
-
-
-# Watsonx
+## Watsonx
 
 {: #ai-products-watsonx}
 
 Watsonx is IBM’s AI and data platform with three core components and a set of AI assistants designed to help to scale and accelerate the impact of AI with trusted data across businesses.
 
 Core components include watsonx.ai, watsonx.data and watsonx.governance.
-
 
 Watsonx.ai - a studio for new foundation models, generative AI and machine learning; : It comprises of Watson Studio and Watson Machine Learning services that are extended with features for working with foundation models and generative AI.
 
@@ -24,8 +19,6 @@ AI assistants are pre-built applications powered by watsonx. They enable automat
 * watsonx Code Assistant: Empower developers of all experience levels to write code with AI-generated recommendations. Purpose-built for targeted use cases such as application modernization and IT automation, watsonx Code Assistant leverages generative AI to increase developer productivity, reduce coding complexity, and accelerate developer onboarding.
 * Watsonx Orders: AI-powered voice agent that accurately takes orders from your drive-thru guests and speeds them to the pay window. It supports a multitude of use cases, including loyalty programs and mobile orders. It knows the customization options of every menu item. It’s aware of what’s available and what’s not. And it works every shift, every day.
 
-
-
 ## Types of Gen AI workloads
 
 {: #concepts-types-gen-ai-workloads}
@@ -38,7 +31,6 @@ Generative AI workloads typically fall into these following categories:
 * Model Training: The initial stage of model building, involving a subset of the source data. The model learns by example from the known data. The model can then be tested against a further, different subset for which the outcome is already known.
 
 Given the current state of technology, we think that most IBM Cloud clients will be focusing on using/creating solutions that involve Inferencing, Prompt Tuning and Fine Tuning. A much smaller set of clients may be interested in doing the Model Training for Gen AI by themselves.
-
 
 ## Watsonx aaS on IBM Cloud
 
