@@ -69,10 +69,10 @@ toc:
           - topic: service-management-architecture.md
             navtitle: Service Management 
   - navgroup:
-      id: deploy
+      id: architecture
       topics:
-      - topic-7.md
-      - topic-8.md
+      - watsonimaging-architecture.md
+      - watsonimaging-design.md
   - navgroup:
       id: reference
       topics:
