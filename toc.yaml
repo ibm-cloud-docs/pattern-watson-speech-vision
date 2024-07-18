@@ -65,7 +65,7 @@ toc:
           - topic: resiliency-architecture.md
             navtitle: Resiliency         
           - topic: database-architecture.md
-            navtitle: database
+            navtitle: containers
           - topic: service-management-architecture.md
             navtitle: Service Management 
   - navgroup:
