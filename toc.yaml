@@ -69,7 +69,7 @@ toc:
           - topic: service-management-architecture.md
             navtitle: Service Management 
   - navgroup:
-      id: architecture
+      id: learn
       topics:
       - watsonimaging-architecture.md
       - watsonimaging-design.md
