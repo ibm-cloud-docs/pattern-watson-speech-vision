@@ -57,12 +57,13 @@ https://www.ibm.com/downloads/cas/1X7EPRYE
 
 The** **IBM® Maximo® Visual Inspection** **platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
+![Maximo Vision.](image/architecture-image-classification-on-ibmcloud.drawio.svg "Maximo"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
+
 **Maximo Visual Inspection** includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use** **IBM Maximo Visual Inspection** **to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
 ### GPU supported on IBM Cloud for SaaS
 
 Link to GPU supported on IBM Cloud
-
 
 ### Integrating with** **Maximo Visual Inspection Edge
 
@@ -73,6 +74,8 @@ Link to GPU supported on IBM Cloud
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
 ## Watson Speech:
+
+![watson Speech.](image/speech-to-text-transcription-pipeline-speech-to-text-transcription-pipeline.drawio.svg "watson speech"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
 
 https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
 
