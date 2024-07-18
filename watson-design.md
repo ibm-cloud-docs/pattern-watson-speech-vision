@@ -49,7 +49,6 @@ Given the current state of technology, we think that most IBM Cloud clients will
 
 Customers can use the IBM Cloud watsonx-aaS service without the need to deploy any generative AI software. IBM Cloud IaaS, PaaS services provide the supporting/surround environment for a secure and regulatory compliant development and deployment of the generative AI workloads/solutions for inferencing, prompt tuning and fine tuning.
 
-
 https://cloud.ibm.com/docs/watson?topic=watson-about#about
 
 https://www.ibm.com/downloads/cas/1X7EPRYE
@@ -62,7 +61,8 @@ The** **IBM® Maximo® Visual Inspection** **platform, built on cognitive infras
 
 ### GPU supported on IBM Cloud for SaaS
 
-Link to GPU supported on IBM Cloud.
+Link to GPU supported on IBM Cloud
+
 
 ### Integrating with** **Maximo Visual Inspection Edge
 
