@@ -73,7 +73,6 @@ Link to GPU supported on IBM Cloud
 
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
-
 ![Visual Inspection for image and Video.](image/video-ingestion.drawio.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
 ## Watson Speech:
@@ -94,7 +93,7 @@ https://cloud.ibm.com/docs/speech-to-text
 
 https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
 
-### Reference
+## Reference
 
 1. https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
 2. https://www.ibm.com/products/watson-discovery/use-cases
