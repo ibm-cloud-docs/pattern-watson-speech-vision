@@ -73,6 +73,9 @@ Link to GPU supported on IBM Cloud
 
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
+
+![Visual Inspection for image and Video.](image/video-ingestion.drawio.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
+
 ## Watson Speech:
 
 ![watson Speech.](image/speech-to-text-transcription-pipeline-speech-to-text-transcription-pipeline.drawio.svg "watson speech"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
