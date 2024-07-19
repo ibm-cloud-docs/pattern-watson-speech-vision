@@ -80,36 +80,60 @@ Our PostgreSQL database-as-a-service offering lets teams spend more time buildin
 
 Our Elasticsearch database-as-a-service comes with a full-text search engine, which makes it the perfect home for your unstructured text data. Elasticsearch also support various forms of  [semantic](https://www.elastic.co/guide/en/elasticsearch/reference/8.9/semantic-search.html) (link resides outside ibm.com) similarity search. It supports [dense vectors](https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html) (link resides outside ibm.com) for exact nearest neighbor search, but it also provides built-in AI models to compute sparse vectors and conduct [advanced similarity search](https://www.elastic.co/guide/en/machine-learning/8.9/ml-nlp-elser.html) (link resides outside ibm.com).
 
-[](https://www.ibm.com/products/databases-for-elasticsearch)
+(https://www.ibm.com/products/databases-for-elasticsearch)
 
-## Requirements
+## Design considerations:
 
-{: #compute-requirements}
+When considering vector databases on IBM Cloud, there are several robust options designed to meet different requirements, from general-purpose relational databases extended with vector capabilities to specialized vector databases integrated with AI and machine learning frameworks.
 
-**VPC**
+### 1. **IBM Watsonx.data with Milvus**
 
-**ROKS design**
+**Description:** IBM Watsonx.data is an open, hybrid, and governed data store that includes the Milvus vector database. Milvus is designed specifically for handling high-dimensional vector data, making it ideal for tasks such as similarity search, recommendation systems, and other AI applications.
+**Features:**
 
-**VSI GPU for specific LLM and Watson studio**
+* **High Performance:** Optimized for handling vector data with low-latency responses.
+* **Integration with IBM Watsonx.ai:** Facilitates AI and machine learning projects by seamlessly integrating with IBM’s AI tools.
+* **Scalability:** Can handle large volumes of vector data efficiently.
+  **Use Cases:** Retrieval augmented generation (RAG), semantic search, and AI-driven applications.
+  **Reference:** [IBM Watsonx.data and Milvus Integration]()
 
-### Architecture components
+### 2. **SingleStoreDB on IBM Cloud**
 
-{: #architecture-components}
+**Description:** SingleStoreDB, available on IBM Cloud, combines transactional and analytical workloads with support for vector data operations.
+**Features:**
 
-**VPC**
+* **Unified Database:** Supports both structured and unstructured data, allowing for complex queries.
+* **Vector Functionality:** Enables storage, indexing, and querying of vector data alongside traditional SQL queries.
+* **High Performance:** Provides low-latency queries, which is crucial for real-time applications.
+  **Use Cases:** Real-time analytics, AI-driven search and recommendation systems.
+  **Reference:** [SingleStore on IBM Cloud]()
 
-**ROKS**
+### 3. **IBM Cloud Databases for PostgreSQL with Extensions**
 
-Code Engine
+**Description:** IBM Cloud Databases for PostgreSQL can be enhanced with extensions to support vector data and operations.
+**Features:**
 
-Speech to Text hosting requirements.
+* **PostGIS:** Adds spatial data support, enabling vector operations for geographical information systems (GIS).
+* **pgvector:** A specialized extension for storing and querying vector embeddings, useful for AI and machine learning applications.
+* **Managed Service:** Fully managed database service with automated backups, scaling, and high availability.
+  **Use Cases:** Geospatial analysis, AI applications with vector embeddings, and general-purpose vector operations.
+  **Reference:** [IBM Cloud Databases for PostgreSQL](https://cloud.ibm.com/catalog/databases-for-postgresql)
 
-1. A VPC Landing Zone is deployed which provides the ability to automate the installation of an Red Hat OpenShift cluster into a multizone region.
-2. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
-3. Separate worker pools are created within the clusters for the application and storage workloads.
-4. The worker pool node size and quantity are determined based on the resource requirements for the application and storage workloads.
-5. To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three availability zones.
-6. Total worker node capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload.
-7. By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
-8. The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
-9.
+### 4. **Faiss on IBM Cloud**
+
+**Description:** While not a managed service, Faiss can be deployed on IBM Cloud for high-performance vector similarity search.
+**Features:**
+
+* **High Performance:** Developed by Facebook AI Research, Faiss is optimized for large-scale similarity search.
+* **Flexibility:** Can be deployed in custom environments on IBM Cloud Virtual Servers.
+  **Use Cases:** Image and text similarity search, recommendation systems.
+  **Reference:** [Deploying Faiss on IBM Cloud](https://research.facebook.com/faiss/)
+
+### Recommendations:
+
+* **For Enterprise AI Projects:** IBM Watsonx.data with Milvus offers the best integration with IBM’s AI tools and provides a highly scalable and performant solution.
+* **For Real-Time Analytics and Mixed Workloads:** SingleStoreDB is ideal due to its ability to handle both transactional and analytical workloads efficiently.
+* **For Geospatial and General Vector Operations:** PostgreSQL with PostGIS and pgvector extensions on IBM Cloud offers a versatile solution for both spatial and AI-related vector operations.
+* **For Custom High-Performance Similarity Search:** Deploying Faiss on IBM Cloud provides a flexible and powerful option for bespoke vector search applications.
+
+Each of these options leverages IBM Cloud’s robust infrastructure and integration capabilities, making them suitable for a wide range of vector database needs.
