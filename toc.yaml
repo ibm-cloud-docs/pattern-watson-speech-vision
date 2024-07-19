@@ -45,8 +45,6 @@ toc:
             navtitle: Database
           - topic: resiliency-design.md
             navtitle: Resiliency
-          - topic: database-design.md
-            navtitle: Database
           - topic: service-management-design.md
             navtitle: Service Management
       - topicgroup:
