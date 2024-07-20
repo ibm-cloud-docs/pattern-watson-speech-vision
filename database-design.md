@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-## Vector Database design
+# Vector Database design
 
 {: #compute-design}
 

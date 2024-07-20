@@ -24,6 +24,10 @@ toc:
       topics:
       - reference-architecture-genai-rag.md
   - navgroup:
+      id: learn
+      topics:
+      - watsonimaging-design.md
+  - navgroup:
       id: plan
       topics:
       - topicgroup:
@@ -39,10 +43,10 @@ toc:
             navtitle: Networking
           - topic: security-design.md
             navtitle: Security
-          - topic: DevSecOps-architecture.md
-            navtitle: dev_ops
           - topic: database-design.md
             navtitle: Database
+          - topic: DevSecOps-architecture.md
+            navtitle: dev_ops
           - topic: resiliency-design.md
             navtitle: Resiliency
           - topic: service-management-design.md
@@ -60,19 +64,14 @@ toc:
             navtitle: Networking
           - topic: security-architecture.md
             navtitle: Security
-          - topic: DevSecOps-design.md
-            navtitle: dev_ops
           - topic: database-architecture.md
             navtitle: Database
+          - topic: DevSecOps-design.md
+            navtitle: dev_ops
           - topic: resiliency-architecture.md
             navtitle: Resiliency          
           - topic: service-management-architecture.md
             navtitle: Service Management 
-  - navgroup:
-      id: learn
-      topics:
-      - watsonimaging-architecture.md
-      - watsonimaging-design.md
   - navgroup:
       id: reference
       topics:
