@@ -31,7 +31,27 @@ keywords:
 
 **ROKS**
 
-Code Engine
+**Code Engine**
+
+IBM Cloud Code Engine is a fully managed, serverless platform built on kubernetes designed to run event-driven functions, batch jobs or containerized applications/microservices. Code Engine can also build applications from source code.
+
+Code Engine resources (application, jobs and functions) are organized in projects which are regional.
+
+Some of the main advantages of IBM Cloud Code Engine are:
+
+- fully integrated into IBM Cloud, allowing to take advantage of all the IBM Cloud services through service bindings.
+
+- cost effective, applications, jobs are run on demand or on schedule and can scale, even down to zero.
+
+- event-driven applications that can react to messages received from various sources (Cloud Object Storage, Cron, Kafka, webhooks) through subscriptions and perform actions based on them
+
+- native DDoS protection for traffic coming from the internet through the use of IBM Cloud Internet Services (CIS) by default
+
+- private workloads over a shared underlying infrastructure, projects and their entities are isolated from each other, private source code repositories and private image registries can be used
+
+Code Engine allows to build cost effective modern event driven applications and let developers focus on the code, not worrying about the platform needed to run it.
+
+
 
 Speech to Text hosting requirements.
 
