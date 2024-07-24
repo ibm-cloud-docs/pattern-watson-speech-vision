@@ -12,7 +12,7 @@ AI holds the promise to transform life and business but raises concerns around t
 
 A more specific use case of this pattern is a Retrieval Augmented Generation [(RAG)](https://www.ibm.com/architectures/hybrid/genai-rag) pattern. RAG enables [foundation models](https://www.ibm.com/products/watsonx-ai/foundation-models) to produce factually correct outputs by querying relevant content. RAG is a solution for any business scenario where there is a large body of documentation that a user must consult to provide confident answers. Below is a diagram that shows the flow of a RAG solution. Please note that this is not the entire reference architecture, but a small portion highlighted for better understanding of what is possible with this Gen AI reference architecture.
 
-![RAG.](watsonx-surround-pattern-design.drawio.svg "Surround"){: caption="Figure 1. Watsonx Surround Pattern" caption-side="bottom"}
+![RAG.](rag-pattern.drawio.svg "RAG"){: caption="Figure 1. Watsonx RAG Pattern" caption-side="bottom"}
 
 ## Architecture diagram
 
@@ -20,7 +20,7 @@ A more specific use case of this pattern is a Retrieval Augmented Generation [(R
 
 The below diagram represents the architecture for Gen AI on IBM cloud and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for IBM Cloud for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](ref-arch-watsonx.drawio.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.drawio.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
