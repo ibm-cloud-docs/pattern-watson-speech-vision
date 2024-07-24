@@ -51,8 +51,6 @@ Some of the main advantages of IBM Cloud Code Engine are:
 
 Code Engine allows to build cost effective modern event driven applications and let developers focus on the code, not worrying about the platform needed to run it.
 
-
-
 Speech to Text hosting requirements.
 
 1. A VPC Landing Zone is deployed which provides the ability to automate the installation of an Red Hat OpenShift cluster into a multizone region.
