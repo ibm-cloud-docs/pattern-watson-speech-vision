@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2024-03-29"
+lastupdated: "2024-07-25"
 
 subcollection: pattern-watson-speech-vision
 
@@ -10,24 +10,54 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
-
 {: #compute-design}
 
 ## Requirements
-
 {: #compute-requirements}
 
 **VPC**
 
+
 **ROKS design**
 
-**VSI GPU for specific LLM and Watson studio**
 
 ### Architecture components
-
 {: #architecture-components}
 
 **VPC**
+
+A Virtual Private Cloud (VPC) is a logically isolated network in an IBM Cloud account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
+
+***Management VPC***
+
+A Management VPC is a specialized VPC that serves as the entry point for managing the IBM Cloud resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
+
+  - Creating and managing VPCs
+  - Configuring network routes and subnets
+  - Monitoring and troubleshooting resource performance
+
+The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
+
+***Workload VPC***
+
+A Workload VPC is a production-grade VPC that can use to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
+
+  - Dedicated networking resources
+  - Support for multiple subnets and routing configurations
+  - Integration with IBM Cloud services, such as databases and message queues
+
+Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
+
+***Edge VPC***
+
+An Edge VPC is a specialized VPC that provides low-latency, high-performance networking for edge computing workloads. Edge VPCs are designed to support IoT, AI, and other latency-sensitive applications that require direct access to the cloud. Key features of an Edge VPC include:
+
+  - Low-latency networking with reduced packet loss
+  - Support for multiple subnets and routing configurations
+  - Integration with IBM Cloud services, such as databases and message queues
+
+Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
+
 
 **ROKS**
 
