@@ -24,16 +24,16 @@ The below diagram represents the architecture for Gen AI on IBM cloud and reuses
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
-**Management VPC** `<br>`
+**Management VPC**
 Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
 
-**Workload VPC** `<br>`
+**Workload VPC**
 Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
 
-**Edge VPC** `<br>`
+**Edge VPC**
 The edge VPC is used to enhance boundary protection for the workload VPC, by allow consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org)
 
-Other features of the reference architecture:`<br>`
+Other features of the reference architecture:
 
 * Can reside in one or more multizone regions to provide additional resiliency.
 * Enables access to the management VPC from the application provider's enterprise environment through IBM Cloud Virtual Private Network Gateway for VPC.
