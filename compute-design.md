@@ -28,6 +28,9 @@ keywords:
 
 A Virtual Private Cloud (VPC) is a logically isolated network in an IBM Cloud account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
 
+![](image/watsonx-surround-pattern-VPC.svg)
+{: caption="Figure 2. Deployment of VPCs in cloud" caption-side="bottom"}
+
 ***Management VPC***
 
 A Management VPC is a specialized VPC that serves as the entry point for managing the IBM Cloud resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
@@ -59,7 +62,28 @@ An Edge VPC is a specialized VPC that provides low-latency, high-performance net
 Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
 
 
-**ROKS**
+**Red Hat OpenShift Service (ROKS)**
+
+![](image/watsonx-surround-pattern-ROKS.svg)
+{: caption="Figure 3. Deployment of ROKS in cloud" caption-side="bottom"}
+
+1. A Workload VPC Landing Zone provisioned to deploy various client workloads. 
+2. The workloads are deployed across multiple availability zones to meet any high availability requirements.
+3. The Subnet ACL in each zone is to define rules for controlling inbound and outbound traffic with in a VPC.
+4. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service 
+    - To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three  availability zones.
+    - Total worker node capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload.
+    - By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
+    - The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
+    - Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
+5. Virtual Server Instances (VSis) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.  
+6. The Virtual Private Endpoint (VPE) enables to access IBM Cloud services, like cloud storage or databases without having to route traffic through the internet.
+7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
+8. IBM Cloud Code Engine is used for any serverless workloads.
+
+
+For more details on the ROKS capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
+{: note}
 
 **Code Engine**
 
