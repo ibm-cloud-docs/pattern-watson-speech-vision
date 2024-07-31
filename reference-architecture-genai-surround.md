@@ -31,7 +31,7 @@ Provides compute, storage, and network services to enable the client or service 
 Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
 
 **Edge VPC**
-The edge VPC is used to enhance boundary protection for the workload VPC, by allow consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org)
+The edge VPC is used to enhance boundary protection for the workload VPC, and allows consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org)
 
 Other features of the reference architecture:
 
@@ -39,6 +39,7 @@ Other features of the reference architecture:
 * Enables access to the management VPC from the application provider's enterprise environment through IBM Cloud Virtual Private Network Gateway for VPC.
 * Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.
 * Connects management VPC, workload VPC, and Edge VPC by using IBM Cloud Transit Gateway.
+* Extends the watsonx default capabilities to voice and images by leveraging IBM Cloud Speech to Text, Text to Speech and Maximo Visual Inspection software as a service offerings
 
 ## Design concepts
 
