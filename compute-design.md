@@ -12,6 +12,11 @@ keywords:
 # Compute design
 {: #compute-design}
 
+Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications.
+
+By hosting their traditional x86 or containerized  applications on IBM Cloud VPC VSIs or containers running on ROKS, latency between IBM watsonx services and the customer is minimized, increasing the performances and responsiveness of the customer's application.
+
+This also allows the customer to benefit from the flexibility and scalability of IBM Cloud VPC offerings and gain easy access all the associated IBM Cloud services.
 
 ### Architecture components
 {: #architecture-components}
