@@ -59,7 +59,7 @@ An Edge VPC is a specialized VPC that provides low-latency, high-performance net
 Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
 
 
-**Red Hat OpenShift Service (ROKS)**
+**Red Hat OpenShift Kubernetes Service**
 
 ![](image/watsonx-surround-pattern-ROKS.svg)
 {: caption="Figure 3. Deployment of ROKS in cloud" caption-side="bottom"}
@@ -73,14 +73,22 @@ Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered c
     - By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
     - The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
     - Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
-5. Virtual Server Instances (VSis) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.  
+5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.  
 6. The Virtual Private Endpoint (VPE) enables to access IBM Cloud services, like cloud storage or databases without having to route traffic through the internet.
 7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. IBM Cloud Code Engine is used for any serverless workloads.
 
+***Red Hat OpenShift Components***
+
+1. Master / Control Plane nodes and componenets are managed by IBM Cloud in Red Hat OpenShift Kubernetes service on IBM Cloud.
+2. The GenAI applications are deployed as microservices and expoed via OpenShift routes, making them easier to integrate with other systems or services. 
+5. The worker / Data Plane nodes capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload. 
 
 For more details on the ROKS capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
 {: note}
+
+4. By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
+5. The Red Hat OpenShift platform is integrated with IBM Cloudd Services to provide centralized cluster observability services.
 
 **Code Engine**
 
@@ -102,7 +110,7 @@ Some of the main advantages of IBM Cloud Code Engine are:
 
 Code Engine allows to build cost effective modern event driven applications and let developers focus on the code, not worrying about the platform needed to run it.
 
-Speech to Text hosting requirements.
+**Speech to Text hosting requirements**
 
 1. A VPC Landing Zone is deployed which provides the ability to automate the installation of an Red Hat OpenShift cluster into a multizone region.
 2. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
