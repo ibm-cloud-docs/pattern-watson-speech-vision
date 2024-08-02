@@ -20,7 +20,7 @@ A more specific use case of this pattern is a Retrieval Augmented Generation [(R
 
 The below diagram represents the architecture for Gen AI on IBM cloud and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for IBM Cloud for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -56,7 +56,7 @@ Below is the Architecture Framework Design heatmap that covers design considerat
 * **Resiliency:** High Availability
 * **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
 
-![heatmap](heatmap.drawio-v2.svg "Current diagram"){: caption="Figure 3. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 3. Architecture design scope" caption-side="bottom"}
 
 ## Requirements
 

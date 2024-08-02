@@ -78,6 +78,7 @@ Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered c
 7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. IBM Cloud Code Engine is used for any serverless workloads.
 
+<<<<<<< Updated upstream
 ***Red Hat OpenShift Components***
 
 1. Master / Control Plane nodes and componenets are managed by IBM Cloud in Red Hat OpenShift Kubernetes service on IBM Cloud.
@@ -91,12 +92,18 @@ For more details on the ROKS capacity planning for various workloads refer to th
 5. The Red Hat OpenShift platform is integrated with IBM Cloudd Services to provide centralized cluster observability services.
 
 **Code Engine**
+=======
+For more details on the ROKS capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
+{: note}
+
+**IBM Cloud Code Engine**
+>>>>>>> Stashed changes
 
 IBM Cloud Code Engine is a fully managed, serverless platform built on kubernetes designed to run event-driven functions, batch jobs or containerized applications/microservices. Code Engine can also build applications from source code.
 
 Code Engine resources (application, jobs and functions) are organized in projects which are regional.
 
-Some of the main advantages of IBM Cloud Code Engine are:
+The key advantages of IBM Cloud Code Engine are:
 
 - fully integrated into IBM Cloud, allowing to take advantage of all the IBM Cloud services through service bindings.
 
@@ -110,7 +117,18 @@ Some of the main advantages of IBM Cloud Code Engine are:
 
 Code Engine allows to build cost effective modern event driven applications and let developers focus on the code, not worrying about the platform needed to run it.
 
+<<<<<<< Updated upstream
 **Speech to Text hosting requirements**
+=======
+
+
+
+
+
+
+
+**KEEP?** Speech to Text hosting requirements.
+>>>>>>> Stashed changes
 
 1. A VPC Landing Zone is deployed which provides the ability to automate the installation of an Red Hat OpenShift cluster into a multizone region.
 2. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.

@@ -45,7 +45,7 @@ Given the current state of technology, we think that most IBM Cloud clients will
 
 ## Watsonx aaS on IBM Cloud
 
-{: #deployment-watsonx-aas}
+{: #deployment-watsonx-Aas}
 
 Customers can use the IBM Cloud watsonx-aaS service without the need to deploy any generative AI software. IBM Cloud IaaS, PaaS services provide the supporting/surround environment for a secure and regulatory compliant development and deployment of the generative AI workloads/solutions for inferencing, prompt tuning and fine tuning.
 
@@ -55,11 +55,11 @@ https://www.ibm.com/downloads/cas/1X7EPRYE
 
 ## Maximo Visual Inspection
 
-The** **IBM® Maximo® Visual Inspection** **platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
+The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
-![Maximo Vision.](image/architecture-image-classification-on-ibmcloud.drawio.svg "Maximo"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
+![Maximo Vision.](image/architecture-image-classification-on-ibmcloud.svg "Maximo"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
 
-**Maximo Visual Inspection** includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use** **IBM Maximo Visual Inspection** **to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
+**Maximo Visual Inspection** includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use **IBM Maximo Visual Inspection** to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
 ### GPU supported on IBM Cloud for SaaS
 
@@ -67,9 +67,9 @@ Link to GPU supported on IBM Cloud
 
 ### Integrating with** **Maximo Visual Inspection Edge
 
-**Maximo Visual Inspection Edge** is a web-based application that you can integrate with** **Maximo Visual Inspection** **to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
+**Maximo Visual Inspection Edge** is a web-based application that you can integrate with **Maximo Visual Inspection** to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
 
-**Maximo Visual Inspection Edge** uses data sets and trained models that are stored in** **Maximo Visual Inspection. In** **Maximo Visual Inspection Edge, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
+**Maximo Visual Inspection Edge** uses data sets and trained models that are stored in** **Maximo Visual Inspection**. In **Maximo Visual Inspection Edge**, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
 
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
@@ -77,7 +77,24 @@ https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-vi
 
 ## Watson Speech:
 
-![watson Speech.](image/speech-to-text-transcription-pipeline-speech-to-text-transcription-pipeline.drawio.svg "watson speech"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
+**IBM Cloud Speech to Text service**
+
+![Watson Speech.](image/speech-to-text-transcription-pipeline.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
+
+IBM Cloud Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
+
+The service is available in multiple languages.
+
+...
+https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
+
+**IBM Cloud Text to Speech service**
+
+IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
+
+...
+
+https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
 
 https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
 
