@@ -96,3 +96,30 @@ A Gateway Virtual Private Network (VPN) is a service that enables to establish a
 - VPG: Virtual Private Gateway provides a secure entrance point for traffic from the on-premises infrastructure to the IBM Cloud.
 - Supports connections with multiple cloud providers, allowing to use IBM Cloud alongside other clouds or networks.
 
+
+7. ***Bastion Host***
+
+A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a secure entry point for accessing and managing other IBM Cloud resources.
+
+- It acts as a single entry point for remote access to the cloud resources, such as virtual servers, databases, or storage systems.
+- Users must authenticate with the Bastion Host using their IBM Cloud credentials (e.g., API keys, usernames, and passwords) before gaining access to other resources.
+- The Bastion Host creates a secure network boundary between the cloud resources and external users or systems. This helps prevent unauthorized access or data exfiltration.
+
+
+**Other Connection Services**
+
+***8. VPN Connection***
+A VPN (Virtual Private Network) connection for VPC enables to securely connect client's on-premises infrastructure or other clouds to the VPC over the internet. This provides a secure and encrypted tunnel between various networks.
+
+- Connects IBM Cloud VPC to client's on-premise infrastructure, data centers, or other clouds (e.g., AWS, Azure) securely.
+- Access IBM Cloud services, such as Kubernetes clusters, databases, or applications, from the on-premises environment.
+- Migrate workloads between your VPC and on-premises infrastructure or other clouds.
+
+In this pattern, the VPN connection is leveraged for accessing the IBM Cloud resoueces securely through a private connection over internet by system/cloud administrators, developer etc for various development and operational activities.
+
+9. ***Direct Link 2.0***
+
+
+10. ***Cloud Internet Service***
+
+11. ***Virtual Private Endpoint (VPE)***
