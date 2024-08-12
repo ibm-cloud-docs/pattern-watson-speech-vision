@@ -75,10 +75,24 @@ For more details on the IBM Cloud Load Balancer refer to this [section in IBM Cl
 
 **Gateway Services**
 
-A Gateway is a set of managed services in IBM Cloud. They act as a bridge between your applications and the outside world, allowing you to securely expose APIs, manage traffic, and enforce policies.
+A Gateway is a set of managed services in IBM Cloud. They act as a bridge between client applications and the outside world, allowing to securely expose APIs, manage traffic, and enforce policies.
 
 5. ***Transit Gateway***
+A Transit Gateway is a managed network service that allows to simplify the network architecture and improve security by consolidating multiple networks into a single, highly available, and scalable platform.
+
+It is essentially a hub-and-spoke architecture where multiple Virtual Private Clouds (VPCs) or Subnets can be connected to a central gateway. This enables communication between VPCs or Subnets without the need for individual VPN connections or peering configurations.
+
+In this pattern, two Transit gateways are considered. One for the communication between the management, worker and edge VPCs and another one for the integration of on-premise network with IBM Cloud resources.
 
 
 6. ***Gateway VPN***
+
+A Gateway Virtual Private Network (VPN) is a service that enables to establish a secure, encrypted connection between the on-premises infrastructure and the IBM Cloud. This allows to extend the private network into the cloud, ensuring seamless communication between the internal resources and IBM Cloud-based services.
+
+- Enables to connect the private network (e.g., client's data center or branch office) directly to the IBM Cloud without exposing any internal resources to the public internet.
+- Reduces latency and improves performance by establishing a direct, optimized connection between the on-premises infrastructure and the IBM Cloud.
+- IPsec: Supports IP Security Protocol (IPSec) for encrypting and authenticating traffic.
+- MPLS: Supports Multiprotocol Label Switching (MPLS) for establishing a secure, managed connection between the on-premises infrastructure and the IBM Cloud.
+- VPG: Virtual Private Gateway provides a secure entrance point for traffic from the on-premises infrastructure to the IBM Cloud.
+- Supports connections with multiple cloud providers, allowing to use IBM Cloud alongside other clouds or networks.
 
