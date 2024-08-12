@@ -84,6 +84,9 @@ It is essentially a hub-and-spoke architecture where multiple Virtual Private Cl
 
 In this pattern, two Transit gateways are considered. One for the communication between the management, worker and edge VPCs and another one for the integration of on-premise network with IBM Cloud resources.
 
+For more details on the IBM Cloud Transit Gateway refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-about)
+{: note}
+
 
 6. ***Gateway VPN***
 
@@ -117,9 +120,48 @@ A VPN (Virtual Private Network) connection for VPC enables to securely connect c
 
 In this pattern, the VPN connection is leveraged for accessing the IBM Cloud resoueces securely through a private connection over internet by system/cloud administrators, developer etc for various development and operational activities.
 
+
+For more details on the IBM Cloud VPN for VPC refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-vpn-overview&interface=ui)
+{: note}
+
+
 9. ***Direct Link 2.0***
+Direct Link 2.0 is a high-speed, and secure connectivity option that enables client's to establish a dedicated, always-on link between your premises and IBM Cloud. This direct connection eliminates the need for internet-based routing, reducing latency and improving overall performance.
+
+Direct Link 2.0 is available in various regions worldwide, including the United States, Europe, Asia, and Latin America. 
+
+
+- Faster speeds: DL2.0 offers speeds up to 100 Gbps, making it ideal for demanding workloads like artificial intelligence, machine learning, and data analytics.
+- Lower latency: With a dedicated connection, you can expect reduced latency, which is critical for applications that require real-time processing, such as financial transactions, speech to text / text to speech.
+- Improved security: Direct Link 2.0 provides an additional layer of security through the use of encrypted tunnels and secure routing protocols.
+- Scalability: As your business grows, you can easily scale up or down to match changing demands without worrying about internet-based connectivity limitations.
+- Reduced costs: By using a dedicated connection, you can reduce your reliance on public internet bandwidth, leading to cost savings and improved resource utilization.
+
+For more details on the IBM Cloud Direct Link refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/dl?topic=dl-dl-about)
+{: note}
 
 
 10. ***Cloud Internet Service***
 
+Cloud Internet Services (CIS) is a suite of managed services that helps you optimize your internet presence and improve the performance of client's AI applications. CIS  provide a secure, scalable, and reliable way to deliver your content, applications, and APIs to users worldwide.
+
+- A global load balancer manages traffic across server resources located in multiple regions.
+- The Web Application Firewall (WAF) protects against OSI Layer-7 attacks.
+- It has inbuilt Web Application Firewall (WAF) and Distributed Deniel of Services (DDoS) capabilities
+- It has Edge Function which is called trigger. Incoming requests to your site are intercepted at the Cloud edge and matched against the triggers in the IBM Cloud account or domain.
+
+For more details on the IBM Cloud Internet Services refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/cis?topic=cis-about-ibm-cloud-internet-services-cis)
+{: note}
+
 11. ***Virtual Private Endpoint (VPE)***
+
+IBM Cloud Virtual Private Endpoints (VPE) for VPC enables to connect to supported IBM Cloud® services from the VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
+
+- Public connectivity is not required and has no public data egress charges.
+- Reaches IBM Cloud assets through a private service provider.
+- A VPE lives in your network address space, extending your private and multicloud into the IBM Cloud. 
+
+For more details on the IBM Cloud Virtual Private Endpoint refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe)
+{: note}
+
+In the pattern, the Virtual Private Endpoint service is leveraged to connect with varuous IBM Cloud Services like DBaaS, Watsonx services, Maximo SaaS and others.
