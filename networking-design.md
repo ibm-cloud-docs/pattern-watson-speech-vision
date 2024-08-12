@@ -17,7 +17,7 @@ For deploying AI applications, it's essential to design a robust and scalable ne
 
 This section details the key network design considerations for AI applications in IBM Cloud.
 
-![](image/watsonx-surround-pattern-networking.svg)
+![](image/watson-surround-pattern-networking.svg)
 {: caption="Figure 2. Network Design in IBM Cloud" caption-side="bottom"}
 
 **Virtual private Cloud (VPC)**
