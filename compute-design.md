@@ -14,52 +14,12 @@ keywords:
 
 Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications.
 
-By hosting their traditional x86 or containerized  applications on IBM Cloud VPC VSIs or containers running on ROKS, latency between IBM watsonx services and the customer is minimized, increasing the performances and responsiveness of the customer's application.
+By hosting their traditional x86 or containerized  applications on IBM Cloud VPC VSIs or containers running on Red Hat OpenShift on VPC, latency between IBM watsonx services and the customer is minimized, increasing the performances and responsiveness of the customer's application.
 
 This also allows the customer to benefit from the flexibility and scalability of IBM Cloud VPC offerings and gain easy access all the associated IBM Cloud services.
 
 ### Architecture components
 {: #architecture-components}
-
-**Virtual private Cloud (VPC)**
-
-A Virtual Private Cloud (VPC) is a logically isolated network in an IBM Cloud account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
-
-![](image/watsonx-surround-pattern-VPC.svg)
-{: caption="Figure 2. Deployment of VPCs in cloud" caption-side="bottom"}
-
-***Management VPC***
-
-A Management VPC is a specialized VPC that serves as the entry point for managing the IBM Cloud resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
-
-- Creating and managing VPCs
-- Configuring network routes and subnets
-- Monitoring and troubleshooting resource performance
-
-The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
-
-***Workload VPC***
-
-A Workload VPC is a production-grade VPC that can use to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
-
-- Dedicated networking resources
-- Support for multiple subnets and routing configurations
-- Integration with IBM Cloud services, such as databases and message queues
-
-Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
-
-***Edge VPC***
-
-An Edge VPC is a specialized VPC that provides low-latency, high-performance networking for edge computing workloads. Edge VPCs are designed to support IoT, AI, and other latency-sensitive applications that require direct access to the cloud. Key features of an Edge VPC include:
-    
-- Low-latency networking with reduced packet loss
-- Support for multiple subnets and routing configurations
-- Integration with IBM Cloud services, such as databases and message queues
-
-Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
-
-
-**Red Hat OpenShift Kubernetes Service**
 
 ![](image/watsonx-surround-pattern-ROKS.svg)
 {: caption="Figure 3. Deployment of ROKS in cloud" caption-side="bottom"}
@@ -78,26 +38,24 @@ Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered c
 7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. IBM Cloud Code Engine is used for any serverless workloads.
 
-<<<<<<< Updated upstream
-***Red Hat OpenShift Components***
+***Red Hat OpenShift on VPC***
 
 1. Master / Control Plane nodes and componenets are managed by IBM Cloud in Red Hat OpenShift Kubernetes service on IBM Cloud.
 2. The GenAI applications are deployed as microservices and expoed via OpenShift routes, making them easier to integrate with other systems or services. 
-5. The worker / Data Plane nodes capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload. 
+3. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
+4. Separate worker pools are created within the clusters for the application and storage workloads.
+5. The worker pool node size and quantity are determined based on the resource requirements for the application and storage workloads.
+6.  By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
+7. To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three availability zones.
+8. The worker / Data Plane nodes capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload. 
 
 For more details on the ROKS capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
 {: note}
 
-4. By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
-5. The Red Hat OpenShift platform is integrated with IBM Cloudd Services to provide centralized cluster observability services.
+9. The Red Hat OpenShift platform is integrated with IBM Cloudd Services to provide centralized cluster observability services.
 
-**Code Engine**
-=======
-For more details on the ROKS capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
-{: note}
 
 **IBM Cloud Code Engine**
->>>>>>> Stashed changes
 
 IBM Cloud Code Engine is a fully managed, serverless platform built on kubernetes designed to run event-driven functions, batch jobs or containerized applications/microservices. Code Engine can also build applications from source code.
 
@@ -117,25 +75,10 @@ The key advantages of IBM Cloud Code Engine are:
 
 Code Engine allows to build cost effective modern event driven applications and let developers focus on the code, not worrying about the platform needed to run it.
 
-<<<<<<< Updated upstream
 **Speech to Text hosting requirements**
-=======
+
+Content To Be Added
 
 
 
 
-
-
-
-**KEEP?** Speech to Text hosting requirements.
->>>>>>> Stashed changes
-
-1. A VPC Landing Zone is deployed which provides the ability to automate the installation of an Red Hat OpenShift cluster into a multizone region.
-2. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
-3. Separate worker pools are created within the clusters for the application and storage workloads.
-4. The worker pool node size and quantity are determined based on the resource requirements for the application and storage workloads.
-5. To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three availability zones.
-6. Total worker node capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload.
-7. By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
-8. The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
-9.
