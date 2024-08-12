@@ -13,24 +13,72 @@ keywords:
 
 {: #networking-design}
 
-## Requirements
+For deploying AI applications, it's essential to design a robust and scalable network infrastructure that can handle the unique demands of these workloads. THe IBM Cloud infrastructure is designed to support the high-performance computing requirements of AI workloads, ensuring optimal performance, scalability, and reliability.
 
-{: #networking-requirements}
+This section details the key network design considerations for AI applications in IBM Cloud.
 
-Considerations
+![](image/watsonx-surround-pattern-networking.svg)
+{: caption="Figure 2. Network Design in IBM Cloud" caption-side="bottom"}
 
-{: #network-considerations}
+**Virtual private Cloud (VPC)**
 
-Key areas that you must keep in mind while designing a Zerto replication for Disaster recovery environment on {{site.data.keyword.cloud_notm}}.
+A Virtual Private Cloud (VPC) is a logically isolated network in an IBM Cloud account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
 
-| **Area**                                                                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Firewall Configuration:**                                             | **Ports and Protocols:** Ensure that the necessary ports and protocols are open in the firewalls between Zerto components, VMware infrastructure, and any other relevant systems. Zerto documentation specifies the required ports for different components and functions. Design your network flows carefully. For more information about ports and protocols, see [Zerto network ports and protocols](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Port_Usage.htm){: external}.  \n - Zerto architecture does not support NAT (Network Address Translation).  \n - Ensure that the required firewall ports are open between the recovered VMs (e.g.: NSX-T distributed firewall rules) and their eventual external dependencies.   \n - Ensure that the {{site.data.keyword.vpc_short}} security groups and firewall rules allow the replication and control traffic.  \n - Ensure that the networks are properly routed and possible firewall rules allow the required traffic at both source and destination sites.firewalls. |
-| **Public Access**                                                       | **Internet Access** to connect to Zerto CallHome Server, Zerto support, Zerto Analytics. **Proxy or NAT connection**, for example by using the VPC subnet public gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Network Segmentation:**                                               | **Isolation**: Segment the network to isolate the Zerto components from other critical infrastructure. This isolation can enhance security and prevent unauthorized access.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **VMware vSphere Connectivity:**                                        | **vCenter and ESXi Host Connectivity:** Establish reliable connections to VMware vCenter and ESXi hosts to facilitate the discovery of VMs, configuration settings retrieval, and other interactions between Zerto and VMware.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Secure Communication:**                                               | **TLS/SSL Encryption:** Enable TLS/SSL encryption for communication between Zerto components to ensure the confidentiality and integrity of data in transit. **Secure Communication with VMware:** When interacting with VMware infrastructure, it is essential to utilize secure communication protocols, adhering to best practices for securing VMware environments, to ensure the confidentiality, integrity, and availability of data, as well as to protect against unauthorized access and potential security threats.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **DNS Configuration:**                                                  | **Name Resolution:** Ensure proper DNS configuration for Zerto components and VMware infrastructure to enable seamless name resolution. Properly configured DNS is essential for the identification and communication between components. Update the DNS records to point to the recovered VMs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Time Synchronization:**                                               | **NTP (Network Time Protocol):** Synchronize the clocks across Zerto components, VMware hosts, and other relevant systems using that use NTP to ensure accurate timestamps for logs and data consistency.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Redundancy and High Availability:**                                   | **Redundant Network Paths:** Configure redundant network paths to provide high availability and fault tolerance, ensuring that a failure in one path does not disrupt data transfer operations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| {: caption="Table 1. Networking design considerations" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+1. ***Management VPC***
+
+A Management VPC is a specialized VPC that serves as the entry point for managing the IBM Cloud resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
+
+- Creating and managing VPCs
+- Configuring network routes and subnets
+- Monitoring and troubleshooting resource performance
+
+The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
+
+2. ***Workload VPC***
+
+A Workload VPC is a production-grade VPC that can use to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
+
+- Dedicated networking resources
+- Support for multiple subnets and routing configurations
+- Integration with IBM Cloud services, such as databases and message queues
+
+Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
+
+3. ***Edge VPC***
+
+An Edge VPC is a specialized VPC that provides low-latency, high-performance networking for edge computing workloads. Edge VPCs are designed to support IoT, AI, and other latency-sensitive applications that require direct access to the cloud. Key features of an Edge VPC include:
+    
+- Low-latency networking with reduced packet loss
+- Support for multiple subnets and routing configurations
+- Integration with IBM Cloud services, such as databases and message queues
+
+Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
+
+**Load Balancer**
+
+A Load Balancer is responsible for distributing traffic across multiple instances of the AI application. They are designed to help in building resilient and scalable applications in IBM Cloud. 
+
+4. ***IBM Cloud Load Balancer***
+
+IBM Cloud Load Balancer is a managed service from IBM Cloud. This service is available in the cloud services catalogue. Some of the key features of this services are 
+
+- HTTP/HTTPS traffic management: It can handle both HTTP and HTTPS traffic, ensuring secure communication between various application.
+- TCP/UDP load balancing: It support TCP and UDP traffic, making me suitable for a wide range of applications
+- Supports a variety of load-balancing methods, such as round robin, weighted round robin, and least connections
+- Load balancing among virtual server and bare metal compute instances that reside locally within a data center
+- Integration: Integrate with other IBM Cloud services like Watson and API Connect
+
+For more details on the IBM Cloud Load Balancer refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
+{: note}
+
+
+**Gateway Services**
+
+A Gateway is a set of managed services in IBM Cloud. They act as a bridge between your applications and the outside world, allowing you to securely expose APIs, manage traffic, and enforce policies.
+
+5. ***Transit Gateway***
+
+
+6. ***Gateway VPN***
+
