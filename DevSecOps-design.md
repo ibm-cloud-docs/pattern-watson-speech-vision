@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# DevOps Tool Chain
+# DevOps Tool Chain( Siva to update)
 
 {: #security-design}
 
@@ -76,8 +76,6 @@ IBM Cloud offers a comprehensive suite of DevOps tools designed to streamline th
 * LogDNA is a centralized log management tool that helps you collect, monitor, and analyze log data from your applications and infrastructure. It enables efficient troubleshooting and operational insights, ensuring better application performance and reliability.
 
 These tools collectively support the entire DevOps lifecycle, from code development to deployment and monitoring, providing a robust environment for modern application development on IBM Cloud
-
-
 
 ### Code Testing Tools on IBM Cloud
 

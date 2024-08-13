@@ -45,7 +45,7 @@ toc:
             navtitle: Security
           - topic: database-design.md
             navtitle: Database
-          - topic: DevSecOps-architecture.md
+          - topic: DevSecOps-design.md
             navtitle: dev_ops
           - topic: resiliency-design.md
             navtitle: Resiliency
@@ -66,7 +66,7 @@ toc:
             navtitle: Security
           - topic: database-architecture.md
             navtitle: Database
-          - topic: DevSecOps-design.md
+          - topic: DevSecOps-architecture.md
             navtitle: dev_ops
           - topic: resiliency-architecture.md
             navtitle: Resiliency          

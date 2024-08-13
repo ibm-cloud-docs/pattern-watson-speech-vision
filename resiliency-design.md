@@ -9,10 +9,12 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Resiliency design
+# Resiliency design(Bertrand)
+
 {: #resiliency-design-id}
 
 ## Requirements
+
 {: #resiliency-requirements}
 
 The following are requirements for the resiliency aspect of the Zerto for disaster recovery for VMware workloads pattern:
@@ -23,6 +25,7 @@ The following are requirements for the resiliency aspect of the Zerto for disast
 ![Zerto_solution_for_vSphere_architecture](image/Zerto-Architecture-High-Level.svg){: caption="Figure 1. Zerto solution for vSphere architecture" caption-side="bottom"}
 
 ## Considerations
+
 {: #resiliency-considerations}
 
 - Zerto replication is software-based and occurs in the hypervisor layer.
@@ -32,6 +35,7 @@ The following are requirements for the resiliency aspect of the Zerto for disast
 - Zerto replicates all VMs belonging to an application, which is defined in Virtual Protection Groups (VPGs), at the same consistent checkpoint, regardless of the number of disks or VMs.
 
 ### Recovery Scenarios
+
 {: #recovery scenarios}
 
 The following scenarios are general guidance only. Customer workloads and scenarios are unique.

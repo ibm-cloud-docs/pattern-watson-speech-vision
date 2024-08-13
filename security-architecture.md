@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture Decisions for Security
+# Architecture Decisions for Security(Bertrand)
 
 {: #security-architecture}
 

@@ -10,24 +10,25 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Storage design
+
 {: #storage-design}
 
-The following provides the details on various storage types and design for the watsonx speech to text, text to speech and image recognition use case. 
-
+The following provides the details on various storage types and design for the watsonx speech to text, text to speech and image recognition use case.
 
 ## Requirements
+
 {: #storage-requirements}
 For an AI powered applications, its crucial to ensure that the underlying storage should meet the following requirements
 
-1. High-throughput storage: Speech-to-text applications generate massive amounts of audio data, requiring high-throughput storage that can process large volumes of data quickly.
+1. High-throughput storage: Speech-to-text & Vision recognition applications that generate massive amounts of audio , Video analytical data, this needs high-throughput storage that can process large volumes of data quickly.
 2. Low-latency access: To ensure real-time processing and minimize delays, our storage system must provide low-latency access to audio files.
 3. Data compression and optimization: Effective compression techniques are essential for reducing the size of audio files while maintaining their integrity.
 4. Scalability and reliability: As speech-to-text applications grow in popularity, our storage system must scale effortlessly to meet increasing demands while ensuring high availability.
 5. Security and compliance: Robust security measures are essential to protect sensitive audio and text data from unauthorized access or breaches.
 6. Integration with AI/ML frameworks: Easy integration with popular AI and machine learning (ML) frameworks is vital for developing innovative applications that leverage speech-to-text and text-to-speech capabilities.
 
-
 ## Considerations
+
 {: #storage-considerations}
 
 ![](image/watsonx-surround-pattern-storage.svg)
@@ -49,14 +50,13 @@ For the usecase, there will be a large volume of data needs to be stored. This r
 
 IBM Cloud Block Storage are a scalable and highly available persistent storage service designed for modern cloud-native applications. In this type of storage that stores data in fixed-size blocks, typically 4KB or 8KB in size. Each block is assigned a unique identifier (block number) and contains a specific amount of data.
 
-
 1. Scalability: Store up to 16 TiB (terabytes) per volume, with the ability to scale up or down as needed.
 2. High availability: Ensure your data is always available with automatic replication across multiple Availability Zones.
 3. Low latency: Access your data quickly with predictable and consistent performance.
 4. Security: Rest assured that your data is protected with end-to-end encryption, secure authentication, and authorization controls.
 5. Integration: Seamlessly integrate me with your cloud-native applications using popular frameworks and APIs.
 
-In containerized applications, block storage plays a crucial role as Persistent Volumes (PVs). 
+In containerized applications, block storage plays a crucial role as Persistent Volumes (PVs).
 Here are some key points for this use cases:
 
 - Data Persistence: Containers can be restarted or deleted without affecting the underlying data stored on a persistent volume.

@@ -9,10 +9,9 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Security design
+# Security design(Bertrand)
 
 {: #security-design}
-
 
 When implementing an Enterprise Artificial Intelligence (AI) solution, there are several key security considerations to keep in mind:
 

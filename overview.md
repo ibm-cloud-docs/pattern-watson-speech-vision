@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Overview
+# Overview(Dwarka to update)
 
 {: #overview-id}
 
@@ -51,12 +51,10 @@ IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting a
 
 Code Engine
 
-
 Deployment Lifecycle Management: The deployment lifecycle is managed using:
 
 IBM Cloud Pipeline for automating development processes.
 IBM Cloud Registry for managing container images across different environments.
-
 
 Maximo Visual Inspection: This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
