@@ -52,9 +52,9 @@ This also allows the customer to benefit from the flexibility and scalability of
 7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. IBM Cloud Code Engine is used for any serverless workloads.
 
-***Red Hat OpenShift on VPC***
+**Red Hat OpenShift on VPC**
 
-1. Master / Control Plane nodes and componenets are managed by IBM Cloud in Red Hat OpenShift Kubernetes service on IBM Cloud.
+1. Master / Control Plane nodes and components are managed by IBM Cloud in Red Hat OpenShift Kubernetes service on IBM Cloud.
 2. The GenAI applications are deployed as microservices and expoed via OpenShift routes, making them easier to integrate with other systems or services.
 3. Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
 4. Separate worker pools are created within the clusters for the application and storage workloads.
