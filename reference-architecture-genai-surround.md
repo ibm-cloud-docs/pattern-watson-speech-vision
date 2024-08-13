@@ -8,11 +8,14 @@
 
 This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud.
 
-AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape. This reference architecture showcases how IBM Cloud and Watsonx provide a secure environment for deploying and governing Gen AI applications.
+AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape. This reference architecture showcases how IBM Cloud and Watsonx provide a secure environment for deploying and governing Gen AI applications and their workflows.
 
-A more specific use case of this pattern is a Retrieval Augmented Generation [(RAG)](https://www.ibm.com/architectures/hybrid/genai-rag) pattern. RAG enables [foundation models](https://www.ibm.com/products/watsonx-ai/foundation-models) to produce factually correct outputs by querying relevant content. RAG is a solution for any business scenario where there is a large body of documentation that a user must consult to provide confident answers. Below is a diagram that shows the flow of a RAG solution. Please note that this is not the entire reference architecture, but a small portion highlighted for better understanding of what is possible with this Gen AI reference architecture.
+~~A more specific use case of this pattern is a Retrieval Augmented Generation [(RAG)](https://www.ibm.com/architectures/hybrid/genai-rag) pattern. RAG enables [foundation models](https://www.ibm.com/products/watsonx-ai/foundation-models) to produce factually correct outputs by querying relevant content. RAG is a solution for any business scenario where there is a large body of documentation that a user must consult to provide confident answers. Below is a diagram that shows the flow of a RAG solution. Please note that this is not the entire reference architecture, but a small portion highlighted for better understanding of what is possible with this Gen AI reference architecture.~~
+
+This pattern is focusing on augmenting the standard watsonx offering  with IBM Cloud speech to text, text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
 
 ![RAG.](rag-pattern.drawio.svg "RAG"){: caption="Figure 1. Watsonx RAG Pattern" caption-side="bottom"}
+**TO REPLACE**
 
 ## Architecture diagram
 

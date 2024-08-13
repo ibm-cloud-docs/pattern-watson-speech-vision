@@ -65,7 +65,7 @@ The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastruc
 
 Link to GPU supported on IBM Cloud
 
-### Integrating with** **Maximo Visual Inspection Edge
+### Integrating with Maximo Visual Inspection Edge
 
 **Maximo Visual Inspection Edge** is a web-based application that you can integrate with **Maximo Visual Inspection** to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
 
