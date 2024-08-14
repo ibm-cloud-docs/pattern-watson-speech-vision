@@ -14,15 +14,20 @@ keywords:
 
 {: overview-id}
 
-This pattern describes watsonx architecture on IBM Cloud including core cloud services and Artificial Intelligence services offered through watson on IBM Cloud. in this particula pattern the main foucs is around watson and IBM cloud services for enterprise customers in sectors such as in Financial Services sector insurance, medical, particularly focusing on AI that needs to delivery RAG, Speech and image and video detection. This will include an exploration of the technical architecture, the integration with existing systems, and the end-to-end capabilities of the solution.
+This pattern is focused on building enterprise AI environment with  watsonx architecture as the core on IBM Cloud along with other IBM Cloud services including IBM Cloud Roks, VPC, Maximo Visual Inspection, watson Voice assistance.
+This pattern is helpfull for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
 
-This patterns describes the architetcure based on the following key areas
+This patterns describes the architetcure based on the following key are technology
 
-1.  IBM Cloud VPC ROKS.
-2.  IBM Cloud VPC VSI.
-3.  IBM Cloud Devlopment Pipelines.
-4.  Code Engine as service.
-5.  watson x on IBM Cloud
+1.  watson x(software as service)
+    1.  watson assistant
+    2.  watson data.
+    3.  watson orchestrate.
+    4.  watson governance
+2.  IBM Cloud VPC ROKS.
+3.  IBM Cloud VPC VSI.
+4.  IBM Cloud Devlopment Pipelines.
+5.  Code Engine as service.
 6.  Maximo visual Inspection as Services
 
 ## Overview of the overall solution
