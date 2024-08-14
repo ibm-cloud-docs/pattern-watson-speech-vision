@@ -13,24 +13,22 @@ keywords:
 
 {: #ai-products-watsonx}
 
+## Requirement
+
+The requirements for the AI aspect for watson  pattern focuses on the following:
+
+* AI components that are required to meet RAG, Chat, Voice and text interaction and image and video detection as needed in the customer use case.
+
+## Watson x SaaS model components
+
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on IBM Cloud, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
 Key Components of Watsonx on IBM Cloud:
-Watsonx.ai: This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models. Watsonx.ai supports both traditional machine learning models and generative AI, allowing users to build applications like chatbots, NLP-based solutions, and recommendation engines (IBM TechXchange Community) (IBM - United States).
 
-Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources, making it easy to preprocess and manage the data needed for AI/ML models (IBM - United States).
-
-Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle (IBM TechXchange Community).
-
-ModelOps and Lifecycle Management: Watsonx integrates with IBM’s ModelOps for continuous model monitoring, retraining, and lifecycle management. This includes deploying AI models at scale across hybrid cloud environments while providing the tools needed for ongoing monitoring and optimization (IBM - United States).
-
-Hybrid and Multi-Cloud Deployment: Watsonx supports hybrid cloud and multi-cloud architectures, allowing enterprises to deploy AI models wherever they need, whether on IBM Cloud, on-premises, or across multiple cloud environments. This flexibility makes it easier to scale and adapt to enterprise requirements while maintaining control over data residency and compliance (IBM TechXchange Community).
-
-## Watsonx aaS on IBM Cloud
-
-{: #deployment-watsonx-Aas}
-
-Customers can use the IBM Cloud watsonx-aaS service without the need to deploy any generative AI software. IBM Cloud IaaS, PaaS services provide the supporting/surround environment for a secure and regulatory compliant development and deployment of the generative AI workloads/solutions for inferencing, prompt tuning and fine tuning.
+1. Watsonx.ai:This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models.
+2. Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources.
+3. Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle.
+4. IBM watsonx Assistant for Voice:
 
 https://cloud.ibm.com/docs/watson?topic=watson-about#about
 
@@ -57,7 +55,6 @@ https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-vi
 ## watsonx Assistant for Voice
 
 IBM watsonx Assistant for Voice offers:
-
 
 1. Advanced artificial intelligence technology that blends large speech models (LSMs) voice recognition, speech to text, and NLU capabilities.
 2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment.
