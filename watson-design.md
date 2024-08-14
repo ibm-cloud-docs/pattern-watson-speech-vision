@@ -13,35 +13,18 @@ keywords:
 
 {: #ai-products-watsonx}
 
-Watsonx is IBM’s AI and data platform with three core components and a set of AI assistants designed to help to scale and accelerate the impact of AI with trusted data across businesses.
+Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on IBM Cloud, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
-Core components include watsonx.ai, watsonx.data and watsonx.governance.
+Key Components of Watsonx on IBM Cloud:
+Watsonx.ai: This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models. Watsonx.ai supports both traditional machine learning models and generative AI, allowing users to build applications like chatbots, NLP-based solutions, and recommendation engines​ (IBM TechXchange Community)​ (IBM - United States).
 
-Watsonx.ai - a studio for new foundation models, generative AI and machine learning; : It comprises of Watson Studio and Watson Machine Learning services that are extended with features for working with foundation models and generative AI.
+Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources, making it easy to preprocess and manage the data needed for AI/ML models​ (IBM - United States).
 
-Watsonx.data - a fit-for-purpose data store built on an open data lakehouse architecture; : It comprises of a single unified data platform based on open lakehouse architecture, open data formats and opensource Presto engine for querying.
+Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle​ (IBM TechXchange Community).
 
-Watsonx.governance - a toolkit, to accelerate AI workflows that are built with responsibility, transparency and explainability. : It comprises of Open Scale, AI Factsheets and Open Pages services that are integrated and enhanced with features for working with foundation models and generative AI. Services will be rebranded with current focus on integrating and Open Scale, AI Factsheets with Open Pages integration to follow.
+ModelOps and Lifecycle Management: Watsonx integrates with IBM’s ModelOps for continuous model monitoring, retraining, and lifecycle management. This includes deploying AI models at scale across hybrid cloud environments while providing the tools needed for ongoing monitoring and optimization​ (IBM - United States).
 
-AI assistants are pre-built applications powered by watsonx. They enable automating customer service, generating code, and automating key workflows in departments such as HR.
-
-* watsonx Assistant: Designed to create exceptional customer service experiences, watsonx Assistant empowers everyone in the organization to build and deploy AI-powered virtual agents without writing a line of code.
-* watsonx Orchestrate: With an expanding catalog of capabilities, business users can use watsonx Orchestrate to delegate common and complex talent management tasks such as creating a job description, pulling a report in Salesforce or SAP SuccessFactors, sourcing candidates and more using natural language.
-* watsonx Code Assistant: Empower developers of all experience levels to write code with AI-generated recommendations. Purpose-built for targeted use cases such as application modernization and IT automation, watsonx Code Assistant leverages generative AI to increase developer productivity, reduce coding complexity, and accelerate developer onboarding.
-* Watsonx Orders: AI-powered voice agent that accurately takes orders from your drive-thru guests and speeds them to the pay window. It supports a multitude of use cases, including loyalty programs and mobile orders. It knows the customization options of every menu item. It’s aware of what’s available and what’s not. And it works every shift, every day.
-
-## Types of Gen AI workloads
-
-{: #concepts-types-gen-ai-workloads}
-
-Generative AI workloads typically fall into these following categories:
-
-* Inferencing: The process of using a trained machine learning model to make predictions on new data.
-* Prompt Tuning: An efficient, low-cost way of adapting a pre-trained model to new tasks without retraining the model or updating its weights. Prompt tuning involves learning a small number of new parameters that are appended to a model’s prompt, while freezing the model’s existing parameters.
-* Fine Tuning: The process of adapting a pre-trained model to perform a specific task by conducting additional training. Fine tuning may involve (1) updating the model’s existing parameters, known as full fine tuning, or (2) updating a subset of the model’s existing parameters or adding new parameters to the model and training them while freezing the model’s existing parameters, known as parameter-efficient fine tuning.
-* Model Training: The initial stage of model building, involving a subset of the source data. The model learns by example from the known data. The model can then be tested against a further, different subset for which the outcome is already known.
-
-Given the current state of technology, we think that most IBM Cloud clients will be focusing on using/creating solutions that involve Inferencing, Prompt Tuning and Fine Tuning. A much smaller set of clients may be interested in doing the Model Training for Gen AI by themselves.
+Hybrid and Multi-Cloud Deployment: Watsonx supports hybrid cloud and multi-cloud architectures, allowing enterprises to deploy AI models wherever they need, whether on IBM Cloud, on-premises, or across multiple cloud environments. This flexibility makes it easier to scale and adapt to enterprise requirements while maintaining control over data residency and compliance​ (IBM TechXchange Community).
 
 ## Watsonx aaS on IBM Cloud
 
@@ -61,9 +44,6 @@ The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastruc
 
 **Maximo Visual Inspection** includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use **IBM Maximo Visual Inspection** to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
-### GPU supported on IBM Cloud for SaaS
-
-Link to GPU supported on IBM Cloud
 
 ### Integrating with Maximo Visual Inspection Edge
 
@@ -85,30 +65,11 @@ IBM Cloud Speech to Text service converts the human voice into the written word.
 
 The service is available in multiple languages.
 
-...
-https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
 
 **IBM Cloud Text to Speech service**
 
 IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
 
-...
-
-https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-
-https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
-
-https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speech-install-data
-
-https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
-
-https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-
-https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
-
-https://cloud.ibm.com/docs/speech-to-text
-
-https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
 
 ## Reference
 
@@ -122,3 +83,11 @@ https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cp
 8. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=configuring.
 9. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge.
 10. https://www.ibm.com/products/maximo/pricing#price-estimator
+11. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+12. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
+13. https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speech-install-data
+14. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
+15. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+16. https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
+17. https://cloud.ibm.com/docs/speech-to-text
+18. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
