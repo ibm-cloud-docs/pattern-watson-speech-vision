@@ -15,9 +15,25 @@ keywords:
 
 ## Requirement
 
-The requirements for the AI aspect for watson  pattern focuses on the following:
+The Watson Pattern AI solution requires a range of AI components to effectively process and analyze various types of data inputs. These requirements are designed to meet specific business needs, including RAG, Chat, Voice, Text Interaction, Image Detection, and Video Detection.
 
-* AI components that are required to meet RAG, Chat, Voice and text interaction and image and video detection as needed in the customer use case.
+1. Retrieval Augmentation Generation (RAG) : The AI system must be able to  do Text Retrieval and  Text Generation
+2. interactive Chat : The AI system should enable natural language processing (NLP) capabilities to facilitate human-like conversations with customers, including:
+
+   1. Intent detection: recognizing the customer's goal or intent behind their query or message
+   2. Entity recognition: identifying specific objects, people, or locations mentioned in a chat conversation
+3. Voice : The AI system should support voice interaction through various channels, such as:
+
+   1. Speech-to-text conversion: converting spoken words into written text for processing and analysis
+   2. Text to Speech conversation : The AI system must be able to process and analyze large volumes of textual data from various sources, including
+4. Image Detection : The AI system should include computer vision capabilities for analyzing images, such as:
+
+   1. Object detection: recognizing specific objects within an image
+   2. Image classification: categorizing images based on their content or context
+5. Video Detection : The AI system must be able to process and analyze video data from various sources, including:
+
+   1. Object tracking: following the movement of specific objects over time in a video sequence.
+   2. Video analysis: detecting patterns, trends, or anomalies within a video
 
 ## Watson x SaaS model components
 
