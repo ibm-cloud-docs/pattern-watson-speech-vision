@@ -17,40 +17,40 @@ keywords:
 
 {: #resiliency-requirements}
 
-The following are requirements for the resiliency aspect of the Zerto for disaster recovery for VMware workloads pattern:
+To ensure the resiliency of the solution, the following components must be taken into account:
 
-- Replicate VMware workloads from a protected site to a recovery site in a different region to enable the failover of workloads if there is a failure in the protected site.
-- Failover that meets the required Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) of the application.
+- custom applications running on IBM Cloud VPC's VSIs
+- custom applications running on ROKS containers
+- custom functions/applications/jobs running on IBM Cloud Code Engine
+- the SaaS services and in particular the AI related SaaS services (Watsonx, IBM Cloud Speech to Text, Text to Speech, Maximo Visual inspection) and especially the data they hold
 
-![Zerto_solution_for_vSphere_architecture](image/Zerto-Architecture-High-Level.svg){: caption="Figure 1. Zerto solution for vSphere architecture" caption-side="bottom"}
+## Considerations for High Availability
 
-## Considerations
+{: #ha-considerations}
 
-{: #resiliency-considerations}
+### High Availability for VPC
 
-- Zerto replication is software-based and occurs in the hypervisor layer.
-- The VRA continuously replicates data from VMs and VMDKs selected by the user, compressing it and sending it to the remote site over the {{site.data.keyword.cloud_notm}} backbone.
-- Every disk write operation to a protected virtual machine is copied by using Zerto Virtual Replication. The write is processed normally on the protected site and asynchronously replicated to the recovery site by a VRA journal. Each protected virtual machine has its own journal.
-- Replication is near-synchronous.
-- Zerto replicates all VMs belonging to an application, which is defined in Virtual Protection Groups (VPGs), at the same consistent checkpoint, regardless of the number of disks or VMs.
+IBM Cloud virtual server instances are highly available within the availability zone where they are deployed. If the original host of a VPC virtual server instance fails, the built in VPC host failure auto restart will automatically move the virtual server instance to a healthy host and restart it.
 
-### Recovery Scenarios
+If cross availability zone high availability zone is needed, a more advanced design would be needed.
+For instance, it can consist in a network or application load balancer distribuling traffic to VPC virtual server instances located in different availability zones of a VPC multi-zone region. Note that if the application running on the virtual server instances are not stateless, some kind of data synchronization mechanism will be needed between the virtual server instances.
 
-{: #recovery scenarios}
+### High Availability for ROKS
 
-The following scenarios are general guidance only. Customer workloads and scenarios are unique.
+In a multi-zone region ROKS deployment, the openshift master and worker nodes are spread across 3 availability zones, making the ROKS containerized workloads highly available by default.
 
-**Scenario 1** : A limited number of VMs become unavailable/corrupted in the production site
+### High Availability for IBM Cloud Code Engine
 
-- By using Zerto's re-IP features, recovery of individual applications or VMs is possible when used with DNS updates. For more information, see [How the Re-IP works in Zerto](https://help.zerto.com/kb/000002926){: external}.
-- Depending on your network routing and subnet allocations, failover without re-IP is also possible.
+IBM Cloud Code Engine is based on IBM Cloud Kubernetes Service clusters. When provisioning an IBM Cloud Code engine project, the workload is deployed in a single availability zone of the multi-zone region that was selected. If a failure in the hosting availability zone occurs, the workload is automatically recreated in one of the remaining zone.
 
-**Scenario 2** : The VMware environment in the protected site becomes unavailable
+### High Availability for SaaS services
 
-- Enable your routing so that NSX overlay IP address ranges at the protected site are routed to the recovery site.
-- Perform Zerto failover of protected VMs and applications at a specified checkpoint by using the recovery site ZVM. For more information, see [Failover_Operation](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/The_Failover_Operation.htm){: external}.
-- When the protected site becomes available, enable reverse protection and perform a Zerto move operation from the recovery site to the protected site. For more information, see [Move_Operation](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Operation.htm){: external}.
+IBM Cloud Speech to Text, Text to Speech and Maximo Visual Inspection are highly available services by default with no single point of failure. This is achieved by leveraging IBM Cloud multi-zone regions.
 
-**Scenario 3** : Recovery of specific files or folders in a protected VM
+More generally, every IBM Cloud SaaS general availability (GA) offering is highly available with an SLA of 99,99%.
 
-- You can recover specific files and folders on Windows or Linux virtual machines that are being protected by Zerto. Recover files and folders from short-term restore point or Extended Journal Copy Repository (recovery site only). See [Restoring Files and Folders](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/restore.htm){: external}.
+## Considerations for Disaster Recovery
+
+{: #dr-considerations}
+
+### Disaster Recovery 

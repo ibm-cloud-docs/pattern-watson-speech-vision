@@ -84,11 +84,31 @@ IBM watsonx Assistant for Voice offers:
 
 IBM Cloud Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
-The service is available in multiple languages.
+The service is available in multiple languages and is exposed as an http interface and a websocket interface. It can be accessed using a public or a private endpoint.
+
+https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
 
 **IBM Cloud Text to Speech service**
 
 IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
+
+The service is exposed as an http interface (synchronous and asynchronous) and a websocket interface. It can be accessed using a public or a private endpoint.
+
+https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+
+https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
+
+https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speech-install-data
+
+https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
+
+https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+
+https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
+
+https://cloud.ibm.com/docs/speech-to-text
+
+https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
 
 ## Reference
 
