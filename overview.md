@@ -22,8 +22,8 @@ This patterns describes the architetcure based on the following key are technolo
 1.  watson x(software as service)
     1.  watson assistant
     2.  watson data.
-    3.  watson orchestrate.
-    4.  watson governance
+    3.  watson governance
+    4.  watson ai
 2.  IBM Cloud VPC ROKS.
 3.  IBM Cloud VPC VSI.
 4.  IBM Cloud Devlopment Pipelines.
@@ -47,15 +47,16 @@ Standard watson deployment solution components.
 
 watsonx Assistant – Used to conversation flow development and webchat interface watson Discovery – Used to ingest documents that will be used to retrieve relevant docs. watsonx ai – RAG with LLM and train as needed. \*watson orchestrate- workflows and integration(Dedicated)
 
+
+### Retrieval-Augmented Generation (RAG)
+
+The solution integrates with external data sources to provide a more comprehensive client experience by leveraging RAG technology for retrieving relevant documents and information from vast datasets, including vector databases like Milvus, hosted on ROKS.
+
 ### Enhanced User Experience with Watson Speech Assistance
 
 Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on Virtual Private Cloud (VPC) with GPU support to handle complex language models efficiently.
 
 Clients can choose from different deployment options—simple, medium, or large—based on their specific production requirements. These options scale with the client's needs and provide a robust foundation for WatsonX Assistant development, document ingestion using Watson Discovery, and running complex Retrieval-Augmented Generation workflows with Large Language Models (LLM) within VPC. Speech to text and Text to speech with multi language support on VPC GPU. Speech summarization for users and virtual ai conversation.
-
-### Retrieval-Augmented Generation (RAG)
-
-The solution integrates with external data sources to provide a more comprehensive client experience by leveraging RAG technology for retrieving relevant documents and information from vast datasets, including vector databases like Milvus, hosted on ROKS.
 
 ### Application Development on IBM Cloud
 
