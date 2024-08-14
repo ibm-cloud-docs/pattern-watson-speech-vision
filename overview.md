@@ -7,28 +7,32 @@ subcollection: watsonx
 
 keywords:
 ---
+
 {{site.data.keyword.attribute-definition-list}}
 
 # Overview(Dwarka to update)
 
-{: #overview-id}
+{: overview-id}
 
 This pattern describes watsonx architecture on IBM Cloud including core cloud services and Artificial Intelligence services offered through watson on IBM Cloud. in this particula pattern the main foucs is around watson and IBM cloud services for enterprise customers in sectors such as in Financial Services sector insurance, medical, particularly focusing on AI that needs to delivery RAG, Speech and image and video detection. This will include an exploration of the technical architecture, the integration with existing systems, and the end-to-end capabilities of the solution.
 
 This patterns describes the architetcure based on the following key areas
 
-1. IBM Cloud VPC ROKS.
-2. IBM Cloud  VPC VSI.
-3. IBM Cloud Devlopment Pipelines.
-4. Code Engine as service.
-5. watson x on IBM Cloud
-6. Maximo visual Inspection as Services
+1.  IBM Cloud VPC ROKS.
+2.  IBM Cloud VPC VSI.
+3.  IBM Cloud Devlopment Pipelines.
+4.  Code Engine as service.
+5.  watson x on IBM Cloud
+6.  Maximo visual Inspection as Services
 
 ## Overview of the overall solution
 
 Overview of the Solution Architecture:
 
-The solution architecture is designed to address specific needs within financial services through WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem:
+The solution architecture is designed to address specific needs within financial services through WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
+
+
+### ![](image/watsonx-surround-pattern-design-overview.drawio.svg)
 
 ### watson x deployment
 
@@ -36,18 +40,13 @@ A conversational AI model tailored for legal and insurance applications, this ch
 
 Standard watson deployment solution components.
 
-watsonx Assistant – Used to conversation flow development and webchat interface
-watson Discovery – Used to ingest documents that will be used to retrieve relevant docs.
-watsonx ai – RAG with LLM and train as needed.
-*watson orchestrate- workflows and integration(Dedicated)
+watsonx Assistant – Used to conversation flow development and webchat interface watson Discovery – Used to ingest documents that will be used to retrieve relevant docs. watsonx ai – RAG with LLM and train as needed. \*watson orchestrate- workflows and integration(Dedicated)
 
 ### Enhanced User Experience with Watson Speech Assistance
 
 Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on Virtual Private Cloud (VPC) with GPU support to handle complex language models efficiently.
 
-Clients can choose from different deployment options—simple, medium, or large—based on their specific production requirements. These options scale with the client's needs and provide a robust foundation for WatsonX Assistant development, document ingestion using Watson Discovery, and running complex Retrieval-Augmented Generation workflows with Large Language Models (LLM) within VPC.
-Speech to text and Text to speech with multi language support on  VPC GPU. Speech summarization for users and
-virtual ai conversation.
+Clients can choose from different deployment options—simple, medium, or large—based on their specific production requirements. These options scale with the client's needs and provide a robust foundation for WatsonX Assistant development, document ingestion using Watson Discovery, and running complex Retrieval-Augmented Generation workflows with Large Language Models (LLM) within VPC. Speech to text and Text to speech with multi language support on VPC GPU. Speech summarization for users and virtual ai conversation.
 
 ### Retrieval-Augmented Generation (RAG)
 
@@ -61,25 +60,23 @@ Multi-Region Deployment without DR: The WatsonX AI service is deployed across IB
 
 The solution integrates with various IBM Cloud services to create a cohesive ecosystem:
 
-1. Vector Database solutions like Milvus, PostgreSql for RAG capabilities, hosted on ROKS.
-2. IBM Cloud Object Storage (COS) for storage needs.
-3. Block Storage to provide persistent disk storage.
-4. File Storage with Aspera integration for high-speed file transfers, such as uploading mp3, video  files.
-5. Monitoring and Logging: The solution includes robust logging and monitoring capabilities through:
-6. IBM Cloud Activity Tracker for real-time activity monitoring within the cloud environment.
-7. IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting and performance optimization.
-8. code engine.
+1.  Vector Database solutions like Milvus, PostgreSql for RAG capabilities, hosted on ROKS.
+2.  IBM Cloud Object Storage (COS) for storage needs.
+3.  Block Storage to provide persistent disk storage.
+4.  File Storage with Aspera integration for high-speed file transfers, such as uploading mp3, video files.
+5.  Monitoring and Logging: The solution includes robust logging and monitoring capabilities through:
+6.  IBM Cloud Activity Tracker for real-time activity monitoring within the cloud environment.
+7.  IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting and performance optimization.
+8.  code engine.
 
 ### DevOps Pipeline
 
 Deployment Lifecycle Management: The deployment lifecycle is managed using:
 
-IBM Cloud Pipeline for automating development processes.
-IBM Cloud Registry for managing container images across different environments.
+IBM Cloud Pipeline for automating development processes. IBM Cloud Registry for managing container images across different environments.
 
 ### Maximo Visual Inspection
 
 This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
-Conclusion:
-The WatsonX AI solution on IBM Cloud offers an end-to-end platform tailored for financial services with a focus on AI capabilities. The architecture is designed to be scalable, secure, and highly available, ensuring that enterprises can leverage the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
+Conclusion: The WatsonX AI solution on IBM Cloud offers an end-to-end platform tailored for financial services with a focus on AI capabilities. The architecture is designed to be scalable, secure, and highly available, ensuring that enterprises can leverage the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
