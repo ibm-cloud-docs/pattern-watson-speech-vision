@@ -16,15 +16,15 @@ keywords:
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on IBM Cloud, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
 Key Components of Watsonx on IBM Cloud:
-Watsonx.ai: This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models. Watsonx.ai supports both traditional machine learning models and generative AI, allowing users to build applications like chatbots, NLP-based solutions, and recommendation engines​ (IBM TechXchange Community)​ (IBM - United States).
+Watsonx.ai: This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models. Watsonx.ai supports both traditional machine learning models and generative AI, allowing users to build applications like chatbots, NLP-based solutions, and recommendation engines (IBM TechXchange Community) (IBM - United States).
 
-Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources, making it easy to preprocess and manage the data needed for AI/ML models​ (IBM - United States).
+Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources, making it easy to preprocess and manage the data needed for AI/ML models (IBM - United States).
 
-Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle​ (IBM TechXchange Community).
+Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle (IBM TechXchange Community).
 
-ModelOps and Lifecycle Management: Watsonx integrates with IBM’s ModelOps for continuous model monitoring, retraining, and lifecycle management. This includes deploying AI models at scale across hybrid cloud environments while providing the tools needed for ongoing monitoring and optimization​ (IBM - United States).
+ModelOps and Lifecycle Management: Watsonx integrates with IBM’s ModelOps for continuous model monitoring, retraining, and lifecycle management. This includes deploying AI models at scale across hybrid cloud environments while providing the tools needed for ongoing monitoring and optimization (IBM - United States).
 
-Hybrid and Multi-Cloud Deployment: Watsonx supports hybrid cloud and multi-cloud architectures, allowing enterprises to deploy AI models wherever they need, whether on IBM Cloud, on-premises, or across multiple cloud environments. This flexibility makes it easier to scale and adapt to enterprise requirements while maintaining control over data residency and compliance​ (IBM TechXchange Community).
+Hybrid and Multi-Cloud Deployment: Watsonx supports hybrid cloud and multi-cloud architectures, allowing enterprises to deploy AI models wherever they need, whether on IBM Cloud, on-premises, or across multiple cloud environments. This flexibility makes it easier to scale and adapt to enterprise requirements while maintaining control over data residency and compliance (IBM TechXchange Community).
 
 ## Watsonx aaS on IBM Cloud
 
@@ -44,7 +44,6 @@ The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastruc
 
 **Maximo Visual Inspection** includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use **IBM Maximo Visual Inspection** to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
-
 ### Integrating with Maximo Visual Inspection Edge
 
 **Maximo Visual Inspection Edge** is a web-based application that you can integrate with **Maximo Visual Inspection** to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
@@ -55,7 +54,16 @@ https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-vi
 
 ![Visual Inspection for image and Video.](image/video-ingestion.drawio.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
-## Watson Speech:
+## watsonx Assistant for Voice
+
+IBM watsonx Assistant for Voice offers:
+
+
+1. Advanced artificial intelligence technology that blends large speech models (LSMs) voice recognition, speech to text, and NLU capabilities.
+2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment.
+3. Analytics that reveal valuable insights like popular customer queries, FAQs, emerging topics, user experience feedback, and satisfaction levels, empowering you to create personalized interactions.
+4. More information https://www.ibm.com/products/watsonx-assistant/voice
+5. additional information https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
 
 **IBM Cloud Speech to Text service**
 
@@ -65,11 +73,9 @@ IBM Cloud Speech to Text service converts the human voice into the written word.
 
 The service is available in multiple languages.
 
-
 **IBM Cloud Text to Speech service**
 
 IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
-
 
 ## Reference
 
