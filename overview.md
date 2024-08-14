@@ -10,7 +10,7 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Overview(Dwarka to update)
+# Overview
 
 {: overview-id}
 
