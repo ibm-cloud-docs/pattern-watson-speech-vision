@@ -13,7 +13,16 @@ keywords:
 
 {: #compute-design}
 
-Introduction:
+## Requirement
+
+The requirements for the compute aspect for this pattern focuses on the following:
+
+* The compute required hosting x86 workloads on Cloud.
+* The compute required to host container workloads.
+* Development pipeline to allow customer developer to write, integrate and test code including delivering via a secured pipeline.
+* serverless workloads on cloud.
+
+## Compute solution architecture
 
 Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications.
 
@@ -36,7 +45,7 @@ This also allows the customer to benefit from the flexibility and scalability of
 1. A Workload VPC Landing Zone provisioned to deploy various client workloads.
 2. The workloads are deployed across multiple availability zones to meet any high availability requirements.
 3. The Subnet ACL in each zone is to define rules for controlling inbound and outbound traffic with in a VPC.
-<<<<<<< HEAD
+   <<<<<<< HEAD
 4. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
    - To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three  availability zones.
    - Total worker node capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload.
@@ -44,10 +53,18 @@ This also allows the customer to benefit from the flexibility and scalability of
    - The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
    - Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
 5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
-=======
-4. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service 
-5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.  
+   =======
+6. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
+7. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
+
 >>>>>>> e44e374e042a5865db317e966310e89c315bb185
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
+
 6. The Virtual Private Endpoint (VPE) enables to access IBM Cloud services, like cloud storage or databases without having to route traffic through the internet.
 7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. IBM Cloud Code Engine is used for any serverless workloads.
