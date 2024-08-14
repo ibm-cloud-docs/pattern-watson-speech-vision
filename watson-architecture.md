@@ -9,8 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-
-## Watsonx(all)
+# Watsonx Architecture decision (all)
 
 {: #ai-products-watsonx}
 

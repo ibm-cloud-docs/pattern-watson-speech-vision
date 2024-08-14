@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-## Watsonx(all)
+# Watsonx design considerations
 
 {: #ai-products-watsonx}
 
