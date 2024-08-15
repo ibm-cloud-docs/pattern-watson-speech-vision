@@ -78,9 +78,6 @@ IBM Cloud Load Balancer is a managed service from IBM Cloud. This service is ava
 
 - HTTP/HTTPS traffic management: It can handle both HTTP and HTTPS traffic, ensuring secure communication between various application.
 - TCP/UDP load balancing: It support TCP and UDP traffic, making me suitable for a wide range of applications
-- Supports a variety of load-balancing methods, such as round robin, weighted round robin, and least connections
-- Load balancing among virtual server and bare metal compute instances that reside locally within a data center
-- Integration: Integrate with other IBM Cloud services like Watson and API Connect
 
 For more details on the IBM Cloud Load Balancer refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 {: note}
@@ -93,19 +90,15 @@ A Gateway is a set of managed services in IBM Cloud. They act as a bridge betwee
 A Transit Gateway is a managed network service that allows to simplify the network architecture and improve security by consolidating multiple networks into a single, highly available, and scalable platform.
 
 For more details on the IBM Cloud Transit Gateway refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-about)
-
 {: note}
 
 ### ***6. Gateway VPN***
 
 A Gateway Virtual Private Network (VPN) is a service that enables to establish a secure, encrypted connection between the on-premises infrastructure and the IBM Cloud. This allows to extend the private network into the cloud, ensuring seamless communication between the internal resources and IBM Cloud-based services.
 
-- Enables to connect the private network (e.g., client's data center or branch office) directly to the IBM Cloud without exposing any internal resources to the public internet.
-- Reduces latency and improves performance by establishing a direct, optimized connection between the on-premises infrastructure and the IBM Cloud.
 - IPsec: Supports IP Security Protocol (IPSec) for encrypting and authenticating traffic.
 - MPLS: Supports Multiprotocol Label Switching (MPLS) for establishing a secure, managed connection between the on-premises infrastructure and the IBM Cloud.
 - VPG: Virtual Private Gateway provides a secure entrance point for traffic from the on-premises infrastructure to the IBM Cloud.
-- Supports connections with multiple cloud providers, allowing to use IBM Cloud alongside other clouds or networks.
 
 ### ***7. Bastion Host***
 
@@ -117,55 +110,36 @@ A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a se
 
 ## **Other Connection Services**
 
-### ***1. VPN Connection***
+### ***8. VPN Connection***
 
 A VPN (Virtual Private Network) connection for VPC enables to securely connect client's on-premises infrastructure or other clouds to the VPC over the internet. This provides a secure and encrypted tunnel between various networks.
-
-- Connects IBM Cloud VPC to client's on-premise infrastructure, data centers, or other clouds (e.g., AWS, Azure) securely.
-- Access IBM Cloud services, such as Kubernetes clusters, databases, or applications, from the on-premises environment.
-- Migrate workloads between your VPC and on-premises infrastructure or other clouds.
 
 In this pattern, the VPN connection is leveraged for accessing the IBM Cloud resoueces securely through a private connection over internet by system/cloud administrators, developer etc for various development and operational activities.
 
 For more details on the IBM Cloud VPN for VPC refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-vpn-overview&interface=ui)
 {: note}
 
-### ***2. Direct Link 2.0***
+### ***9. Direct Link 2.0***
 
 Direct Link 2.0 is a high-speed, and secure connectivity option that enables client's to establish a dedicated, always-on link between your premises and IBM Cloud. This direct connection eliminates the need for internet-based routing, reducing latency and improving overall performance.
 
 Direct Link 2.0 is available in various regions worldwide, including the United States, Europe, Asia, and Latin America.
 
-- Faster speeds: DL2.0 offers speeds up to 100 Gbps, making it ideal for demanding workloads like artificial intelligence, machine learning, and data analytics.
-- Lower latency: With a dedicated connection, you can expect reduced latency, which is critical for applications that require real-time processing, such as financial transactions, speech to text / text to speech.
-- Improved security: Direct Link 2.0 provides an additional layer of security through the use of encrypted tunnels and secure routing protocols.
-- Scalability: As your business grows, you can easily scale up or down to match changing demands without worrying about internet-based connectivity limitations.
-- Reduced costs: By using a dedicated connection, you can reduce your reliance on public internet bandwidth, leading to cost savings and improved resource utilization.
-
 For more details on the IBM Cloud Direct Link refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/dl?topic=dl-dl-about)
 {: note}
 
-### ***3. Cloud Internet Service***
+### ***10. Cloud Internet Service***
 
 Cloud Internet Services (CIS) is a suite of managed services that helps you optimize your internet presence and improve the performance of client's AI applications. CIS  provide a secure, scalable, and reliable way to deliver your content, applications, and APIs to users worldwide.
-
-- A global load balancer manages traffic across server resources located in multiple regions.
-- The Web Application Firewall (WAF) protects against OSI Layer-7 attacks.
-- It has inbuilt Web Application Firewall (WAF) and Distributed Deniel of Services (DDoS) capabilities
-- It has Edge Function which is called trigger. Incoming requests to your site are intercepted at the Cloud edge and matched against the triggers in the IBM Cloud account or domain.
 
 For more details on the IBM Cloud Internet Services refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/cis?topic=cis-about-ibm-cloud-internet-services-cis)
 {: note}
 
-### ***4. Virtual Private Endpoint (VPE)***
+### ***11. Virtual Private Endpoint (VPE)***
 
 IBM Cloud Virtual Private Endpoints (VPE) for VPC enables to connect to supported IBM Cloud® services from the VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
-
-- Public connectivity is not required and has no public data egress charges.
-- Reaches IBM Cloud assets through a private service provider.
-- A VPE lives in your network address space, extending your private and multicloud into the IBM Cloud.
 
 For more details on the IBM Cloud Virtual Private Endpoint refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe)
 {: note}
 
-In the pattern, the Virtual Private Endpoint service is leveraged to connect with varuous IBM Cloud Services like DBaaS, Watsonx services, Maximo SaaS and others.
+In this pattern, the Virtual Private Endpoint service is leveraged to connect with varuous IBM Cloud Services like DBaaS, Watsonx services, Maximo SaaS and others.
