@@ -72,14 +72,13 @@ Multi-Region Deployment without DR: The WatsonX AI service is deployed across IB
 
 The solution integrates with various IBM Cloud services to create a cohesive ecosystem:
 
-1.  Vector Database solutions like Milvus.
-2.  IBM Cloud Object Storage (COS) for storage needs.
-3.  Block Storage to provide persistent disk storage.
-4.  File Storage with Aspera integration for high-speed file transfers, such as uploading mp3, video files.
-5.  Monitoring and Logging: The solution includes robust logging and monitoring capabilities through:
-6.  IBM Cloud Activity Tracker for real-time activity monitoring within the cloud environment.
-7.  IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting and performance optimization.
-8.  code engine.
+1.  IBM Cloud Object Storage (COS) for storage needs.
+2.  Block Storage to provide persistent disk storage.
+3.  File Storage with Aspera integration for high-speed file transfers, such as uploading mp3, video files.
+4.  Monitoring and Logging: The solution includes robust logging and monitoring capabilities through:
+5.  IBM Cloud Activity Tracker for real-time activity monitoring within the cloud environment.
+6.  IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting and performance optimization.
+7.  code engine.
 
 ### DevOps Pipeline
 
