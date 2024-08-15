@@ -13,7 +13,6 @@ keywords:
 
 {: #networking-design}
 
-
 ## Requirement
 
 The requirements for the network aspect for this pattern focuses on the following:
@@ -93,11 +92,8 @@ A Gateway is a set of managed services in IBM Cloud. They act as a bridge betwee
 ***Transit Gateway***
 A Transit Gateway is a managed network service that allows to simplify the network architecture and improve security by consolidating multiple networks into a single, highly available, and scalable platform.
 
-It is essentially a hub-and-spoke architecture where multiple Virtual Private Clouds (VPCs) or Subnets can be connected to a central gateway. This enables communication between VPCs or Subnets without the need for individual VPN connections or peering configurations.
-
-In this pattern, two Transit gateways are considered. One for the communication between the management, worker and edge VPCs and another one for the integration of on-premise network with IBM Cloud resources.
-
 For more details on the IBM Cloud Transit Gateway refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-about)
+
 {: note}
 
 ### ***6. Gateway VPN***
@@ -123,7 +119,6 @@ A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a se
 
 ### ***1. VPN Connection***
 
-
 A VPN (Virtual Private Network) connection for VPC enables to securely connect client's on-premises infrastructure or other clouds to the VPC over the internet. This provides a secure and encrypted tunnel between various networks.
 
 - Connects IBM Cloud VPC to client's on-premise infrastructure, data centers, or other clouds (e.g., AWS, Azure) securely.
@@ -136,7 +131,6 @@ For more details on the IBM Cloud VPN for VPC refer to this [section in IBM Clou
 {: note}
 
 ### ***2. Direct Link 2.0***
-
 
 Direct Link 2.0 is a high-speed, and secure connectivity option that enables client's to establish a dedicated, always-on link between your premises and IBM Cloud. This direct connection eliminates the need for internet-based routing, reducing latency and improving overall performance.
 

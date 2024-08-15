@@ -14,13 +14,14 @@ keywords:
 
 {: overview-id}
 
-This pattern provides a overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and it provides integrated with other IBM Cloud services. Specifically, it combines Watson X with IBM Cloud Roks, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
-This pattern is helpfull for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
+This pattern provides a overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and it provides integration with other IBM Cloud services. Specifically, it combines Watson X with IBM Cloud Roks, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
+This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection. 
+This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
 
 This pattern is built upon the following key technologies:
 
 1. Watson X: a software-as-a-service (SaaS) offering for building AI-powered applications
-2. Watson Assistant: a cloud-based AI platform for developing conversational interfaces
+2. Watson Assistant: a cloud-based AI platform for developing conversational interfaces( speech to text and text to speech)
 3. Watson Data: a managed data service that enables secure and scalable data storage
 4. Watson Governance: a set of tools for managing and governing Watson-powered AI solutions
 5. Watson AI: a portfolio of AI technologies, including natural language processing (NLP), machine learning (ML), and computer vision (CV)
@@ -60,15 +61,11 @@ The solution integrates with external data sources to provide a more comprehensi
 
 ### Enhanced User Experience with Watson Speech Assistance
 
-Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on Virtual Private Cloud (VPC) with GPU support to handle complex language models efficiently.
-
-Clients can choose from different deployment options—simple, medium, or large—based on their specific production requirements. These options scale with the client's needs and provide a robust foundation for WatsonX Assistant development, document ingestion using Watson Discovery, and running complex Retrieval-Augmented Generation workflows with Large Language Models (LLM) within VPC. Speech to text and Text to speech with multi language support on VPC GPU. Speech summarization for users and virtual ai conversation.
+Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on IBM Cloud.
 
 ### Application Development on IBM Cloud
 
-The architecture leverages VPC Extensible and Kubernetes (ROKS) for application development that is both resilient and scalable. This enables businesses to deploy their workloads, including x86 and containerized applications, across a High Availability (HA) environment with an optional Disaster Recovery (DR) setup.
-
-Multi-Region Deployment without DR: The WatsonX AI service is deployed across IBM Cloud Multi Region to ensure redundancy and failover capabilities, although a dedicated Disaster Recovery (DR) setup is not included in this configuration. This approach provides geographic diversity and helps maintain business continuity even in the event of regional disruptions.
+The architecture leverages IBM Cloud VPC and IBM Cloud ROKS for application development that is both resilient and scalable. This enables businesses to deploy their workloads, including x86 and containerized applications, across a High Availability (HA) environment across MZR( Multi-Zone Region)
 
 The solution integrates with various IBM Cloud services to create a cohesive ecosystem:
 
@@ -76,9 +73,7 @@ The solution integrates with various IBM Cloud services to create a cohesive eco
 2.  Block Storage to provide persistent disk storage.
 3.  File Storage with Aspera integration for high-speed file transfers, such as uploading mp3, video files.
 4.  Monitoring and Logging: The solution includes robust logging and monitoring capabilities through:
-5.  IBM Cloud Activity Tracker for real-time activity monitoring within the cloud environment.
-6.  IBM Cloud Logs to centralize logs from all services, aiding in troubleshooting and performance optimization.
-7.  code engine.
+5.  Code engine: Customer can run event triggered events as functions as needed.
 
 ### DevOps Pipeline
 

@@ -1,4 +1,4 @@
-# Gen AI Pattern for Watsonx on IBM Cloud
+# Gen AI Pattern for Watsonx on IBM Cloud(Bertrand)
 
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}

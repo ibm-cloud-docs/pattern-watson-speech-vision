@@ -54,18 +54,9 @@ This also allows the customer to benefit from the flexibility and scalability of
 6. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
 7. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
 8. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
-
->>>>>>> e44e374e042a5865db317e966310e89c315bb185
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
-
-6. The Virtual Private Endpoint (VPE) enables to access IBM Cloud services, like cloud storage or databases without having to route traffic through the internet.
-7. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
-8. IBM Cloud Code Engine is used for any serverless workloads.
+9. The Virtual Private Endpoint (VPE) enables to access IBM Cloud services, like cloud storage or databases without having to route traffic through the internet.
+10. An Application Load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
+11. IBM Cloud Code Engine is used for any serverless workloads.
 
 ### **Red Hat OpenShift on VPC**
 
