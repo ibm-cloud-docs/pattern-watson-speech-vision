@@ -38,7 +38,7 @@ Overview of the Solution Architecture:
 
 The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with Chat capability for Speech and voice itneraction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
 
-### ![](image/watsonx-surround-pattern-design-overview.drawio.svg)
+### ![](image/Overview-Pattern.svg)
 
 
 ### watson x deployment
