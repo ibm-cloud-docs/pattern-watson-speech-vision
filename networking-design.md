@@ -13,6 +13,21 @@ keywords:
 
 {: #networking-design}
 
+
+## Requirement
+
+The requirements for the network aspect for this pattern focuses on the following:
+
+* The required environment must have network connections to connect and hosting x86 virtualized workloads on Cloud.
+* The required environment must have network connections to connect and hosting containizer workloads on Cloud.
+* network connections to AI services on IBM Cloud.
+* network connections to all PaaS and Saas Services consuimed on IBM Cloud.
+* secured connections to Hybrid cloud environment.
+* secured connections to external users and towards development pipeline to allow customer developer to write, integrate and test code including delivering via a secured pipeline.
+* serverless workloads on cloud.
+
+## Network Design considerations
+
 For deploying AI applications, it's essential to design a robust and scalable network infrastructure that can handle the unique demands of these workloads. THe IBM Cloud infrastructure is designed to support the high-performance computing requirements of AI workloads, ensuring optimal performance, scalability, and reliability.
 
 This section details the key network design considerations for AI applications in IBM Cloud.
@@ -20,12 +35,11 @@ This section details the key network design considerations for AI applications i
 ![](image/watson-surround-pattern-networking.svg)
 {: caption="Figure 2. Network Design in IBM Cloud" caption-side="bottom"}
 
-**Virtual private Cloud (VPC)**
+## **Virtual private Cloud (VPC)**
 
 A Virtual Private Cloud (VPC) is a logically isolated network in an IBM Cloud account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
 
-
-***1. Management VPC***
+### ***1. Management VPC***
 
 A Management VPC is a specialized VPC that serves as the entry point for managing the IBM Cloud resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
 
@@ -35,7 +49,7 @@ A Management VPC is a specialized VPC that serves as the entry point for managin
 
 The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
 
-***2. Workload VPC***
+### ***2. Workload VPC***
 
 A Workload VPC is a production-grade VPC that can use to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
 
@@ -45,23 +59,23 @@ A Workload VPC is a production-grade VPC that can use to deploy and run applicat
 
 Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
 
-***3. Edge VPC***
+### ***3. Edge VPC***
 
 An Edge VPC is a specialized VPC that provides low-latency, high-performance networking for edge computing workloads. Edge VPCs are designed to support IoT, AI, and other latency-sensitive applications that require direct access to the cloud. Key features of an Edge VPC include:
-    
+
 - Low-latency networking with reduced packet loss
 - Support for multiple subnets and routing configurations
 - Integration with IBM Cloud services, such as databases and message queues
 
 Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
 
-**Load Balancer**
+### **4. Load Balancer**
 
-A Load Balancer is responsible for distributing traffic across multiple instances of the AI application. They are designed to help in building resilient and scalable applications in IBM Cloud. 
+A Load Balancer is responsible for distributing traffic across multiple instances of the AI application. They are designed to help in building resilient and scalable applications in IBM Cloud.
 
-***4. IBM Cloud Load Balancer***
+***IBM Cloud Load Balancer***
 
-IBM Cloud Load Balancer is a managed service from IBM Cloud. This service is available in the cloud services catalogue. Some of the key features of this services are 
+IBM Cloud Load Balancer is a managed service from IBM Cloud. This service is available in the cloud services catalogue. Some of the key features of this services are
 
 - HTTP/HTTPS traffic management: It can handle both HTTP and HTTPS traffic, ensuring secure communication between various application.
 - TCP/UDP load balancing: It support TCP and UDP traffic, making me suitable for a wide range of applications
@@ -72,12 +86,11 @@ IBM Cloud Load Balancer is a managed service from IBM Cloud. This service is ava
 For more details on the IBM Cloud Load Balancer refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 {: note}
 
-
-**Gateway Services**
+### **5. Gateway Services**
 
 A Gateway is a set of managed services in IBM Cloud. They act as a bridge between client applications and the outside world, allowing to securely expose APIs, manage traffic, and enforce policies.
 
-***5. Transit Gateway***
+***Transit Gateway***
 A Transit Gateway is a managed network service that allows to simplify the network architecture and improve security by consolidating multiple networks into a single, highly available, and scalable platform.
 
 It is essentially a hub-and-spoke architecture where multiple Virtual Private Clouds (VPCs) or Subnets can be connected to a central gateway. This enables communication between VPCs or Subnets without the need for individual VPN connections or peering configurations.
@@ -87,8 +100,7 @@ In this pattern, two Transit gateways are considered. One for the communication 
 For more details on the IBM Cloud Transit Gateway refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-about)
 {: note}
 
-
-***6. Gateway VPN***
+### ***6. Gateway VPN***
 
 A Gateway Virtual Private Network (VPN) is a service that enables to establish a secure, encrypted connection between the on-premises infrastructure and the IBM Cloud. This allows to extend the private network into the cloud, ensuring seamless communication between the internal resources and IBM Cloud-based services.
 
@@ -99,8 +111,7 @@ A Gateway Virtual Private Network (VPN) is a service that enables to establish a
 - VPG: Virtual Private Gateway provides a secure entrance point for traffic from the on-premises infrastructure to the IBM Cloud.
 - Supports connections with multiple cloud providers, allowing to use IBM Cloud alongside other clouds or networks.
 
-
-***7. Bastion Host***
+### ***7. Bastion Host***
 
 A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a secure entry point for accessing and managing other IBM Cloud resources.
 
@@ -108,10 +119,11 @@ A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a se
 - Users must authenticate with the Bastion Host using their IBM Cloud credentials (e.g., API keys, usernames, and passwords) before gaining access to other resources.
 - The Bastion Host creates a secure network boundary between the cloud resources and external users or systems. This helps prevent unauthorized access or data exfiltration.
 
+## **Other Connection Services**
 
-**Other Connection Services**
+### ***1. VPN Connection***
 
-***8. VPN Connection***
+
 A VPN (Virtual Private Network) connection for VPC enables to securely connect client's on-premises infrastructure or other clouds to the VPC over the internet. This provides a secure and encrypted tunnel between various networks.
 
 - Connects IBM Cloud VPC to client's on-premise infrastructure, data centers, or other clouds (e.g., AWS, Azure) securely.
@@ -120,16 +132,15 @@ A VPN (Virtual Private Network) connection for VPC enables to securely connect c
 
 In this pattern, the VPN connection is leveraged for accessing the IBM Cloud resoueces securely through a private connection over internet by system/cloud administrators, developer etc for various development and operational activities.
 
-
 For more details on the IBM Cloud VPN for VPC refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-vpn-overview&interface=ui)
 {: note}
 
+### ***2. Direct Link 2.0***
 
-***9. Direct Link 2.0***
+
 Direct Link 2.0 is a high-speed, and secure connectivity option that enables client's to establish a dedicated, always-on link between your premises and IBM Cloud. This direct connection eliminates the need for internet-based routing, reducing latency and improving overall performance.
 
-Direct Link 2.0 is available in various regions worldwide, including the United States, Europe, Asia, and Latin America. 
-
+Direct Link 2.0 is available in various regions worldwide, including the United States, Europe, Asia, and Latin America.
 
 - Faster speeds: DL2.0 offers speeds up to 100 Gbps, making it ideal for demanding workloads like artificial intelligence, machine learning, and data analytics.
 - Lower latency: With a dedicated connection, you can expect reduced latency, which is critical for applications that require real-time processing, such as financial transactions, speech to text / text to speech.
@@ -140,8 +151,7 @@ Direct Link 2.0 is available in various regions worldwide, including the United 
 For more details on the IBM Cloud Direct Link refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/dl?topic=dl-dl-about)
 {: note}
 
-
-***10. Cloud Internet Service***
+### ***3. Cloud Internet Service***
 
 Cloud Internet Services (CIS) is a suite of managed services that helps you optimize your internet presence and improve the performance of client's AI applications. CIS  provide a secure, scalable, and reliable way to deliver your content, applications, and APIs to users worldwide.
 
@@ -153,13 +163,13 @@ Cloud Internet Services (CIS) is a suite of managed services that helps you opti
 For more details on the IBM Cloud Internet Services refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/cis?topic=cis-about-ibm-cloud-internet-services-cis)
 {: note}
 
-***11. Virtual Private Endpoint (VPE)***
+### ***4. Virtual Private Endpoint (VPE)***
 
 IBM Cloud Virtual Private Endpoints (VPE) for VPC enables to connect to supported IBM Cloud® services from the VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
 
 - Public connectivity is not required and has no public data egress charges.
 - Reaches IBM Cloud assets through a private service provider.
-- A VPE lives in your network address space, extending your private and multicloud into the IBM Cloud. 
+- A VPE lives in your network address space, extending your private and multicloud into the IBM Cloud.
 
 For more details on the IBM Cloud Virtual Private Endpoint refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe)
 {: note}
