@@ -38,10 +38,33 @@ Overview of the Solution Architecture:
 
 The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with Chat capability for Speech and voice itneraction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
 
-### ![](image/Overview-Pattern.svg)
+![](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and IBM Cloud surround environment" caption-side="bottom"}
 
+1 Customer Datacenter location: A physical or virtual data center where customers can host their own infrastructure on IBM Cloud.
 
-### watson x deployment
+2 End users: The individuals who will be using applications, services, and data hosted in an IBM Cloud environment.
+
+3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure.
+
+4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights.
+
+5 Enhanced user experience via Watson STT and TTS: Improves the way humans interact with machines by leveraging IBM Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
+
+6 Maximo Visual Inspection: A visual inspection feature within Maximo, an asset management platform, that enables users to capture and analyze video evidence of equipment or facility conditions, streamlining maintenance workflows and decision-making processes.
+
+7 Application run time services: Offers a range of cloud-based services for deploying, managing, and optimizing application workloads in real-time, ensuring optimal performance, scalability, and security across IBM Cloud environments.
+
+8 Apps Life Cycle Management: A comprehensive platform for designing, building, testing, deploying, and maintaining applications throughout their entire life cycle within an IBM Cloud environment.
+
+9 Storage: Provides scalable and secure cloud storage services to help customers efficiently store, manage, and retrieve large amounts of data across various types of workloads.
+
+11  Security and compliance: Offers a suite of security solutions designed to protect customer data in transit and at rest, ensuring compliance with major industry standards for confidentiality, integrity, and availability.
+
+12  Logging and monitoring: Enables customers to collect, analyze, and visualize log data from their cloud-based applications and infrastructure, providing insights into system performance, usage patterns, and potential issues that need attention.
+
+### watsonx IBM Cloud Service
+
+The watsonx as service on IBM Cloud integrates with external data sources to provide a more comprehensive client experience by leveraging RAG technology for retrieving relevant documents and information from vast datasets, including vector databases like Milvus and customer apps hosted on ROKS.governance is a key functionality of the watson offering allowing a proper administrative control over the utilization and management of watsonx ai components.
 
 Standard watson deployment solution components considered 
 1.  watson x(software as service)
@@ -53,11 +76,6 @@ Standard watson deployment solution components considered
 watsonx Assistant – Used to conversation flow development and webchat interface watson Discovery – Used to ingest documents that will be used to retrieve relevant docs. 
 watsonx ai – RAG with LLM and train as needed. 
 watson orchestrate- workflows and integration(Dedicated) if needed.
-
-
-### Retrieval-Augmented Generation (RAG)
-
-The solution integrates with external data sources to provide a more comprehensive client experience by leveraging RAG technology for retrieving relevant documents and information from vast datasets, including vector databases like Milvus and customer apps hosted on ROKS.
 
 ### Enhanced User Experience with Watson Speech Assistance
 

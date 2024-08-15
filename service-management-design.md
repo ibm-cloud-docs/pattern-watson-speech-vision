@@ -17,73 +17,102 @@ keywords:
 
 {: #service-management-requirements}
 
-The following are requirements for the compute aspect for the Zerto for disaster recovery for VMware workloads pattern:
+The following are service management requirements watsonx and enterprise workload pattern:
 
-- Monitor the usage and performance of the Zerto components.
+- Manage and monitor ai.
 - Enable logging and alerting to DevOps tools.
+- manage and monitor customer x86 enterprise workloads
+- manage and monitor container workloads on IBM Cloud.
+- provide logs and audit tracks
 
-Monitoring a Zerto replication environment is crucial to ensure the health, performance, and reliability of the replication processes. Ensure effective monitoring of your Zerto replication environment by following best practices.
-
-## Considerations
+## Design considerations
 
 {: #monitoring-considerations}
 
 Review the key considerations for service management.
 
-### Infrastructure monitoring
+Management and monitoring
 
-{: #infrastructuremonitoring}
+{: #management-monitoring}
 
-- Monitor the underlying infrastructure components, including virtualization hosts, storage, and network devices, to identify potential bottlenecks. Consider the use of the {{site.data.keyword.cloud_notm}} console. For more information see [{{site.data.keyword.monitoringlong_notm}}](/docs/cloud-infrastructure?topic=cloud-infrastructure-monitoring-iaas) or  [Monitoring for VMware vCenter Server deployments](/docs/monitoring?topic=monitoring-vmware-vcenter).
-- Use performance monitoring tools specific to your virtualization platform to track resource utilization. Review Zerto analytics for performance monitoring, or consider VMware Aria operations and logs on {{site.data.keyword.IBM_notm}}. For more information, see  [VMware Aria Operations and VMware Aria Operations for Logs on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview).
+The recommended approach for multi-cluster management and monitoring is to use IBM Cloud tools that include IBM Log Analysis and IBM Cloud Monitoring. This approach enables application cluster metrics log aggregation and central management within IBM Cloud.
 
-### Log Analysis:
+### IBM watson x management capabilities
 
-{: #loganalysis}
+Here are some of the key management and monitoring features in watson x:
 
-- Regularly review Zerto log files for any warning or error messages. Logs can provide detailed information about the health and performance of various components. For more information, see [Collecting Zerto logs](https://help.zerto.com/bundle/Admin.VC.HTML.95/page/Collecting_Zerto_Logs.htm){: external}.
-- Configure log retention and archiving to ensure that historical logs are available for troubleshooting and analysis.
-- Consider the use of {{site.data.keyword.loganalysislong_notm}}. For more information, see [Getting started with {{site.data.keyword.loganalysislong_notm}}](/docs/log-analysis?topic=log-analysis-getting-started) and [Logging for VMware vCenter Server deployments](/docs/log-analysis?topic=log-analysis-vmware-vcenter).
-- Consider the optional add-on service [VMware Aria Operations and VMware Aria Operations for Logs on {{site.data.keyword.cloud_notm}} overview](/docs/vmwaresolutions?topic=vmwaresolutions-vrops_overview).
+1. **Model Management** : watsonx governance allows you to manage multiple AI models within a single platform, making it easier to track model performance, update models, and retire old versions.
+2. **Monitoring Dashboards** : The watsonx governance console provides intuitive dashboards that offer real-time insights into your AI-powered application's performance. You can monitor key metrics such as accuracy, latency, and throughput.
+3. **Alerting and Notifications** : Set up custom alerts for specific events or thresholds, ensuring you're always informed about potential issues or anomalies in your AI models' behavior.
+4. **Model Explainability** : watsonx governanceprovides features to explain the decision-making processes of your AI models, enabling transparency and trustworthiness.
+5. **Risk Analysis** : WatsonX offers advanced risk analysis capabilities to identify potential biases and other risks associated with your AI-powered applications.
+6. **Security Auditing** : watsonx governance built-in security auditing mechanisms help you detect vulnerabilities in your AI models and ensure compliance with relevant regulations.
+7. **Model Versioning** : watsonx governance allows to manage multiple versions of your AI models, allowing for easy tracking of changes, updates, and rollbacks if needed.
+8. **Integration with Other IBM Tools** : Seamlessly integrate WatsonX with other IBM tools like Cloud Pak, Watson Studio, and BigFix for a more comprehensive AI management ecosystem.
 
-### Event Logs and Syslog Integration:
+### **watson Speech to Text**
 
-{: #logintegration}
+**Management and Monitoring** :
 
-- Integrate Zerto with centralized logging systems or syslog servers to consolidate and analyze logs across the environment. For more information, see [syslog](https://help.zerto.com/kb/000003918){: external}.
-- Monitor Windows event logs for events related to Zerto and address any issues promptly. This is performed by using {{site.data.keyword.loganalysislong_notm}}.
-- All alerts that are issued by Zerto are displayed in the Zerto User Interface. For more information, see [Zerto alerts](https://help.zerto.com/bundle/Alarms.Alerts.HTML/page/Zerto_Alerts.htm){: external}.
-- Zerto Analytics provides comprehensive monitoring and health tracking for your protected environment. Using Zerto analytics, you can see aggregated information from the Zerto Virtual Managers and view the status of your environment. All your alerts, tasks, events, and information on Virtual Protection Groups (VPGs) can be viewed together. Zerto analytics is developed with an API first approach. Everything that is presented in the GUI is also available with APIs. The APIs are delivered with Swagger open source that help you develop, test REST integration that uses standardized examples, and easily populate custom portals with Zerto analytics content. For more information, see [Zerto Analytics](https://help.zerto.com/bundle/Zerto.Analytics.HTML/page/Zerto_Analytics_-_Overview_and_Use.htm){: external}.
-- Zerto can issue alerts through the vCenter's alarms feature. The actions that are triggered by these alarms can be customized by the administrator. For more information about how to configure these actions, which include sending an email, a notification trap, or running a command from the vCenter server, see[VMware alerts](https://help.zerto.com/bundle/Alarms.Alerts.HTML/page/Zerto_Alarms_In_VMware_vSphere.htm){: external}.
-- By default, Zerto stores its logs locally on the host where it is installed. For more information, see [Understanding Logs](https://help.zerto.com/bundle/Admin.VC.HTML.97/page/Understanding_the_Logs.htm){: external}.
-- Email notifications or SNMP traps can also be used for alerting or job monitoring. For more information, see [Zerto email alerts](https://help.zerto.com/kb/000003529){: external}.
+* **Speech detection features** : You can speech handling via trigger events when speech starts, monitor pauses using silence detectors, and handle timeouts during streaming.
+* **Real-Time Updates** : Use WebSocket APIs for real-time transcription and interim results. Low-latency modes can be enabled for faster response times, although this may slightly reduce accuracy.
+* **Background Suppression & Sensitivity** : Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-service-features))** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)).
 
-### Network Monitoring
+### **watson Text to Speech**
 
-{: #networkmonitoring}
+**Management and Monitoring** :
 
-- Monitor network traffic between the primary and secondary sites to ensure that replication traffic is not impeded. For more information, see [Monitoring Peer Sites](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Monitoring_Peer_Sites_%E2%80%93_The_SITES_Tab.htm){: external}.
-- Set up alerts for unusual network behavior or performance issues.
+* **Customization Options** : Use APIs to synthesize text into speech, with control over the voice (male or female, standard or neural), languages (English, Spanish, etc.), and audio formats (WAV, OGG).
+* **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs** **([IBM Cloud](https://cloud.ibm.com/catalog/services/text-to-speech))** **([IBM Cloud](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
 
-### Regular Audits and Reviews
+### Monitoring Tips:
 
-{: #audit-reviews}
+* Use IBM Cloud's built-in monitoring and logging tools to track API usage, errors, and performance metrics.
+* For troubleshooting or enhancing performance, monitor real-time data streams, adjust parameters based on use cases, and fine-tune latency settings for faster or more accurate results.
 
-- Conduct regular audits of your Zerto configuration and performance to identify areas for optimization and enhancement.
-- Review reports and alerts to ensure that any issues are addressed in a timely manner.
+For more detailed instructions, you can explore the following IBM Cloud documentation:
 
-### User Activity Monitoring
+* [IBM Speech to Text Getting Started](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)
+* [IBM Text to Speech Overview](https://cloud.ibm.com/catalog/services/text-to-speech)
 
-{: #user-monitoring}
+## IBM Log Analysis
 
-- Monitor user activities within the Zerto environment, such as changes to policies, to ensure security and compliance. For more information, see [Monitoring Tasks](https://help.zerto.com/bundle/Admin.Azure.HTML.90/page/Monitoring_Tasks.htm){: external}.
+{: #log-analysis}
 
-### Automation
+You can use IBM Log Analysis to add log management capabilities to Red Hat OpenShift VPC clusters and provide for the following:
 
-{: #automation-considerations}
+* Customizable user interface for live streaming of log tailing, real-time troubleshooting issue alerts, and log archiving.
+* Quick integration with the cluster via a script.
+* Aggregated logs across clusters and cloud providers.
+* Historical access to logs.
+* Highly available, scalable, and compliant with industry security standards.
+* Integrated with IBM Cloud IAM for user access management.
 
-- The automated deployment of VMware Cloud Foundation on {{site.data.keyword.vpc_short}} does not include any Zerto components. You need to manually install and configure the required Zerto components.
-- To obtain an image to install the required software in this architecture pattern, open an {{site.data.keyword.cloud_notm}} support case to {{site.data.keyword.IBM_notm}} for VMware Solutions.
-  {: important}
-- Manage the protection and replication of virtual machines between the protected and recovery sites, by using the Zerto User Interface.
-- Zerto also provides a set of RESTful APIs and PowerShell cmdlets ([Zerto powershell command module](https://help.zerto.com/bundle/Powershell.CMDlets.HTML.90/page/Introduction.htm){: external}) to enable incorporating some of the disaster recovery functions within scripts or programs. For more information, see [Zerto Cloud Manager Restful APIs](https://help.zerto.com/bundle/API.ZCM.HTML.10.0_U3/page/Introduction_to_the_ZCM_RESTful_APIs.htm){: external}.
+## IBM Cloud Monitoring
+
+{: #ibm-cloud-monitoring}
+
+You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift VPC clusters and provide for the following:
+
+* Customizable user interface for a unified view of cluster metrics, container security, resource usage, alerts, and custom events.
+* Quick integration with the cluster via a script.
+* Aggregated metrics and container monitoring across clusters and cloud providers.
+* Historical access to metrics that is based on the timeline and plan, and the ability to capture and download trace files.
+* Highly available, scalable, and compliant with industry security standards.
+* Integrated with IBM Cloud IAM for user access management.
+
+For more information, see** **[how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring)
+
+## Flow Logs for VPC clusters
+
+{: #flow-logs}
+
+Configure IBM Cloud Flow Logs for VPC to gather information about the traffic entering or leaving VPC cluster worker nodes. Flow logs are stored in an IBM Cloud Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations. For more information, see** **[Flow logs use cases](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/vpc?topic=vpc-flow-logs&interface=ui#flow-logs-use-cases).
+
+Using IBM Cloud Monitoring can create alerts when workloads need more resources. {: note}
+
+## Resource Management
+
+{: #resource-management}
+
+Set up spending notifications from the IBM Cloud billing console. You can set quotas or resource limits on clusters and namespaces. The cluster administrators can make sure that teams that share a cluster don't consume more than their fair share of compute resources, memory and CPU, by creating a** **[Resource Quota object](https://kubernetes.io/docs/concepts/policy/resource-quotas/) for each Kubernetes namespace in the cluster. If the cluster admin sets a compute resource quota, then each container within the deployment template must specify resource requests and limits for memory and CPU, otherwise the pod creation fails.
