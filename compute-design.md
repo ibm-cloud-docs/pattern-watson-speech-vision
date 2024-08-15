@@ -45,17 +45,15 @@ This also allows the customer to benefit from the flexibility and scalability of
 1. A Workload VPC Landing Zone provisioned to deploy various client workloads.
 2. The workloads are deployed across multiple availability zones to meet any high availability requirements.
 3. The Subnet ACL in each zone is to define rules for controlling inbound and outbound traffic with in a VPC.
-   <<<<<<< HEAD
 4. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
-   - To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three  availability zones.
+5. - To meet the Red Hat OpenShift on VPC service availability Service Level Agreement (SLA) of 99.99%, a minimum of 6 worker nodes are equally distributed across three  availability zones.
    - Total worker node capacity is sized at 150% of the total workload's required capacity, so that if one zone fails, the resources are available to maintain the workload.
    - By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
    - The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}}d Services to provide centralized cluster observability services.
    - Three separate clusters are created for the production, pre-production, and dev and test environments. The diagram depicts only the production cluster.
-5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
-   =======
-6. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
-7. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
+6. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
+7. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
+8. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in IBM Cloud.
 
 >>>>>>> e44e374e042a5865db317e966310e89c315bb185
 >>>>>>>

@@ -18,6 +18,8 @@ The following provides the details on various storage types and design for the w
 ## Requirements
 
 {: #storage-requirements}
+
+
 For an AI powered applications, its crucial to ensure that the underlying storage should meet the following requirements
 
 1. High-throughput storage: Speech-to-text & Vision recognition applications that generate massive amounts of audio , Video analytical data, this needs high-throughput storage that can process large volumes of data quickly.
