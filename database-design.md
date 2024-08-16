@@ -96,4 +96,4 @@ This approach relies on leveraging high-dimensional vector data to enrich prompt
 * **Integration with IBM Watsonx.ai:** Facilitates AI and machine learning projects by seamlessly integrating with IBM’s AI tools.
 * **Scalability:** Can handle large volumes of vector data efficiently.
   **Use Cases:** Retrieval augmented generation (RAG), semantic search, and AI-driven applications.
-* **Reference:** [IBM Watsonx.data and Milvus Integration]()
+* **Reference:** [IBM Watsonx.data and Milvus Integration](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-adding-milvus-service)
