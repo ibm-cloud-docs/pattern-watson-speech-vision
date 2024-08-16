@@ -46,7 +46,7 @@ https://cloud.ibm.com/docs/watson?topic=watson-about#about
 
 https://www.ibm.com/downloads/cas/1X7EPRYE
 
-## Maximo Visual Inspection(Siva to modify the image)
+## Maximo Visual Inspection
 
 The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
@@ -56,13 +56,11 @@ Maximo Visual Inspection includes tools and interfaces for anyone who has limite
 
 ### Integrating with Maximo Visual Inspection Edge( remove the diagram and use as contest from Siva diagram)
 
-**Maximo Visual Inspection Edge** is a web-based application that you can integrate with **Maximo Visual Inspection** to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
+Maximo Visual Inspection Edge is a web-based application that you can integrate with Maximo Visual Inspection to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
 
-**Maximo Visual Inspection Edge** uses data sets and trained models that are stored in** **Maximo Visual Inspection**. In **Maximo Visual Inspection Edge**, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
+Maximo Visual Inspection Edge uses data sets and trained models that are stored in  Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
 
-https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
-
-
+More on [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)
 ## watsonx Assistant for Voice( Siva)
 
 IBM watsonx Assistant for Voice offers:
