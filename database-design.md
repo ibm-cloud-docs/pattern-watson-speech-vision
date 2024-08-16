@@ -95,3 +95,4 @@ Enterprises are increasingly favoring [retrieval augmented generation (RAG)](htt
 * **Scalability:** Can handle large volumes of vector data efficiently.
   **Use Cases:** Retrieval augmented generation (RAG), semantic search, and AI-driven applications.
   **Reference:** [IBM Watsonx.data and Milvus Integration]()
+
