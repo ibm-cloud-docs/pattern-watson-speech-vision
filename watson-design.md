@@ -62,7 +62,7 @@ Maximo Visual Inspection includes tools and interfaces for anyone who has limite
 
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
-![Visual Inspection for image and Video.](image/video-ingestion.drawio.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloudsvg.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
 ## watsonx Assistant for Voice( Siva)
 
