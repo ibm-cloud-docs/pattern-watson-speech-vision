@@ -27,7 +27,7 @@ In this section we cover two database aspects
 
 1. Enteprise generic Database
 2. AI Database.
-   1. RAG Vector DB.
+   1. RAG Vector DB provided by watson services.
    2. For more information on Cloud Pak for Data [CP4D for Speech Services](https://www.ibm.com/docs/en/cloud-paks/cp-data/5.0.x?topic=services-watson-speech)
 
 ### Enterprise Application Databases
