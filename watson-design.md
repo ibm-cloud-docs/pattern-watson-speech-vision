@@ -50,7 +50,7 @@ https://www.ibm.com/downloads/cas/1X7EPRYE
 
 The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
-![Maximo Vision.](image/architecture-image-classification-on-ibmcloud.svg "Maximo"){: caption="Figure 1. Vision RAG Pattern" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
 Maximo Visual Inspection includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use IBM Maximo Visual Inspection to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
@@ -62,7 +62,6 @@ Maximo Visual Inspection includes tools and interfaces for anyone who has limite
 
 https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloudsvg.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
 ## watsonx Assistant for Voice( Siva)
 
@@ -76,7 +75,7 @@ IBM watsonx Assistant for Voice offers:
 
 **IBM Cloud Speech to Text service**
 
-![Watson Speech.](image/speech-to-text-transcription-pipeline.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
 
 IBM Cloud Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
