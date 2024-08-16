@@ -14,7 +14,8 @@ keywords:
 
 {: overview-id}
 
-This pattern provides a overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and it provides integration with other IBM Cloud services. Specifically, it combines Watson X with IBM Cloud Roks, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
+This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. 
+It combines watsonx with IBM Cloud ROKS, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
 This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection. 
 This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
 
@@ -46,7 +47,7 @@ The solution architecture is designed to address specific needs within enterpris
 
 3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure.
 
-4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights.
+4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
 
 5 Enhanced user experience via Watson STT and TTS: Improves the way humans interact with machines by leveraging IBM Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
 
@@ -62,7 +63,7 @@ The solution architecture is designed to address specific needs within enterpris
 
 12  Logging and monitoring: Enables customers to collect, analyze, and visualize log data from their cloud-based applications and infrastructure, providing insights into system performance, usage patterns, and potential issues that need attention.
 
-### watsonx IBM Cloud Service
+### IBM Cloud watsonx Service
 
 The watsonx as service on IBM Cloud integrates with external data sources to provide a more comprehensive client experience by leveraging RAG technology for retrieving relevant documents and information from vast datasets, including vector databases like Milvus and customer apps hosted on ROKS.governance is a key functionality of the watson offering allowing a proper administrative control over the utilization and management of watsonx ai components.
 
