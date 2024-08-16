@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Service management design considerations(all)
+# Service management design considerations
 
 {: #service}
 
@@ -23,7 +23,7 @@ The following are service management requirements watsonx and enterprise workloa
 - Enable logging and alerting to DevOps tools.
 - manage and monitor customer x86 enterprise workloads
 - manage and monitor container workloads on IBM Cloud.
-- provide logs and audit tracks
+- provide infrastructure and platform logs and audit.
 
 ## Design considerations
 
@@ -48,9 +48,11 @@ Here are some of the key management and monitoring features in watson x:
 5. **Risk Analysis** : WatsonX offers advanced risk analysis capabilities to identify potential biases and other risks associated with your AI-powered applications.
 6. **Security Auditing** : watsonx governance built-in security auditing mechanisms help you detect vulnerabilities in your AI models and ensure compliance with relevant regulations.
 7. **Model Versioning** : watsonx governance allows to manage multiple versions of your AI models, allowing for easy tracking of changes, updates, and rollbacks if needed.
-8. **Integration with Other IBM Tools** : Seamlessly integrate WatsonX with other IBM tools like Cloud Pak, Watson Studio, and BigFix for a more comprehensive AI management ecosystem.
+8. **Integration with Other IBM Tools** : Seamlessly integrate WatsonX with other IBM tools like Cloud Pak, Watson Studio,and other customer management environment.
 
-### **watson Speech to Text**
+### **IBM Watson voice assistance** 
+
+#### **watson Speech to Text**
 
 **Management and Monitoring** :
 
@@ -58,14 +60,14 @@ Here are some of the key management and monitoring features in watson x:
 * **Real-Time Updates** : Use WebSocket APIs for real-time transcription and interim results. Low-latency modes can be enabled for faster response times, although this may slightly reduce accuracy.
 * **Background Suppression & Sensitivity** : Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-service-features))** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)).
 
-### **watson Text to Speech**
+#### **watson Text to Speech**
 
 **Management and Monitoring** :
 
 * **Customization Options** : Use APIs to synthesize text into speech, with control over the voice (male or female, standard or neural), languages (English, Spanish, etc.), and audio formats (WAV, OGG).
 * **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs** **([IBM Cloud](https://cloud.ibm.com/catalog/services/text-to-speech))** **([IBM Cloud](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
 
-### Monitoring Tips:
+#### Management and Monitoring
 
 * Use IBM Cloud's built-in monitoring and logging tools to track API usage, errors, and performance metrics.
 * For troubleshooting or enhancing performance, monitor real-time data streams, adjust parameters based on use cases, and fine-tune latency settings for faster or more accurate results.

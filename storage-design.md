@@ -27,12 +27,13 @@ For an AI powered applications, its crucial to ensure that the underlying storag
 4. Scalability and reliability: As speech-to-text applications grow in popularity, our storage system must scale effortlessly to meet increasing demands while ensuring high availability.
 5. Security and compliance: Robust security measures are essential to protect sensitive audio and text data from unauthorized access or breaches.
 6. File synchronous transfer: ability to transfer large files from customer environment to IBM Cloud.
+7. All the storage for containers are stateless, as most of the applications data are stored in DB.
 
 ## Storage design considerations
 
 {: #storage-considerations}
 
-![](image/watsonx-surround-pattern-storage.svg){: caption="Figure 3. Storage Design" caption-side="bottom"}
+![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 1. Storage Design" caption-side="bottom"}
 
 ### **IBM Cloud Object Storage**
 
