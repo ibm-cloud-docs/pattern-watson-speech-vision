@@ -58,14 +58,14 @@ Here are some of the key management and monitoring features in watson x:
 
 * **Speech detection features** : You can speech handling via trigger events when speech starts, monitor pauses using silence detectors, and handle timeouts during streaming.
 * **Real-Time Updates** : Use WebSocket APIs for real-time transcription and interim results. Low-latency modes can be enabled for faster response times, although this may slightly reduce accuracy.
-* **Background Suppression & Sensitivity** : Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-service-features))** **([IBM Cloud](https://ondeck.console.cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)).
+* **Background Suppression & Sensitivity** : Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality ([IBM watson speech features](https://ondeck.console.cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-service-features)) and ([IBM watson getting started](https://ondeck.console.cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)).
 
 #### **watson Text to Speech**
 
 **Management and Monitoring** :
 
 * **Customization Options** : Use APIs to synthesize text into speech, with control over the voice (male or female, standard or neural), languages (English, Spanish, etc.), and audio formats (WAV, OGG).
-* **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs** **([IBM Cloud](https://cloud.ibm.com/catalog/services/text-to-speech))** **([IBM Cloud](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
+* **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs([IBM Cloud](https://cloud.ibm.com/catalog/services/text-to-speech))([IBM Cloud](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
 
 #### Management and Monitoring
 

@@ -28,6 +28,8 @@ To ensure the resiliency of the solution as a whole, the following components mu
 
 {: #ha-considerations}
 
+### High Availability for IBM watsonx services
+
 ### High Availability for VPC
 
 IBM Cloud virtual server instances are highly available within the availability zone where they are deployed. If the original host of a VPC virtual server instance fails, the built in VPC host failure auto restart will automatically move the virtual server instance to a healthy host and restart it.
@@ -60,6 +62,8 @@ More generally, every IBM Cloud SaaS general availability (GA) offering is highl
 ## Considerations for Disaster Recovery
 
 {: #dr-considerations}
+
+### Disaster Recovery for IBM watsonx services
 
 ### Disaster Recovery for IBM Cloud VPC Virtual Servers Instances
 
