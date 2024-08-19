@@ -16,11 +16,13 @@ The following pattern covers
 2. IBM Watson assistant with Speech to Text and Text to Speech
 3. IBM Maximo Visual Inspection for image and vide detection.
 
-![IBM watsonx RAG pattern.](image/rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+
+IBM Maximo Visual inspection is considered to analyze images and video detection.
 
 ![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images  detection and analysis" caption-side="bottom"}
 
-IBM Maximo Visual inspection is considered to analyze images and video detection.
+IBM watson assistant for voice with speeh to text and text to speech
 
 ![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
