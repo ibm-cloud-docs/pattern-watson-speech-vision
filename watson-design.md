@@ -54,14 +54,15 @@ The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastruc
 
 Maximo Visual Inspection includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use IBM Maximo Visual Inspection to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
-### Integrating with Maximo Visual Inspection Edge( remove the diagram and use as contest from Siva diagram)
+### Integrating with Maximo Visual Inspection Edge
 
 Maximo Visual Inspection Edge is a web-based application that you can integrate with Maximo Visual Inspection to perform AI-based inspections at the edge. You can collect images to train AI models or use trained models to inspect images from cameras that are positioned close to edge activities, such as assembly-line operations.
 
 Maximo Visual Inspection Edge uses data sets and trained models that are stored in  Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
 
 More on [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)
-## watsonx Assistant for Voice( Siva)
+
+## IBM watsonx Assistant for Voice.
 
 IBM watsonx Assistant for Voice offers:
 
@@ -71,7 +72,7 @@ IBM watsonx Assistant for Voice offers:
 4. More information https://www.ibm.com/products/watsonx-assistant/voice
 5. additional information https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
 
-**IBM Cloud Speech to Text service**
+### **IBM Cloud Speech to Text service**
 
 ![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
 
@@ -79,7 +80,7 @@ IBM Cloud Speech to Text service converts the human voice into the written word.
 
 The service is available in multiple languages and is exposed as an http interface and a websocket interface. It can be accessed using a public or a private endpoint. [Getting started with Watson Speech to Text](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted)
 
-**IBM Cloud Text to Speech service**
+### **IBM Cloud Text to Speech service**
 
 IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
 
