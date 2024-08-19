@@ -1,4 +1,4 @@
-# Gen AI Pattern for Watsonx on IBM Cloud(Bertrand)
+# Gen AI Pattern for Watsonx on IBM Cloud
 
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}
@@ -6,13 +6,23 @@
 
 
 
-AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape. 
+AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape.
 
 This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud, focusing on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
+The following pattern covers
 
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
+1. IBM Watsonx RAG pattern.
+2. IBM Watson assistant with Speech to Text and Text to Speech
+3. IBM Maximo Visual Inspection for image and vide detection.
+
+![IBM watsonx RAG pattern.](image/rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images  detection and analysis" caption-side="bottom"}
+
+IBM Maximo Visual inspection is considered to analyze images and video detection.
+
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Architecture diagram
 
@@ -20,7 +30,7 @@ This reference architecture summarizes the best practices for Watsonx Gen AI Pat
 
 The below diagram represents the architecture for Gen AI on IBM cloud and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for IBM Cloud for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 4. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
