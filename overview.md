@@ -77,7 +77,7 @@ watsonx Assistant – Used to conversation flow development and webchat interfac
 watsonx ai – RAG with LLM and train as needed. 
 watson orchestrate- workflows and integration(Dedicated) if needed.
 
-### Enhanced User Experience with Watson Speech Assistance
+### Enhanced User Experience with Watsonx Assistance for Voice
 
 Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on IBM Cloud.
 
