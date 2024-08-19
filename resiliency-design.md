@@ -39,6 +39,14 @@ For instance, it can consist in a network or application load balancer distribul
 
 In a multi-zone region ROKS deployment, the openshift master and worker nodes are spread across 3 availability zones, making the ROKS containerized workloads highly available by default.
 
+### High Availability for IBM Cloud Databases for PostgreSQL
+
+Databases for PostgreSQL deployments contain a cluster with two data members, a leader and a replica. Both members contain a copy of the data by using asynchronous replication, with a distributed consensus mechanism to maintain cluster state and handle failovers. If the leader becomes unreachable, the cluster initiates a failover, and the replica is promoted to leader. The replica rejoins the cluster and your cluster continues to operate normally. Additional read replicas can be added in a different availability zone in the same region or in a different region to further increase high availability.
+
+### High Availability for IBM Cloudant
+
+All data is stored in triplicate across three separate physical servers in a cluster within a region. Cloudant instances can be provisioned in multiple regions and setup with continuous data replication to provide High Availability across regions.
+
 ### High Availability for IBM Cloud Code Engine
 
 IBM Cloud Code Engine is based on IBM Cloud Kubernetes Service clusters. When provisioning an IBM Cloud Code engine project, the workload is deployed in a single availability zone of the multi-zone region that was selected. If a failure in the hosting availability zone occurs, the workload is automatically recreated in one of the remaining zone.
@@ -71,20 +79,28 @@ To protect Red Hat Openshift on IBM Cloud workloads against an IBM Cloud multi-z
 
 For the global load balancer to detect if one of the clusters is unavailable, consider adding a ping-based health check to every IP address. When you set up this check, your DNS provider regularly pings the IP addresses that you added to your domain. If one IP address becomes unavailable, then traffic is not sent to this IP address anymore. However, Red Hat OpenShift does not automatically restart pods from the unavailable cluster on worker nodes in available clusters.
 
-If the workloads are stateful, particular attention should also be given to storage replication between the clusters running in different regions.
-Several options exist for cross region replication such as Portworx or IBM Cloud Object Storage. The choice of a storage option depends mainly on the specific requirements in terms of RPO/RTO and performances.
+In this pattern the applications running on the ROKS cluster are considered as being stateless. As a result storage replication between ROKS clusters deployed in different regions is not needed.
+
+### Disaster Recovery for IBM Cloud Databases for PostgreSQL
+
+As part of the service, a daily backup of the database is automatically taken. The backup is stored  in a cross-region Object Store instance. Additional manual backup can also be performed. In case of unavailability of the original IBM Cloud region, the backup can be restored to a new instance of IBM Cloud Databases for PostgreSQL.
+
+### Disaster Recovery for IBM Cloudant
+
+IBM Cloudant data isn't automatically backed up, but supported tools are provided to handle backups.
+In addition, provisioning Cloudant instances in different IBM Cloud regions and configuring bidirectional replication between them allows to quickly recover to the latest state in case a disaster makes a region unavailable.
 
 ### Disaster Recovery for IBM Cloud Code Engine
 
-To protect Code Engine workloads against an IBM Clou multi-zone region (MZR) wide failure, the workloads should be deployed across multiple MZRs and implement an automatic failover mechanism by leveraging an Edge Proxy service such as IBM Cloud Internet Services (CIS). For more information about deploying an application across multiple regions, see [Deploying code engine workloads across multiple regions](https://cloud.ibm.com/docs/codeengine?topic=codeengine-deploy-multiple-regions).
+To protect Code Engine workloads against an IBM Cloud multi-zone region (MZR) wide failure, the workloads should be deployed across multiple MZRs and implement an automatic failover mechanism by leveraging an Edge Proxy service such as IBM Cloud Internet Services (CIS). For more information about deploying an application across multiple regions, see [Deploying code engine workloads across multiple regions](https://cloud.ibm.com/docs/codeengine?topic=codeengine-deploy-multiple-regions).
 
 ### Disaster Recovery for IBM Cloud SaaS Services
 
-For the IBM Cloud SaaS services used in this solution, the focus should be on preserving the data through appropriate backups.
+For the IBM Cloud SaaS services used in this solution, the focus should be on preserving the data through an appropriate backup strategy.
 
 In the unlikely event of an IBM Cloud  multi-zone region failure, the services remain available in other multi-zone regions. Therefore the steps to recover from the failure would be to create new services instances in another multi-zone region and then to restore the data that was previously backed up to these new services instances.
 
-### Disaster Recovery for IBM Cloud Speech to Text
+#### Disaster Recovery for IBM Cloud Speech to Text
 
 Your disaster recovery plan includes knowing, preserving, and being prepared to restore all data that is maintained on IBM Cloud. This includes data from custom language models, custom acoustic models, and asynchronous speech recognition requests.
 
@@ -92,7 +108,7 @@ Re-creating custom models, especially custom acoustic models, from saved data ca
 
 For custom language models, you need to maintain and be prepared to re-create and restore your custom language models and their corpora, grammars, and custom words. You also need to be prepared to retrain your custom language models on their data and words resources.
 
-### Disaster Recovery for IBM Cloud Text to Speech
+#### Disaster Recovery for IBM Cloud Text to Speech
 
 For the Text to Speech service, only data for custom models, custom words, speaker models, and custom prompts is stored on IBM Cloud. Your disaster recovery plan includes knowing, preserving, and being prepared to restore your customization information.
 
