@@ -6,14 +6,13 @@
 
 
 
-This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud.
+AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape. 
 
-AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape. This reference architecture showcases how IBM Cloud and Watsonx provide a secure environment for deploying and governing Gen AI applications and their workflows.
+This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud, focusing on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
 
-This pattern is focusing on augmenting the standard watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
 
-![RAG.](rag-pattern.drawio.svg "RAG"){: caption="Figure 1. Watsonx RAG Pattern" caption-side="bottom"}
-**TO REPLACE**
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 1. Speech to Text transcription pipeline" caption-side="bottom"}
 
 ## Architecture diagram
 
