@@ -43,8 +43,8 @@ Key Components of Watsonx on IBM Cloud:
 4. IBM watsonx Assistant for Voice:
 
 https://cloud.ibm.com/docs/watson?topic=watson-about#about
-
 https://www.ibm.com/downloads/cas/1X7EPRYE
+{: note}
 
 ## Maximo Visual Inspection
 
