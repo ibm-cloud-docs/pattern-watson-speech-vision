@@ -26,9 +26,9 @@ The requirements for the database aspect for this pattern focuses on the followi
 In this section we cover two database aspects
 
 1. Enteprise generic Database
-2. AI Database.
-   1. RAG Vector DB provided by watson services.
-   2. For more information on Cloud Pak for Data [CP4D for Speech Services](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wtts.html?context=cpdaas)
+2. [AI Database](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-getting-started).
+   1. Presto
+   2. Milvus.
 
 ### Enterprise Application Databases
 
@@ -83,7 +83,7 @@ Enter [vectors](https://www.ibm.com/docs/en/essl/7.1). Vectors are arrays of num
 
 ### Vector databases design considerations
 
-Enterprises are increasingly favoring [retrieval augmented generation (RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG) approach in generative AI workflows for its faster time-to-market, efficient inference and reliable output, particularly in key use cases such as customer care and HR/Talent. RAG ensures that the model is linked to the most current, reliable facts and that users have access to the model’s sources, so that its claims can be checked for accuracy. RAG is core to our ability to anchor large language models in trusted data to reduce model hallucinations. 
+Enterprises are increasingly favoring [retrieval augmented generation (RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG) approach in generative AI workflows for its faster time-to-market, efficient inference and reliable output, particularly in key use cases such as customer care and HR/Talent. RAG ensures that the model is linked to the most current, reliable facts and that users have access to the model’s sources, so that its claims can be checked for accuracy. RAG is core to our ability to anchor large language models in trusted data to reduce model hallucinations.
 
 This approach relies on leveraging high-dimensional vector data to enrich prompts with semantically relevant information for in-context learning by foundation models. It requires effective storage and retrieval during the inference stage, which handles the highest volume of data. Vector databases excel at efficiently indexing, storing and retrieving these high-dimensional vectors, providing the speed, precision and scale needed for applications like recommendation engines and chatbots.
 

@@ -58,13 +58,3 @@ IBM Cloud Block Storage are a scalable and highly available persistent storage s
 5. Integration: Seamlessly integrate me with your cloud-native applications using popular frameworks and APIs.
 
 In containerized applications, block storage plays a crucial role as Persistent Volumes (PVs).By leveraging block storage as Persistent Volumes in containerized applications, ensures the data persistence, simplify stateful application management, and scale your storage resources as needed.
-
-### File Storage Aspera addition
-
-In IBM Cloud , Aspera is a high-speed transfer technology that enables fast, reliable, and secure movement of large files between locations. It's particularly useful for transferring massive amounts of data, such as those associated with media and entertainment industries.
-
-Aspera works by creating a temporary, optimized copy of your file and then transmitting it to its destination using standard protocols like HTTP or FTP. This process allows for much faster transfer speeds than traditional methods, making it ideal for situations where you need to move large files quickly, such as:
-
-- File sharing: Aspera enables fast and secure sharing of large files across the cloud.
-- Data migration: It helps simplify the process of migrating massive amounts of data from one location to another.
-- Content delivery: Aspera accelerates the delivery of high-bandwidth content, such as movies or TV shows.
