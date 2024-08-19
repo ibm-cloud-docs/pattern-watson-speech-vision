@@ -108,9 +108,7 @@ The service is exposed as an http interface (synchronous and asynchronous) and a
 10. https://www.ibm.com/products/maximo/pricing#price-estimator
 11. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
 12. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
-13. https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speech-install-data
-14. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
+13. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
 15. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-16. https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted
-17. https://cloud.ibm.com/docs/speech-to-text
-18. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
+16. https://cloud.ibm.com/docs/speech-to-text
+17. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
