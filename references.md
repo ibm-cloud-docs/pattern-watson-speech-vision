@@ -24,3 +24,4 @@ keywords:
 * **SpeechText** - [cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted)
 * **Maximo** - [ibm.com/docs/en/mas-cd/maximo-manage/continuous-delivery?topic=SSLPL8_cd/com.ibm.mam.doc/upgrade/c_mas_architecture.htm](https://www.ibm.com/docs/en/mas-cd/maximo-manage/continuous-delivery?topic=SSLPL8_cd/com.ibm.mam.doc/upgrade/c_mas_architecture.htm)
 * **eBook** - [ibm.com/downloads/cas/1X7EPRYE](https://www.ibm.com/downloads/cas/1X7EPRYE)
+* **Milvus on IBM Cloud:**[IBM Watsonx.data and Milvus Integration](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-adding-milvus-service)
