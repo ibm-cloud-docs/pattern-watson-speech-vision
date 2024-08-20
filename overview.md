@@ -32,7 +32,7 @@ This pattern is built upon the following key technologies:
 10. Maximo Visual Inspection as-a-Service: an AI-powered inspection solution for detecting defects in images and videos
 
 
-## Overview of the overall solution
+## Solution Overview
 
 Overview of the Solution Architecture:
 
