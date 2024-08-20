@@ -14,29 +14,28 @@ keywords:
 
 {: overview-id}
 
-1. This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. It combines watsonx with IBM Cloud ROKS, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
-2. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
-3. This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
+1. This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. It combines watsonx with Redh Hat Openshift on IBM Cloud (ROKS), IBM Cloud Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistante to deliver AI solutions providing retrieval augmented generation (RAG), real-time analytics, speech recognition, image and video detection.
+2. This pattern is helpful for the enterprise customers focusing on AI that needs to deliver RAG, Speech and image and video detection.
+3. This pattern describes how a customer can host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
 
 This pattern is built upon the following key technologies:
 
 1. Watson X: a software-as-a-service (SaaS) offering for building AI-powered applications
-2. Watson Assistant: a cloud-based AI platform for developing conversational interfaces( speech to text and text to speech)
+2. Watson Assistant: a cloud-based AI platform for developing conversational interfaces(speech to text and text to speech)
 3. Watson Data: a managed data service that enables secure and scalable data storage
 4. Watson Governance: a set of tools for managing and governing Watson-powered AI solutions
 5. Watson AI: a portfolio of AI technologies, including natural language processing (NLP), machine learning (ML), and computer vision (CV)
-6. IBM Cloud VPC ROKS: a cloud-based infrastructure service that enables scalable and secure deployment of applications
+6. IBM Cloud VPC ROKS: a cloud-based infrastructure service that enables scalable and secure deployment of containerized applications
 7. IBM Cloud VPC VSI: a virtual server instance for running custom workloads on IBM Cloud
 8. IBM Cloud Development Pipelines: a continuous integration/continuous delivery (CI/CD) toolchain for automating software development workflows
 9. Code Engine as-a-Service: a cloud-based service that enables rapid application development and deployment using containerized applications
 10. Maximo Visual Inspection as-a-Service: an AI-powered inspection solution for detecting defects in images and videos
 
-
 ## Solution Overview
 
 Overview of the Solution Architecture:
 
-The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with Chat capability for Speech and voice itneraction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
+The solution architecture is designed to address specific needs within enterprise customers who need AI RAG, with chat capability for Speech and voice interaction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
 
 ![](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and IBM Cloud surround environment" caption-side="bottom"}
 
@@ -46,9 +45,9 @@ The solution architecture is designed to address specific needs within enterpris
 
 3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure.
 
-4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
+4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentated Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
 
-5 Enhanced user experience via Watson STT and TTS: Improves the way humans interact with machines by leveraging IBM Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
+5 Enhanced user experience via Watson Speech to Text (STT) and Text to Speech (TTS): Improves the way humans interact with machines by leveraging IBM Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
 
 6 Maximo Visual Inspection: A visual inspection feature within Maximo, an asset management platform, that enables users to capture and analyze video evidence of equipment or facility conditions, streamlining maintenance workflows and decision-making processes.
 
