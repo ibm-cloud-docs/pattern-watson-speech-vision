@@ -9,8 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# DevOps Tool Chain( Siva to update)
-
+# DevOps Tool Chain
 {: #devops-design}
 
 IBM Cloud offers a comprehensive suite of DevOps tools designed to streamline the development, deployment, and management of applications. Here are some key DevOps tools available on IBM Cloud.
