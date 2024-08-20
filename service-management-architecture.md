@@ -7,7 +7,7 @@ subcollection: pattern-watson-speech-vision
 
 keywords:
 ---
-# Architecture decisions for service management(all)
+# Architecture decisions for service management
 
 {: \#ad-service-management}
 
