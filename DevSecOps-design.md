@@ -9,6 +9,13 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
+# Requirements
+
+* Automation of the application build, test, and deployment process
+* Reduced manual effort during deploymeny and risk of human error
+* Increased speed of delivery and time-to-market
+* Improved quality and reliability of software applications
+
 # DevOps Tool Chain
 {: #devops-design}
 

@@ -9,24 +9,19 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture Decisions for DevOps tool chain( Siva)
+# Architecture Decisions for DevOps tool chain
+{: #devops-architecture}
 
-{: #security-architecture}
-
-Security for ROKS/VPC
-
-Security for MAximo
-
-Security for STT/TTS
-
-Security for Watsonx and DB etc.
+This section outlines the architectural decisions made to implement CI/CD pipelines for the DevOps process.
 
 ## Security Architecture decision
 
-{: #ad-security}
+{: #ad-devops}
 
 | Architecture decision                                                            | Requirement                                                                                                                  | Options                                                                                                       | Decision                               | Rationale                                                                                                                                                                                                                                  |
 | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Encryption at rest                                                               | Encrypt all protected VM data                                                                                                | VM file encryption                                                                                            | VM file encryption                     | File encryption on a VM with applications such as BitLocker for non-boot disks is supported by Zerto                                                                                                                                       |
-| Data encryption and privacy in transit                                           | Encrypt and protect the protected VMs data in transit as it is replicated between the {{site.data.keyword.IBM_notm}} regions | - Enable native TLS-based VRA encryption  \n -  No encryption  \n -  connection that is considered as private | Enable native TLS-based VRA encryption | Native Zerto capability to protect sensitive replication data in-flight. For more information, see[VRA to VRA Encryption](https://help.zerto.com/bundle/Security.Hardening.HTML/page/Virtual_Replication_Appliance.htm#vra_to_vra_encryption) |
-| {: caption="Table 1. Architecture decisions for security" caption-side="bottom"} |                                                                                                                              |                                                                                                               |                                        |                                                                                                                                                                                                                                            |
+| Application deployment automation | Automation of the application build, test, and deployment process| * IBM Cloud Continuous Delivery \n * Custom built delivery pipelines with opensource tools | IBM Cloud Continuous Delivery | IBM Cloud Continuous Delivery is based on the principles of continuous integration and continuous delivery (CI/CD), which involve automating the build, test, and deployment of software applications in a continuous and iterative manner. This approach helps to ensure that applications are developed and delivered quickly and reliably, while also reducing the risk of errors and failures.IBM Cloud Continuous Delivery is designed to work with a range of development tools and platforms, including IBM Cloud Foundry, IBM Cloud Functions, and IBM Cloud Kubernetes Service. |
+| Registry for storing and managing container images | Provide a container registy to store the container images securely and easy to manage| * IBM Cloud Container Registry\n * Quay \n * Docher Hub \n * Red Hat OpenShift internal Image registry| IBM Cloud Container Registry| IBM Cloud Container Registry is a managed service that provides a centralized location for storing and managing container images, including Docker images, Kubernetes images, and other container formats. Its easier to track and manage your images across multiple environments. It integrates with other IBM Cloud services, such as IBM Cloud Kubernetes Service, IBM Cloud Foundry, and IBM Cloud Functions, to streamline the containerized application development and deployment processes.|
+| Monitor and manage devops pipelines| Provide dashboard provides real-time insights and analytics for DevOps teams, allowing them to gain visibility into their development and delivery processes | * IBM Cloud DevOps Insights\n * Dynatrace \n * Datadog \n * AppDynamics| IBM Cloud DevOps Insights| IBM Cloud DevOps Insights automatically displays historical data from all of the IBM Cloud® Continuous Delivery within your toolchain. IBM Cloud DevOps Insights integrates with other IBM Cloud services, such as IBM Cloud Kubernetes Service, IBM Cloud Foundry, and IBM Cloud Functions, to provide a comprehensive DevOps platform. |
+|Orchestrator for the DevOps Pipelines| Provide an orchestrater for orchestrating the series of steps of the tasks in specific order in the pipeline.| * Tekton\n * Jenkins\n * ArgoCD| Tekton | Tekton pipelines are composed of a series of tasks that are executed in a specific order, and each task can be customized to perform a specific function, such as building a Docker image, running tests, or deploying to a cloud-based environment. It streamline the development and delivery processes, improve collaboration and visibility, and reduce errors and downtime.|
+{: caption="Table 1. Architecture decisions for security" caption-side="bottom"} 
