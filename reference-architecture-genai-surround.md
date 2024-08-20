@@ -17,6 +17,8 @@ The following pattern covers
 3. IBM Maximo Visual Inspection for image and vide detection.
 
 ![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+
+
 More information on RAG Pattern can be found here
 [RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
 {: note}
