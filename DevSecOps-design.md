@@ -16,12 +16,14 @@ keywords:
 * Increased speed of delivery and time-to-market
 * Improved quality and reliability of software applications
 
-# DevOps Tool Chain
+# DevOps pipeline
+
 {: #devops-design}
 
 IBM Cloud offers a comprehensive suite of DevOps tools designed to streamline the development, deployment, and management of applications. Here are some key DevOps tools available on IBM Cloud.
 
 ## 1. Continuous Integration
+
 Continuous Integration (CI) in IBM Cloud refers to the practice of automatically building, testing, and verifying the quality of software code changes as soon as they are committed to a repository. This process helps to ensure that the code is stable, secure, and functions as expected, reducing the risk of errors and defects that can occur later in the development lifecycle.
 
 For details about Continuous Integration refer to this [section in IBM Cloud Docs](https://www.ibm.com/topics/continuous-integration)
@@ -42,11 +44,9 @@ Overall, Continuous Integration in IBM Cloud helps to streamline the software de
 For getting started with IBM Cloud Continuous Delivery refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started)
 {: note}
 
-
 ## 3. IBM Cloud Container Registry
 
 IBM Cloud Container Registry is a managed container registry service that allows you to store, manage, and deploy container images, such as Docker images, in a secure and scalable manner.
-
 
 For details about IBM Cloud Container Registry refer to this [section in IBM Cloud Docs]https://cloud.ibm.com/docs/Registry?topic=Registry-getting-started)
 {: note}
