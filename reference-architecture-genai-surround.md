@@ -8,11 +8,27 @@
 
 AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape.
 
-This reference architecture summarizes the best practices when deploying Watsonx Gen AI on IBM Cloud. It focuses on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
+This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud, focusing on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
+The following pattern covers
 
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 2. Speech to Text transcription pipeline" caption-side="bottom"}
+1. IBM Watsonx RAG pattern.
+2. IBM Watson assistant with Speech to Text and Text to Speech
+3. IBM Maximo Visual Inspection for image and vide detection.
+
+![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+
+More information on RAG Pattern can be found here
+[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
+{: note}
+
+IBM Maximo Visual inspection is considered to analyze images and video detection.
+
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images  detection and analysis" caption-side="bottom"}
+
+IBM watson assistant for voice with speeh to text and text to speech
+
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Architecture diagram
 
@@ -20,7 +36,7 @@ This reference architecture summarizes the best practices when deploying Watsonx
 
 The below diagram represents the architecture for Gen AI on IBM cloud and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for IBM Cloud for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 3. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 4. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -127,19 +143,19 @@ The following table outlines the products or services used in the architecture f
 
 {: #compliance}
 
-**CI / CD / CC Pipelines** <br>
+**CI / CD / CC Pipelines** `<br>`
 The Continuous Integration (CI), Continuous Deployment (CD), and Continuous Compliance (CC) pipelines, referred to as [DevSecOps Application Lifecycle Management](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-devsecops-alm-e1c16cac-7ea8-413f-a819-67e3a3251e44-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjcmVmZXJlbmNlX2FyY2hpdGVjdHVyZQ%3D%3D) are used to deploy the application, check for vulnerabilities, and ensure auditability. Below are some of important compliance features of DevSecOps Application Lifecycle Management:
 
-* **Vulnerability Scans** <br>
+* **Vulnerability Scans** `<br>`
   Vulnerability scans involve using specialized tools to look for security vulnerabilities in the code. This is crucial to identify and fix potential security issues before they become a problem in production.
-* **Sign Build Artifacts** <br>
+* **Sign Build Artifacts** `<br>`
   The code is compiled and built into software or application artifacts (like executable files or libraries). These artifacts are then digitally signed to ensure their authenticity and integrity.
-* **Evidence Gathering** <br>
+* **Evidence Gathering** `<br>`
   This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. It helps in tracing back and understanding what happened at different stages of development.
-* **Evidence Locker** <br>
+* **Evidence Locker** `<br>`
   This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. This helps in tracing back and understanding what happened at different stages of development.
 
-**Security and Compliance Center (SCC)** <br>
+**Security and Compliance Center (SCC)** `<br>`
 This reference architecture utilizes the Security and Compliance Center (SCC) which defines policy as code, implements controls for secure data and workload deployments and assess security and compliance posture. For this reference architecture two profiles are used. The [**IBM Cloud Framework for Financial Services**](https://cloud.ibm.com/docs/framework-financial-services-controls?topic=framework-financial-services-controls-overview) and **AI ICT Guardrails**. A profile is a grouping of controls that can be evaluated for compliance.
 
 
