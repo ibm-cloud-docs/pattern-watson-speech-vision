@@ -20,11 +20,12 @@ keywords:
 
 Use case implementation:
 
-1. Healthcare Customer experience: Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
+1. Financial/Insurance claims enhancement : Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. Analyze video feeds to detect anomalies, predict potential failures, and schedule proactive maintenance.
 
-2. Chatbot-based Customer Support: Implement Watson Assistant to create a conversational interface for customer support chatbots.
+2. Healthcare Customer experience: Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
 
-3. Financial/Insurance claims enhancement : Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. Analyze video feeds to detect anomalies, predict potential failures, and schedule proactive maintenance.
+3. Chatbot-based Customer Support: Implement Watson Assistant to create a conversational interface for customer support chatbots.
+
 
 This pattern is built upon the following key technologies:
 
