@@ -18,7 +18,7 @@ keywords:
 2. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
 3. This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
 
-Use case implementation
+Use case implementation:
 
 1. Healthcare Insights: Use watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
 
