@@ -12,8 +12,8 @@ This reference architecture summarizes the best practices for Watsonx Gen AI Pat
 
 The following pattern covers
 
-1. IBM Watsonx RAG pattern.
-2. IBM Watson assistant with Speech to Text and Text to Speech
+1. IBM watsonx RAG pattern.
+2. IBM watson assistant with Speech to Text and Text to Speech
 3. IBM Maximo Visual Inspection for image and vide detection.
 
 ![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}

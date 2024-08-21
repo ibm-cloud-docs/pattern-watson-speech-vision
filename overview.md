@@ -14,13 +14,13 @@ keywords:
 
 {: overview-id}
 
-1. This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. It combines watsonx with IBM Cloud ROKS, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
+1. This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. It combines Watsonx with IBM Cloud ROKS, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
 2. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
-3. This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to watson x environment delivery all in one enterprise solution.
+3. This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to Watsonx environment delivery all in one enterprise solution.
 
 Use case implementation:
 
-1. Healthcare Insights: Use watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
+1. Healthcare Customer experience: Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
 
 2. Chatbot-based Customer Support: Implement Watson Assistant to create a conversational interface for customer support chatbots.
 
@@ -28,11 +28,11 @@ Use case implementation:
 
 This pattern is built upon the following key technologies:
 
-1. watson: a software-as-a-service (SaaS) offering for building AI-powered applications
+1. Watsonx: a software-as-a-service (SaaS) offering for building AI-powered applications
 2. Watson Assistant: a cloud-based AI platform for developing conversational interfaces( speech to text and text to speech)
 3. watson.data: a managed data service that enables secure and scalable data storage
-4. watson.governance: a set of tools for managing and governing Watson-powered AI solutions
-5. watson.aI: a portfolio of AI technologies, including natural language processing (NLP), machine learning (ML), and computer vision (CV)
+4. watson.governance: a set of tools for managing and governing watson-powered AI solutions
+5. watson.ai: a portfolio of AI technologies, including natural language processing (NLP), machine learning (ML), and computer vision (CV)
 6. IBM Cloud VPC ROKS: a cloud-based infrastructure service that enables scalable and secure deployment of applications
 7. IBM Cloud VPC VSI: a virtual server instance for running custom workloads on IBM Cloud
 8. IBM Cloud Development Pipelines: a continuous integration/continuous delivery (CI/CD) toolchain for automating software development workflows
@@ -45,9 +45,9 @@ This pattern is built upon the following key technologies:
 
 Overview of the Solution Architecture:
 
-The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with Chat capability for Speech and voice itneraction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by WatsonX AI deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
+The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with Chat capability for Speech and voice itneraction with the internal application to deal with documents and also provide ability for image and video recognition for variour functional and non functional requirements. this is achieved by watsonx ai deployment in a Software as a Service (SaaS) model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem.
 
-![](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and IBM Cloud surround environment" caption-side="bottom"}
+![](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx ai and IBM Cloud surround environment" caption-side="bottom"}
 
 1 Customer Datacenter location: A physical or virtual data center where customers can host their own infrastructure on IBM Cloud.
 
@@ -55,9 +55,9 @@ The solution architecture is designed to address specific needs within enterpris
 
 3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure.
 
-4 Watson X services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
+4 watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
 
-5 Enhanced user experience via Watson STT and TTS: Improves the way humans interact with machines by leveraging IBM Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
+5 Enhanced user experience via watson STT and TTS: Improves the way humans interact with machines by leveraging IBM watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
 
 6 Maximo Visual Inspection: A visual inspection feature within Maximo, an asset management platform, that enables users to capture and analyze video evidence of equipment or facility conditions, streamlining maintenance workflows and decision-making processes.
 
@@ -86,7 +86,7 @@ watsonx Assistant – Used to conversation flow development and webchat interfac
 watsonx ai – RAG with LLM and train as needed. 
 watson orchestrate- workflows and integration(Dedicated) if needed.
 
-### Enhanced User Experience with Watsonx Assistance for Voice
+### Enhanced User Experience with watsonx assistance for Voice
 
 Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on IBM Cloud and consumed in this pattern.
 
@@ -112,4 +112,4 @@ IBM Cloud Pipeline for automating development processes. IBM Cloud Registry for 
 
 This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
-Conclusion: The WatsonX AI solution on IBM Cloud offers an end-to-end platform tailored for financial services with a focus on AI capabilities. The architecture is designed to be scalable, secure, and highly available, ensuring that enterprises can leverage the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
+Conclusion: The watsonx  solution on IBM Cloud offers an end-to-end platform tailored for financial services with a focus on AI capabilities. The architecture is designed to be scalable, secure, and highly available, ensuring that enterprises can leverage the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
