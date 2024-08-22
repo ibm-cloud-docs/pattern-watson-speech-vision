@@ -10,10 +10,10 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
-
 {: #compute-design}
 
 ## Requirement
+{: #compute-requirement}
 
 The requirements for the compute aspect for this pattern focuses on the following:
 
@@ -23,6 +23,7 @@ The requirements for the compute aspect for this pattern focuses on the followin
 * serverless workloads on cloud.
 
 ## Compute solution architecture
+{: #compute-solution}
 
 Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications.
 
@@ -36,7 +37,6 @@ By hosting their traditional x86 or containerized  applications on IBM Cloud VPC
 This also allows the customer to benefit from the flexibility and scalability of IBM Cloud VPC offerings and gain easy access all the associated IBM Cloud services.
 
 ### Architecture components
-
 {: #architecture-components}
 
 ![](image/watsonx-surround-pattern-ROKS.svg)

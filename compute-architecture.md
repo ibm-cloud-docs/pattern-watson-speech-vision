@@ -10,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for compute
-
 {: #compute-decisions}
 
 The following are the compute architecture decisions for the Red Hat OpenShift on VPC cluster design.
