@@ -31,15 +31,15 @@ The Watson Pattern AI solution requires a range of AI components to effectively 
    1. Object tracking: following the movement of specific objects over time in a video sequence.
    2. Video analysis: detecting patterns, trends, or anomalies within a video
 
-## IBM Watson x SaaS model components
+## IBM Watsonx Services on IBM Cloud
 
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on IBM Cloud, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
 Key Components of Watsonx on IBM Cloud:
 
-1. Watsonx.ai:This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models.
-2. Watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources.
-3. Watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle.
+1. watsonx.ai:This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models.
+2. watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources.
+3. watsonx.governance: This tool ensures AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle.
 4. IBM watsonx Assistant for Voice:
 
 https://cloud.ibm.com/docs/watson?topic=watson-about#about
@@ -108,6 +108,6 @@ The service is exposed as an http interface (synchronous and asynchronous) and a
 11. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
 12. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
 13. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
-15. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-16. https://cloud.ibm.com/docs/speech-to-text
-17. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
+14. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+15. https://cloud.ibm.com/docs/speech-to-text
+16. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
