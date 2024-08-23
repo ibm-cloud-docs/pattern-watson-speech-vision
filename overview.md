@@ -29,25 +29,26 @@ Pratical implementation across industry for watsonx and Maximo visual inspection
 3. Chatbot-based Customer Support: Implement Watson Assistant to create a conversational interface for customer support chatbots.
 
 4. Predictive Maintenance for Industrial Equipment
-   1. Install cameras or sensors on industrial equipment (e.g., pumps, motors, gearboxes) to capture images.
-   2. Use Maximo Visual Inspection's computer vision capabilities to analyze the images and detect anomalies or degradation in real-time.
-   3. Leverage machine learning algorithms to predict when maintenance is required based on historical data and current trends.
-   4. Automate notifications for scheduled maintenance, reducing downtime and increasing overall equipment efficiency.
+   1. Use Maximo Visual Inspection's computer vision capabilities to analyze the images and detect anomalies or degradation in real-time.
+   2. Leverage machine learning algorithms to predict when maintenance is required based on historical data and current trends.
+   3. Automate notifications for scheduled maintenance, reducing downtime and increasing overall equipment efficiency.
+   4. Integrate with RAG and voice to provide better user experience
 
 5. Quality Control for Manufacturing
    1. Use computer vision to inspect products (e.g., parts, components) as they move along a production line.
    2. Detect defects or irregularities in real-time using AI-powered image analysis.
    3. Provide immediate feedback to manufacturing personnel, enabling them to correct issues on the spot and reduce waste.
+   4. Integrate with RAG and voice to provide better user experience
 
 6. Asset Inspection for Oil & Gas
    1. Utilize unmanned aerial vehicles (UAVs) or drones equipped with cameras to capture images of oil rigs, pipelines, or other assets.
    2. Employ AI-powered image analysis to detect signs of wear, damage, or malfunction in real-time.
-   3. Automate reporting and provide insights on asset condition to maintenance personnel, enabling more efficient planning and execution.
+   3. Integrate with RAG and voice to provide better user experience
 
 7. Healthcare Equipment Inspection
    1. Use cameras installed on medical equipment (e.g., MRI machines) or in storage areas to capture images of devices.
    2. Apply computer vision algorithms to analyze the images and detect signs of wear, damage, or malfunction in real-time.
-   3.  Automate reporting and provide insights on equipment condition to maintenance personnel, enabling more efficient planning and execution.
+   3. Integrate with RAG and voice to provide better user experience 
 
 
 This pattern is built upon the following key technologies:
