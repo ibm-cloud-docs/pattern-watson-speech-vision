@@ -14,11 +14,15 @@ keywords:
 
 {: overview-id}
 
+## Pattern insight
+
 1. This pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment using the Watsonx architecture as the core for AI and integration with other IBM Cloud services. It combines Watsonx with IBM Cloud ROKS, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets RAG, real-time analytics, speech recognition, image and video detection.
 2. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, Speech and image and video detection.
 3. This pattern describes how can a customer host and run x86 on IBM Cloud VPC and container workloads on IBM Cloud ROKS VPC in close proximity to Watsonx environment delivery all in one enterprise solution.
 
-Pratical implementation across industry for watsonx and Maximo visual inspection with watson voice assistance.
+## Industry use cases
+
+Here are pratical use case implementation across industry for watsonx and Maximo visual inspection with watson voice assistance.
 
 1. Financial/Insurance claims enhancement : 
    1. Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. Analyze video feeds to detect anomalies, predict potential failures, and schedule proactive maintenance.
@@ -111,7 +115,7 @@ watsonx Assistant – Used to conversation flow development and webchat interfac
 watsonx ai – RAG with LLM and train as needed. 
 watson orchestrate- workflows and integration(Dedicated) if needed.
 
-### Enhanced User Experience with watsonx assistance for Voice
+### Conversational User Experience with watsonx Assistance for Voice
 
 Leveraging IBM's Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, ensuring accessibility and convenience for end-users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functionalities are hosted on IBM Cloud and consumed in this pattern.
 
