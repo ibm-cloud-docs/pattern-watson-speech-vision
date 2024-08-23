@@ -25,12 +25,16 @@ keywords:
 Here are pratical use case implementation across industry for watsonx and Maximo visual inspection with watson voice assistance.
 
 1. Financial/Insurance claims enhancement : 
-   1. Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. Analyze video feeds to detect anomalies, predict potential failures, and schedule proactive maintenance.
+   1. Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. 
+   2. Analyze video feeds to detect anomalies, help in claims processing and generate reports for approver. Help end users to provide a proper search, RAG and voice interaction with documents, images, videos.
 
 2. Healthcare Customer experience: 
-   1. Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
+   1. Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. 
+   2. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
 
-3. Chatbot-based Customer Support: Implement Watson Assistant to create a conversational interface for customer support chatbots.
+3. Chatbot-based Customer Support: 
+   1. Implement Watson Assistant to create a conversational interface for customer support chatbots.
+   2. Provide voice and RAG implementation with documents for end customer with speech to text and text to speech.
 
 4. Predictive Maintenance for Industrial Equipment
    1. Use Maximo Visual Inspection's computer vision capabilities to analyze the images and detect anomalies or degradation in real-time.
