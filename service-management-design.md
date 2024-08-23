@@ -50,7 +50,7 @@ Here are some of the key management and monitoring features in watson x:
 7. **Model Versioning** : watsonx governance allows to manage multiple versions of your AI models, allowing for easy tracking of changes, updates, and rollbacks if needed.
 8. **Integration with Other IBM Tools** : Seamlessly integrate WatsonX with other IBM tools like Cloud Pak, Watson Studio,and other customer management environment.
 
-### **IBM Watson voice assistance** 
+### **IBM Watson voice assistance**
 
 #### **watson Speech to Text**
 
@@ -76,7 +76,7 @@ For more detailed instructions, you can explore the following IBM Cloud document
 
 * [IBM Speech to Text Getting Started](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)
 * [IBM Text to Speech Overview](https://cloud.ibm.com/catalog/services/text-to-speech)
-
+  
 ## IBM Log Analysis
 
 {: #log-analysis}
@@ -103,7 +103,8 @@ You can use IBM Cloud Monitoring to monitor the performance and overall system h
 * Highly available, scalable, and compliant with industry security standards.
 * Integrated with IBM Cloud IAM for user access management.
 
-For more information, see** **[how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring)
+For more information, see [how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring) 
+{: note}
 
 ## Flow Logs for VPC clusters
 
