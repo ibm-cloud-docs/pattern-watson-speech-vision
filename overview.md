@@ -21,12 +21,12 @@ The watsonx integration with speech and vision pattern provides an overview and 
 Review the following use case implementation across different industries for watsonx and Maximo Visual Inspection with Watson voice assistance:
 
 1. Financial and insurance claims enhancement: 
-   1. Use Maximo Visual Inspection as-a-Service with {{site.data.keyword.Bluemix_notm}} VPC Red Hat OpenShift to develop an insurance claim system. 
+   1. Use Maximo Visual Inspection with {{site.data.keyword.Bluemix_notm}} VPC Red Hat OpenShift to develop an insurance claim system. 
    2. Analyze video feeds to detect anomalies, help in claims processing, and generate reports for approver. Help users to provide a proper search, RAG, and voice interaction with documents, images, videos.
 
 2. Healthcare:
    1. Use watsonx to build an AI-powered application that analyzes medical images such as MRI's or CT scans for disease detection and diagnosis. 
-   2. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
+   2. Integrate Maximo Visual Inspection to enable real-time image analysis and generate reports.
    3. Use cameras that are installed on medical equipment like MRI machines or in storage areas to capture images of devices.
    4. Apply computer vision algorithms to analyze the images and detect signs of wear, damage, or malfunction in real-time.
    5. Integrate with RAG and voice to provide a better user experience.
@@ -60,7 +60,7 @@ This pattern is built on the following key technologies:
 7. {{site.data.keyword.Bluemix_notm}} VPC VSI: A virtual server instance for running custom workloads on {{site.data.keyword.Bluemix_notm}}.
 8. {{site.data.keyword.Bluemix_notm}} Development Pipelines: A continuous integration and continuous delivery (CI/CD) toolchain for automating software development workflows.
 9. Code Engine as-a-Service: A cloud-based service that enables rapid application development and deployment that uses containerized applications.
-10. Maximo Visual Inspection as-a-Service: An AI-powered inspection solution for detecting defects in images and videos.
+10. Maximo Visual Inspection on ROKS VPC : An AI-powered inspection solution for detecting defects in images and videos.
 
 ## Solution architecture
 {: solution-overview}
