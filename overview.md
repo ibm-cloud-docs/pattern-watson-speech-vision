@@ -51,6 +51,7 @@ Here are pratical use case implementation across industry for watsonx and Maximo
    2. Employ AI-powered image analysis to detect signs of wear, damage, or malfunction in real-time.
    3. Integrate with RAG and voice to provide better user experience
 
+IBM technologies considered
 This pattern is built upon the following key technologies:
 
 1. Watsonx: a software-as-a-service (SaaS) offering for building AI-powered applications
