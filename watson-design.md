@@ -92,22 +92,3 @@ For more information about the service, see [About Watson Speech to Text](https:
 For more information about the service, see [About Watson Text to Speech](https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-about "(Opens in a new tab or window)").
 
 The service is exposed as an http interface (synchronous and asynchronous) and a websocket interface. It can be accessed using a public or a private endpoint.
-
-## Reference
-
-1. https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
-2. https://www.ibm.com/products/watson-discovery/use-cases
-3. https://www.ibm.com/products/watsonx-ai
-4. https://www.ibm.com/products/watsonx-data
-5. https://www.ibm.com/products/watsonx-governance
-6. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=planning-supported-gpus-devices
-7. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=overview
-8. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=configuring.
-9. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge.
-10. https://www.ibm.com/products/maximo/pricing#price-estimator
-11. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-12. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
-13. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
-14. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
-15. https://cloud.ibm.com/docs/speech-to-text
-16. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas

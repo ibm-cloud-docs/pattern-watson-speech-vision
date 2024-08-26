@@ -25,3 +25,16 @@ keywords:
 * **Maximo** - [ibm.com/docs/en/mas-cd/maximo-manage/continuous-delivery?topic=SSLPL8_cd/com.ibm.mam.doc/upgrade/c_mas_architecture.htm](https://www.ibm.com/docs/en/mas-cd/maximo-manage/continuous-delivery?topic=SSLPL8_cd/com.ibm.mam.doc/upgrade/c_mas_architecture.htm)
 * **eBook** - [ibm.com/downloads/cas/1X7EPRYE](https://www.ibm.com/downloads/cas/1X7EPRYE)
 * **Milvus on IBM Cloud:**[IBM Watsonx.data and Milvus Integration](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-adding-milvus-service)
+
+5. https://www.ibm.com/products/watsonx-governance
+6. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=planning-supported-gpus-devices
+7. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=overview
+8. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=configuring.
+9. https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge.
+10. https://www.ibm.com/products/maximo/pricing#price-estimator
+11. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+12. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-speech-install-data
+13. https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-pkg_text_to_speech
+14. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+15. https://cloud.ibm.com/docs/speech-to-text
+16. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
