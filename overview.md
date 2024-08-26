@@ -26,12 +26,12 @@ keywords:
 Here are pratical use case implementation across industry for watsonx and Maximo visual inspection with watson voice assistance.
 
 1. Financial/Insurance claims enhancement : 
-   1. Use Maximo Visual Inspection as-a-Service in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. 
+   1. Use Maximo Visual Inspection  in conjunction with IBM Cloud VPC ROKS to develop a insurance claim system. 
    2. Analyze video feeds to detect anomalies, help in claims processing and generate reports for approver. Help end users to provide a proper search, RAG and voice interaction with documents, images, videos.
 
 2. Healthcare industry usecases: 
    1. Use Watsonx to build an AI-powered application that analyzes medical images (e.g., MRI, CT scans) for disease detection and diagnosis. 
-   2. Integrate Maximo Visual Inspection as-a-Service to enable real-time image analysis and generate reports.
+   2. Integrate Maximo Visual Inspection to enable real-time image analysis and generate reports.
    3. Use cameras installed on medical equipment (e.g., MRI machines) or in storage areas to capture images of devices.
    4. Apply computer vision algorithms to analyze the images and detect signs of wear, damage, or malfunction in real-time.
    5. Integrate with RAG and voice to provide better user experience 
@@ -63,7 +63,7 @@ This pattern is built upon the following key technologies:
 7. IBM Cloud VPC VSI: a virtual server instance for running custom workloads on IBM Cloud
 8. IBM Cloud Development Pipelines: a continuous integration/continuous delivery (CI/CD) toolchain for automating software development workflows
 9. Code Engine as-a-Service: a cloud-based service that enables rapid application development and deployment using containerized applications
-10. Maximo Visual Inspection as-a-Service: an AI-powered inspection solution for detecting defects in images and videos
+10. Maximo Visual Inspection: an AI-powered inspection solution for detecting defects in images and videos
 
 
 

@@ -55,7 +55,7 @@ Other features of the reference architecture:
 * Enables access to the management VPC from the application provider's enterprise environment through IBM Cloud Virtual Private Network Gateway for VPC.
 * Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.
 * Connects management VPC, workload VPC, and Edge VPC by using IBM Cloud Transit Gateway.
-* Extends the watsonx default capabilities to voice and images by leveraging IBM Cloud Speech to Text, Text to Speech and Maximo Visual Inspection software as a service offerings
+* Extends the watsonx default capabilities to voice and images by leveraging IBM Cloud Speech to Text, Text to Speech.
 
 ## Design concepts
 
