@@ -38,4 +38,4 @@ keywords:
 14. https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
 15. https://cloud.ibm.com/docs/speech-to-text
 16. https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas
-17. Deploymane Tile https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help.
+17. Deployment Catalog Tile : https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help.
