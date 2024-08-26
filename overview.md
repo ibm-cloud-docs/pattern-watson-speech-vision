@@ -86,7 +86,7 @@ The solution architecture is designed to address specific needs within enterpris
 
 2 End users: The individuals who will be using applications, services, and data hosted in an IBM Cloud environment.
 
-3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure.
+3 Compute on IBM Cloud through VPC/ROKS: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift (ROKS), providing isolation and security for cloud-based infrastructure. The reference architecture assumes the centralized portal will provide access to watson environment. There could be direct access to the watson services but for the purpose of this reference architecture, its assumed all via custom webportal.
 
 4 watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do Text Retrieval and Text Generation allowing users to interact with documents.
 
