@@ -24,6 +24,7 @@ The following are service management requirements watsonx and enterprise workloa
 - manage and monitor customer x86 enterprise workloads
 - manage and monitor container workloads on IBM Cloud.
 - provide infrastructure and platform logs and audit.
+- manage and monitor models.
 
 ## Design considerations
 
@@ -76,7 +77,7 @@ For more detailed instructions, you can explore the following IBM Cloud document
 
 * [IBM Speech to Text Getting Started](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)
 * [IBM Text to Speech Overview](https://cloud.ibm.com/catalog/services/text-to-speech)
-  
+
 ## IBM Log Analysis
 
 {: #log-analysis}
@@ -103,7 +104,7 @@ You can use IBM Cloud Monitoring to monitor the performance and overall system h
 * Highly available, scalable, and compliant with industry security standards.
 * Integrated with IBM Cloud IAM for user access management.
 
-For more information, see [how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring) 
+For more information, see [how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring)
 {: note}
 
 ## Flow Logs for VPC clusters

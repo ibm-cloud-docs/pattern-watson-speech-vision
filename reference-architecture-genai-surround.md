@@ -8,7 +8,7 @@
 
 AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape.
 
-This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud, focusing on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities to achieve an end to end workflow for customer care.
+This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on IBM Cloud, focusing on augmenting the standard Watsonx offering  with IBM Cloud speech to text/text to speech and computer vision capabilities.
 
 The following pattern covers
 
@@ -72,7 +72,7 @@ Below is the Architecture Framework Design heatmap that covers design considerat
 * **Resiliency:** High Availability
 * **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 3. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 5. Architecture design scope" caption-side="bottom"}
 
 ## Requirements
 

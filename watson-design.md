@@ -49,7 +49,7 @@ https://cloud.ibm.com/docs/watson?topic=watson-about#about
 
 The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images  RAG Pattern" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images watsonx pattern" caption-side="bottom"}
 
 Maximo Visual Inspection includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use IBM Maximo Visual Inspection to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
@@ -60,6 +60,8 @@ Maximo Visual Inspection Edge is a web-based application that you can integrate 
 Maximo Visual Inspection Edge uses data sets and trained models that are stored in  Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
 
 More on [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)
+
+This reference watsonx pattern does not describe training and finetunning of models and this is out of scope of this reference pattern.{: note}
 
 ## IBM watsonx Assistant for Voice.
 
