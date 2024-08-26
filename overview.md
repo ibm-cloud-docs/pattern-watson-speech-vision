@@ -100,7 +100,7 @@ The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with e
 Using {{site.data.keyword.IBM_notm}} Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, helping ensure accessibility and convenience for users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functions are hosted on {{site.data.keyword.Bluemix_notm}} and consumed in this pattern.
 
 ### DevOps pipeline
-{# devops-watsonx}
+{#devops-watsonx}
 
 The deployment lifecycle is managed by using {{site.data.keyword.Bluemix_notm}} pipeline for automating development processes and {{site.data.keyword.Bluemix_notm}} registry for managing container images across different environments.
 
