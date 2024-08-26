@@ -22,7 +22,7 @@ To ensure the resiliency of the solution as a whole, the following components mu
 - custom applications running on IBM Cloud VPC's VSIs
 - custom applications running on ROKS containers
 - custom functions/applications/jobs running on IBM Cloud Code Engine
-- the SaaS services and in particular the AI related SaaS services (Watsonx, IBM Cloud Speech to Text, Text to Speech, Maximo Visual inspection) and especially the data they hold
+- the SaaS services and in particular the AI related SaaS services (Watsonx, IBM Cloud Speech to Text, Text to Speech) and especially the data they hold
 
 ## Considerations for High Availability
 
@@ -30,7 +30,7 @@ To ensure the resiliency of the solution as a whole, the following components mu
 
 ### High Availability for IBM Watsonx services and IBM Cloud Software as a Service (SaaS) services
 
-IBM Watson services, such as watsonx.ai, watsonx.data, watson Assistant for voice as well as IBM Cloud Speech to Text, IBM Cloud Text to Speech and Maximo Visual Inspection are highly available services by default with no single point of failure. This is achieved by leveraging IBM Cloud multi-zone regions.
+IBM Watson services, such as watsonx.ai, watsonx.data, watson Assistant for voice as well as IBM Cloud Speech to Text, IBM Cloud Text to Speech  are highly available services by default with no single point of failure. This is achieved by leveraging IBM Cloud multi-zone regions.
 
 More generally, every IBM Cloud SaaS general availability (GA) offering is highly available with an SLA of 99,99%.
 
