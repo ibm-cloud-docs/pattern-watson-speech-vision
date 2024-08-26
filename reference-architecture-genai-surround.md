@@ -1,4 +1,4 @@
-# IBM Cloud watsonx conversational and vision AI pattern
+# IBM Cloud watsonx conversational and vision AI reference architecture
 
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}
