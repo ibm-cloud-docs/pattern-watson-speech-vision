@@ -16,7 +16,7 @@ keywords:
 * Increased speed of delivery and time-to-market
 * Improved quality and reliability of software applications
 
-# DevOps
+## DevOps Pipeline
 
 {: #devops-design}
 
