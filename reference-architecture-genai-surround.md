@@ -72,7 +72,7 @@ Below is the Architecture Framework Design heatmap that covers design considerat
 * **Resiliency:** High Availability
 * **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 5. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 6. Architecture design scope" caption-side="bottom"}
 
 ## Requirements
 
