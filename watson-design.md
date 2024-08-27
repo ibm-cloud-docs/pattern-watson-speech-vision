@@ -92,9 +92,9 @@ IBM Cloud Text to Speech service converts written text to natural-sounding speec
 
 Watson speech services
 
-Watson Speech to Text for IBM Cloud Pak for Data transcribes written text from spoken audio. The service leverages machine learning to combine knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe the human voice. It continuously updates and refines its transcription as it receives more speech audio.
+Watson Speech to Text transcribes written text from spoken audio. The service leverages machine learning to combine knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe the human voice. It continuously updates and refines its transcription as it receives more speech audio.
 
-For more information about the service, see [About Watson Speech to Text](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-about "(Opens in a new tab or window)").Watson Text to Speech for IBM Cloud Pak for Data****synthesizes natural-sounding speech from written text. The service streams the results back to the client with minimal delay. The service is appropriate for voice-driven and screenless applications, where audio is the preferred method of output.
+For more information about the service, see [About Watson Speech to Text](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-about "(Opens in a new tab or window)").Watson Text to Speech synthesizes natural-sounding speech from written text. The service streams the results back to the client with minimal delay. The service is appropriate for voice-driven and screenless applications, where audio is the preferred method of output.
 
 For more information about the service, see [About Watson Text to Speech](https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-about "(Opens in a new tab or window)").
 
