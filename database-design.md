@@ -44,11 +44,11 @@ The Enterprise or Bespoke applications requires backend to store various entity 
 - Backup and Recovery: The database must provide robust backup and recovery mechanisms to ensure business continuity in case of unexpected failures or errors.
 - Compliance: The database must comply with relevant industry regulations and standards, such as GDPR, HIPAA, PCI-DSS, and SOX.
 
-#### **IBM Cloud Databases for PostgreSQL**
+#### {{site.data.keyword.Bluemix_notm}} Databases for PostgreSQL
 
 The Database for PostgreSQL service provides a managed PostgreSQL database that can be used to store and retrieve data for the applications. This service allows to easily deploy, manage, and scale your PostgreSQL databases without worrying about the underlying infrastructure.
 
-For more details on the IBM Cloud Databases for PostgreSQL refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/databases-for-postgresql)
+For more details on the {{site.data.keyword.Bluemix_notm}} Databases for PostgreSQL refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/databases-for-postgresql)
 {: note}
 
 - Relational Data Storage: Store and manage large amounts of structured data, such as customer information, order history, or inventory levels.
@@ -63,7 +63,7 @@ For more details on the IBM Cloud Databases for PostgreSQL refer to this [sectio
 
 IBM Cloudant is a fully managed JSON document database that offers independent serverless scaling of provisioned throughput capacity and storage. Cloudant is compatible with Apache CouchDB and accessible through a simple to use HTTPS API for web, mobile, and IoT applications.
 
-For more details on the IBM Cloud Cloudant refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/Cloudant)
+For more details on the {{site.data.keyword.Bluemix_notm}} Cloudant refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/Cloudant)
 {: note}
 
 - JSON Document-Oriented: Store and retrieve data as JSON documents, making it easy to integrate with a wide range of programming languages and frameworks.

@@ -64,7 +64,7 @@ This pattern is built on the following key technologies:
 7. {{site.data.keyword.Bluemix_notm}} VPC VSI: A virtual server instance for running custom workloads on {{site.data.keyword.Bluemix_notm}}.
 8. {{site.data.keyword.Bluemix_notm}} Development Pipelines: A continuous integration and continuous delivery (CI/CD) toolchain for automating software development workflows.
 9. Code Engine as-a-Service: A cloud-based service that enables rapid application development and deployment that uses containerized applications.
-10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services(ROKS) on IBM Cloud VPC : An AI-powered inspection solution for detecting defects in images and videos.
+10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services(ROKS) on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
 
 ## Solution architecture
 {: solution-overview}
@@ -78,7 +78,7 @@ The solution architecture is designed to address specific needs within enterpris
 1. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) Red Hat OpenShift: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift, providing isolation and security for cloud-based infrastructure. 
 1. Watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, which is designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do text retrieval and text generation allowing users to interact with documents.
 1. Enhanced user experience through Watson Speech-to-Text (STT) and Text-to-Speech (TTS): Improves the way humans interact with machines by using {{site.data.keyword.IBM_notm}} Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
-1. Maximo Visual Inspection: A visual inspection feature within Maximo deployed on Red Hat OpenShift Kubernetes Services on IBM Cloud VPC, that enables users to capture and analyze video evidence of equipment or facility conditions, streamlining maintenance workflows and decision-making processes.
+1. Maximo Visual Inspection: A visual inspection feature within Maximo deployed on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC, that enables users to capture and analyze video evidence of equipment or facility conditions, streamlining maintenance workflows and decision-making processes.
 1. Application runtime services: Offers a range of cloud-based services for deploying, managing, and optimizing application workloads in real-time, helping ensure optimal performance, scalability, and security across {{site.data.keyword.Bluemix_notm}} environments.
 1. Apps Life-Cycle Management: A comprehensive platform for designing, building, testing, deploying, and maintaining applications throughout their entire life cycle within an {{site.data.keyword.Bluemix_notm}} environment.
 1. Storage: Provides scalable and secure cloud storage services to help customers efficiently store, manage, and retrieve large amounts of data across various types of workloads.

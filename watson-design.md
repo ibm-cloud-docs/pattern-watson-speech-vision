@@ -31,11 +31,11 @@ The Watson Pattern AI solution requires a range of AI components to effectively 
    1. Object tracking: following the movement of specific objects over time in a video sequence.
    2. Video analysis: detecting patterns, trends, or anomalies within a video
 
-## IBM Watsonx Services on IBM Cloud
+## IBM Watsonx Services on {{site.data.keyword.Bluemix_notm}}
 
-Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on IBM Cloud, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
+Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on {{site.data.keyword.Bluemix_notm}}, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
-Key Components of Watsonx on IBM Cloud:
+Key Components of Watsonx on {{site.data.keyword.Bluemix_notm}}:
 
 1. watsonx.ai:This is the core AI engine within Watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models.
 2. watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources.
@@ -77,17 +77,17 @@ IBM watsonx Assistant for Voice offers:
 4. More information https://www.ibm.com/products/watsonx-assistant/voice
 5. additional information https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
 
-### **IBM Cloud Speech to Text service**
+### {{site.data.keyword.Bluemix_notm}} Speech to Text service
 
 ![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 8. Speech to Text transcription pipeline" caption-side="bottom"}
 
-IBM Cloud Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
+{{site.data.keyword.Bluemix_notm}} Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
 The service is available in multiple languages and is exposed as an http interface and a websocket interface. It can be accessed using a public or a private endpoint. [Getting started with Watson Speech to Text](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted)
 
-### **IBM Cloud Text to Speech service**
+### {{site.data.keyword.Bluemix_notm}} Text to Speech service
 
-IBM Cloud Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
+{{site.data.keyword.Bluemix_notm}} Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
 
 Watson speech services
 

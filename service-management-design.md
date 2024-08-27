@@ -22,7 +22,7 @@ The following are service management requirements watsonx and enterprise workloa
 - Manage and monitor ai.
 - Enable logging and alerting to DevOps tools.
 - manage and monitor customer x86 enterprise workloads
-- manage and monitor container workloads on IBM Cloud.
+- manage and monitor container workloads on {{site.data.keyword.Bluemix_notm}}.
 - provide infrastructure and platform logs and audit.
 - manage and monitor models.
 
@@ -36,7 +36,7 @@ Management and monitoring
 
 {: #management-monitoring}
 
-The recommended approach for multi-cluster management and monitoring is to use IBM Cloud tools that include IBM Log Analysis and IBM Cloud Monitoring. This approach enables application cluster metrics log aggregation and central management within IBM Cloud.
+The recommended approach for multi-cluster management and monitoring is to use {{site.data.keyword.Bluemix_notm}} tools that include IBM Log Analysis and {{site.data.keyword.Bluemix_notm}} Monitoring. This approach enables application cluster metrics log aggregation and central management within {{site.data.keyword.Bluemix_notm}}.
 
 ### IBM watson x management capabilities
 
@@ -66,14 +66,14 @@ Here are some of the key management and monitoring features in watson x:
 **Management and Monitoring** :
 
 * **Customization Options** : Use APIs to synthesize text into speech, with control over the voice (male or female, standard or neural), languages (English, Spanish, etc.), and audio formats (WAV, OGG).
-* **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs([IBM Cloud](https://cloud.ibm.com/catalog/services/text-to-speech))([IBM Cloud](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
+* **Voice Customization** : You can define custom pronunciations, control speech synthesis attributes such as pitch and volume, and even work with IBM to create custom voices if you have specific needs([{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/catalog/services/text-to-speech))([{{site.data.keyword.Bluemix_notm}}](https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted)).
 
 #### Management and Monitoring
 
-* Use IBM Cloud's built-in monitoring and logging tools to track API usage, errors, and performance metrics.
+* Use {{site.data.keyword.Bluemix_notm}}'s built-in monitoring and logging tools to track API usage, errors, and performance metrics.
 * For troubleshooting or enhancing performance, monitor real-time data streams, adjust parameters based on use cases, and fine-tune latency settings for faster or more accurate results.
 
-For more detailed instructions, you can explore the following IBM Cloud documentation:
+For more detailed instructions, you can explore the following {{site.data.keyword.Bluemix_notm}} documentation:
 
 * [IBM Speech to Text Getting Started](https://cloud.ibm.com/docs/services/speech-to-text?topic=speech-to-text-gettingStarted)
 * [IBM Text to Speech Overview](https://cloud.ibm.com/catalog/services/text-to-speech)
@@ -89,34 +89,34 @@ You can use IBM Log Analysis to add log management capabilities to Red Hat OpenS
 * Aggregated logs across clusters and cloud providers.
 * Historical access to logs.
 * Highly available, scalable, and compliant with industry security standards.
-* Integrated with IBM Cloud IAM for user access management.
+* Integrated with {{site.data.keyword.Bluemix_notm}} IAM for user access management.
 
-## IBM Cloud Monitoring
+## {{site.data.keyword.Bluemix_notm}} Monitoring
 
 {: #ibm-cloud-monitoring}
 
-You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift VPC clusters and provide for the following:
+You can use {{site.data.keyword.Bluemix_notm}} Monitoring to monitor the performance and overall system health of Red Hat OpenShift VPC clusters and provide for the following:
 
 * Customizable user interface for a unified view of cluster metrics, container security, resource usage, alerts, and custom events.
 * Quick integration with the cluster via a script.
 * Aggregated metrics and container monitoring across clusters and cloud providers.
 * Historical access to metrics that is based on the timeline and plan, and the ability to capture and download trace files.
 * Highly available, scalable, and compliant with industry security standards.
-* Integrated with IBM Cloud IAM for user access management.
+* Integrated with {{site.data.keyword.Bluemix_notm}} IAM for user access management.
 
-For more information, see [how to forward application and cluster metric data to IBM Cloud Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring)
+For more information, see [how to forward application and cluster metric data to {{site.data.keyword.Bluemix_notm}} Monitoring](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/openshift?topic=openshift-health-monitor#openshift_monitoring)
 {: note}
 
 ## Flow Logs for VPC clusters
 
 {: #flow-logs}
 
-Configure IBM Cloud Flow Logs for VPC to gather information about the traffic entering or leaving VPC cluster worker nodes. Flow logs are stored in an IBM Cloud Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations. For more information, see** **[Flow logs use cases](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/vpc?topic=vpc-flow-logs&interface=ui#flow-logs-use-cases).
+Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather information about the traffic entering or leaving VPC cluster worker nodes. Flow logs are stored in an {{site.data.keyword.Bluemix_notm}} Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations. For more information, see** **[Flow logs use cases](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/review/docs/vpc?topic=vpc-flow-logs&interface=ui#flow-logs-use-cases).
 
-Using IBM Cloud Monitoring can create alerts when workloads need more resources. {: note}
+Using {{site.data.keyword.Bluemix_notm}} Monitoring can create alerts when workloads need more resources. {: note}
 
 ## Resource Management
 
 {: #resource-management}
 
-Set up spending notifications from the IBM Cloud billing console. You can set quotas or resource limits on clusters and namespaces. The cluster administrators can make sure that teams that share a cluster don't consume more than their fair share of compute resources, memory and CPU, by creating a** **[Resource Quota object](https://kubernetes.io/docs/concepts/policy/resource-quotas/) for each Kubernetes namespace in the cluster. If the cluster admin sets a compute resource quota, then each container within the deployment template must specify resource requests and limits for memory and CPU, otherwise the pod creation fails.
+Set up spending notifications from the {{site.data.keyword.Bluemix_notm}} billing console. You can set quotas or resource limits on clusters and namespaces. The cluster administrators can make sure that teams that share a cluster don't consume more than their fair share of compute resources, memory and CPU, by creating a** **[Resource Quota object](https://kubernetes.io/docs/concepts/policy/resource-quotas/) for each Kubernetes namespace in the cluster. If the cluster admin sets a compute resource quota, then each container within the deployment template must specify resource requests and limits for memory and CPU, otherwise the pod creation fails.
