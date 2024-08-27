@@ -73,8 +73,8 @@ The solution architecture is designed to address specific needs within enterpris
 
 ![Solution architecture](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
 
-1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on {{site.data.keyword.Bluemix_notm}}. Here there are corporate users connecting over a secured connection on private network
-1. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. Here there are users who will connect public network over internet.
+1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on {{site.data.keyword.Bluemix_notm}}. In this location, there are corporate users connecting over a secured connection on private network
+1. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. This includes users who will connect public network over internet.
 1. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) Red Hat OpenShift: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift, providing isolation and security for cloud-based infrastructure. 
 1. Watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, which is designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do text retrieval and text generation allowing users to interact with documents.
 1. Enhanced user experience through Watson Speech-to-Text (STT) and Text-to-Speech (TTS): Improves the way humans interact with machines by using {{site.data.keyword.IBM_notm}} Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
@@ -99,26 +99,26 @@ The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with e
     5. Watson orchestrate: workflows and integration (Dedicated) if needed.
 
 ### Conversational user experience with watsonx Assistance for voice
-{: user-experience-overview}
+{: #user-experience-overview}
 
 Using {{site.data.keyword.IBM_notm}} Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, helping ensure accessibility and convenience for users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functions are hosted on {{site.data.keyword.Bluemix_notm}} and consumed in this pattern.
 
 ### DevOps pipeline
-{: devops-watsonx}
+{: #devops-watsonx}
 
 The deployment lifecycle is managed by using {{site.data.keyword.Bluemix_notm}} pipeline for automating development processes and {{site.data.keyword.Bluemix_notm}} registry for managing container images across different environments.
 
 ### Maximo Visual Inspection
-{: maximo-watsonx}
+{: #maximo-watsonx}
 
 This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
 The watsonx solution on {{site.data.keyword.Bluemix_notm}} offers an end-to-end platform that is tailored for financial services with a focus on AI capabilities. The architecture is scalable, secure, and highly available, helping ensure that enterprises can use the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
 
-More infromation on Maximo please refer to following links
+For more information, see the following links:
 
-1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge).
-2. [Maximo suite overview](https://cloud.ibm.com/docs/maximo-application-suite?topic=maximo-application-suite-overview).
-3. [Deployment Catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help).
+1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge){: external}
+2. [Maximo suite overview](docs/maximo-application-suite?topic=maximo-application-suite-overview).
+3. [Deployment Catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help){: external}
 
 This reference watsonx pattern does not describe training and finetunning of models and this is out of scope of this reference pattern.{: note}
