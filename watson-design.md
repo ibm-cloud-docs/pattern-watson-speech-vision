@@ -59,7 +59,8 @@ Maximo Visual Inspection Edge is a web-based application that you can integrate 
 
 Maximo Visual Inspection Edge uses data sets and trained models that are stored in  Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources, such as cameras or network folders. These inspections either collect images to train models or use trained models and rules to inspect images. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
 
-More on [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)
+More on [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge).
+
 
 This reference watsonx pattern does not describe training and finetunning of models and this is out of scope of this reference pattern.{: note}
 
