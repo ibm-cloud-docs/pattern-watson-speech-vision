@@ -16,7 +16,7 @@ The following pattern covers
 2. IBM watson assistant with Speech to Text and Text to Speech
 3. IBM Maximo Visual Inspection for image and vide detection.
 
-![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 1. watsonx RAG design " caption-side="bottom"}
+![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 2. watsonx RAG design " caption-side="bottom"}
 
 More information on RAG Pattern can be found here
 [RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
@@ -24,11 +24,11 @@ More information on RAG Pattern can be found here
 
 IBM Maximo Visual inspection is considered to analyze images and video detection.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images  detection and analysis" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 3. Video and images detection and analysis" caption-side="bottom"}
 
 IBM watson assistant for voice with speeh to text and text to speech
 
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 4. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Architecture diagram
 
@@ -36,7 +36,7 @@ IBM watson assistant for voice with speeh to text and text to speech
 
 The below diagram represents the architecture for Gen AI on IBM cloud and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for IBM Cloud for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 4. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 5. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
