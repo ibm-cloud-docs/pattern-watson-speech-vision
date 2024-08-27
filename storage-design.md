@@ -33,7 +33,7 @@ For an AI powered applications, its crucial to ensure that the underlying storag
 
 {: #storage-considerations}
 
-![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 1. Storage Design" caption-side="bottom"}
+![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 10. Storage Design" caption-side="bottom"}
 
 ### **IBM Cloud Object Storage**
 
