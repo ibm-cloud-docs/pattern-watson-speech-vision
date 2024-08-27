@@ -13,7 +13,7 @@ keywords:
 # Overview
 {: overview-watsonx-speech}
 
-The watsonx integration with speech and vision pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integration with other {{site.data.keyword.Bluemix_notm}} services. It combines watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets Retrieval Augmentation Generation (RAG), real-time analytics, speech recognition, image, and video detection. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, speech, and image and video detection. In addition, it describes how a customer can host and run x86 on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to watsonx environment delivery all in one enterprise solution.
+The watsonx integration with speech and vision pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integration with other {{site.data.keyword.Bluemix_notm}} services. It combines watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets Retrieval Augmentation Generation (RAG), real-time analytics, speech recognition, image, and video detection. This pattern is helpful for the enterprise customers in focusing on AI that needs to delivery RAG, speech, and image and video detection. In addition, it describes how a customer can host and run x86 on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to watsonx environment delivering all in one enterprise solution.
 
 ## Industry use cases
 {: usecase-id}
@@ -100,16 +100,24 @@ The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with e
 Using {{site.data.keyword.IBM_notm}} Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, helping ensure accessibility and convenience for users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functions are hosted on {{site.data.keyword.Bluemix_notm}} and consumed in this pattern.
 
 ### DevOps pipeline
-{#devops-watsonx}
+{: devops-watsonx}
 
 The deployment lifecycle is managed by using {{site.data.keyword.Bluemix_notm}} pipeline for automating development processes and {{site.data.keyword.Bluemix_notm}} registry for managing container images across different environments.
 
 ### Maximo Visual Inspection
-{: #maximo-watsonx}
+{: maximo-watsonx}
 
 This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
 The watsonx solution on {{site.data.keyword.Bluemix_notm}} offers an end-to-end platform that is tailored for financial services with a focus on AI capabilities. The architecture is scalable, secure, and highly available, helping ensure that enterprises can use the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
+
+More infromation on Maximo please refer to following links
+
+1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge).
+2. [Maximo suite overview](https://cloud.ibm.com/docs/maximo-application-suite?topic=maximo-application-suite-overview).
+3. [Deployment Catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help).
+
+This reference watsonx pattern does not describe training and finetunning of models and this is out of scope of this reference pattern.{: note}
 
 This reference watsonx pattern does not describe training and fine-tuning of models and this is out of the scope of this reference pattern.
 {: note}
