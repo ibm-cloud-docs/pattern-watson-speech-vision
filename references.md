@@ -11,7 +11,7 @@ keywords:
 
 # References
 
-{: \#references-id}
+{: references-id}
 
 1. [Reference Retrieval Augmented Generation Pattern](http://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
 2. [Introduction to watson assistant](http://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant)
@@ -30,5 +30,5 @@ keywords:
 15. [watsonx.governance](https://www.ibm.com/products/watsonx-governance)
 16. [GPU support on IBM Cloud](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=planning-supported-gpus-devices)
 17. [https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wstt.html?context=cpdaas)
-18. Onboarding - [dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wx&amp;audience=wdp](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wx&audience=wdp)
-19. eBook - [ibm.com/downloads/cas/1X7EPRYE](https://www.ibm.com/downloads/cas/1X7EPRYE)
+18. [watsonx documentation](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=wx&audience=wdp)
+19. [watsonx.discovery]](https://www.ibm.com/downloads/cas/1X7EPRYE)
