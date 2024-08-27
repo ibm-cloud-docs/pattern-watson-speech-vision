@@ -73,8 +73,8 @@ The solution architecture is designed to address specific needs within enterpris
 
 ![Solution architecture](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
 
-1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on {{site.data.keyword.Bluemix_notm}}.
-1. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment.
+1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on {{site.data.keyword.Bluemix_notm}}. Here there are corporate users connecting over a secured connection on private network
+1. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. Here there are users who will connect public network over internet.
 1. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) Red Hat OpenShift: Enables the deployment of compute workloads into a Virtual Private Cloud (VPC) or Red Hat OpenShift, providing isolation and security for cloud-based infrastructure. 
 1. Watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision, and machine learning, which is designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do text retrieval and text generation allowing users to interact with documents.
 1. Enhanced user experience through Watson Speech-to-Text (STT) and Text-to-Speech (TTS): Improves the way humans interact with machines by using {{site.data.keyword.IBM_notm}} Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
