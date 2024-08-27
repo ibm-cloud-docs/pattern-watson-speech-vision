@@ -10,7 +10,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Database design
-{: #compute-design}
+{: #database-design}
 
 Requirement :
 
