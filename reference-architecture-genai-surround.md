@@ -1,4 +1,4 @@
-# } watsonx conversational and vision AI reference architecture
+# watsonx conversational and vision AI reference architecture
 
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}
