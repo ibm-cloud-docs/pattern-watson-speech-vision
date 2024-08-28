@@ -12,23 +12,9 @@ This reference architecture summarizes the best practices for Watsonx Gen AI Pat
 
 The following pattern covers
 
-1. IBM watsonx RAG pattern.
+1. IBM watsonx RAG overview.
 2. IBM watson assistant with Speech to Text and Text to Speech
 3. IBM Maximo Visual Inspection for image and vide detection.
-
-![IBM watsonx RAG pattern.](rag-pattern.drawio.svg "watsonx Rag "){: caption="Figure 2. watsonx RAG design " caption-side="bottom"}
-
-More information on RAG Pattern can be found here
-[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
-{: note}
-
-IBM Maximo Visual inspection is considered to analyze images and video detection.
-
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 3. Video and images detection and analysis" caption-side="bottom"}
-
-IBM watson assistant for voice with speeh to text and text to speech
-
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 4. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Architecture diagram
 
@@ -36,7 +22,7 @@ IBM watson assistant for voice with speeh to text and text to speech
 
 The below diagram represents the architecture for Gen AI on {{site.data.keyword.Bluemix_notm}} and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for {{site.data.keyword.Bluemix_notm}} for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 5. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -58,6 +44,17 @@ Other features of the reference architecture:
 * Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.
 * Connects management VPC, workload VPC, and Edge VPC by using {{site.data.keyword.Bluemix_notm}} Transit Gateway.
 * Extends the watsonx default capabilities to voice and images by leveraging {{site.data.keyword.Bluemix_notm}} Speech to Text, Text to Speech.
+
+watsonx RAG overview are described here, please refer to documentations on architecture, deployment on IBM cloud.
+[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern){: note}
+
+IBM Maximo Visual inspection is considered to analyze images and video detection.
+
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images detection and analysis" caption-side="bottom"}
+
+IBM watson assistant for voice with speeh to text and text to speech
+
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Design concepts
 
@@ -119,7 +116,6 @@ The following table outlines the products or services used in the architecture f
 |                                                         | [Direct Link 2.0](https://cloud.ibm.com/docs/dl?topic=dl-get-started-with-ibm-cloud-dl)                                                                                           | Seamlessly connect on-premises resources to cloud resources                                                                                                              |
 |                                                         | [Transit Gateway (TGW)](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-getting-started)                                                                         | Connects the Workload and Management VPCs within a region                                                                                                                |
 |                                                         | [Cloud Internet Services (CIS)](https://cloud.ibm.com/docs/cis?topic=cis-getting-started)                                                                                         | Global load balancing between regions                                                                                                                                    |
-|                                                         | [Access Control List (ACL)](https://cloud.ibm.com/docs/vpc?topic=vpc-using-acls)                                                                                                  | To control all incoming and outgoing traffic in Virtual Private Cloud                                                                                                    |
 | Security                                                | [IAM](https://cloud.ibm.com/docs/account?topic=account-cloudaccess)                                                                                                               | {{site.data.keyword.Bluemix_notm}} Identity & Access Management                                                                                                          |
 |                                                         | [Key Protect](https://cloud.ibm.com/docs/key-protect?topic=key-protect-about)                                                                                                     | A full-service encryption solution that allows data to be secured and stored in {{site.data.keyword.Bluemix_notm}}                                                       |
 |                                                         | [BYO Bastion Host on VPC VSI](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport) | Remote access with Privileged Access Management                                                                                                                          |
@@ -135,7 +131,7 @@ The following table outlines the products or services used in the architecture f
 | Service Management                                      | [{{site.data.keyword.Bluemix_notm}} Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor)                                                             | Apps and operational monitoring                                                                                                                                          |
 |                                                         | [IBM Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started)                                                                                    | Apps and operational logs                                                                                                                                                |
 |                                                         | [Activity Tracker Event Routing](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started)                                                              | Audit logs                                                                                                                                                               |
-| Speech                                                  | watson speech to text                                                                                                                                                          | watson speect to text conversation ai capability                                                                                                                         |
+| watson assistant                                        | watson speech to text                                                                                                                                                          | watson speect to text conversation ai capability                                                                                                                         |
 |                                                         | watson text to speech                                                                                                                                                          | watson text to speech conversation ai capability                                                                                                                         |
 | Computer Vision                                         | Maximo Visual Inspection                                                                                                                                                       | provide image and video recognition capability.                                                                                                                          |
 | {: caption="Table 2. Components" caption-side="bottom"} |                                                                                                                                                                                |                                                                                                                                                                          |
