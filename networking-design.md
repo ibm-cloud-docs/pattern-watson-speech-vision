@@ -37,7 +37,7 @@ This section details the key network design considerations for AI applications i
 
 A Virtual Private Cloud (VPC) is a logically isolated network in an {{site.data.keyword.Bluemix_notm}} account. A VPC provides a secure, dedicated environment for applications and data, with its own subnet, IP address range, and routing. This allows to deploy and manage applications in a highly flexible and scalable manner.
 
-### Management VPC
+### **1. Management VPC**
 
 A Management VPC is a specialized VPC that serves as the entry point for managing the {{site.data.keyword.Bluemix_notm}} resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
 
@@ -47,7 +47,7 @@ A Management VPC is a specialized VPC that serves as the entry point for managin
 
 The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
 
-### Workload VPC
+### **2. Workload VPC**
 
 A Workload VPC is a production-grade VPC that can use to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
 
@@ -57,7 +57,7 @@ A Workload VPC is a production-grade VPC that can use to deploy and run applicat
 
 Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
 
-### Load Balancer
+### **3. Load Balancer**
 
 A Load Balancer is responsible for distributing traffic across multiple instances of the AI application. They are designed to help in building resilient and scalable applications in {{site.data.keyword.Bluemix_notm}}.
 
@@ -71,7 +71,7 @@ A Load Balancer is responsible for distributing traffic across multiple instance
 For more details on the {{site.data.keyword.Bluemix_notm}} Load Balancer refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 {: note}
 
-### **5. Gateway Services**
+### **4. Gateway Services**
 
 A Gateway is a set of managed services in {{site.data.keyword.Bluemix_notm}}. They act as a bridge between client applications and the outside world, allowing to securely expose APIs, manage traffic, and enforce policies.
 
@@ -81,7 +81,7 @@ A Transit Gateway is a managed network service that allows to simplify the netwo
 For more details on the {{site.data.keyword.Bluemix_notm}} Transit Gateway refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-about)
 {: note}
 
-### ***6. Gateway VPN***
+### ***5. Gateway VPN***
 
 A Gateway Virtual Private Network (VPN) is a service that enables to establish a secure, encrypted connection between the on-premises infrastructure and the {{site.data.keyword.Bluemix_notm}}. This allows to extend the private network into the cloud, ensuring seamless communication between the internal resources and {{site.data.keyword.Bluemix_notm}}-based services.
 
@@ -89,7 +89,7 @@ A Gateway Virtual Private Network (VPN) is a service that enables to establish a
 - MPLS: Supports Multiprotocol Label Switching (MPLS) for establishing a secure, managed connection between the on-premises infrastructure and the {{site.data.keyword.Bluemix_notm}}.
 - VPG: Virtual Private Gateway provides a secure entrance point for traffic from the on-premises infrastructure to the {{site.data.keyword.Bluemix_notm}}.
 
-### ***7. Bastion Host***
+### ***6. Bastion Host***
 
 A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a secure entry point for accessing and managing other {{site.data.keyword.Bluemix_notm}} resources.
 
@@ -99,7 +99,7 @@ A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a se
 
 ## **Other Connection Services**
 
-### ***8. VPN Connection***
+### ***7. VPN Connection***
 
 A VPN (Virtual Private Network) connection for VPC enables to securely connect client's on-premises infrastructure or other clouds to the VPC over the internet. This provides a secure and encrypted tunnel between various networks.
 
@@ -108,7 +108,7 @@ In this pattern, the VPN connection is leveraged for accessing the {{site.data.k
 For more details on the {{site.data.keyword.Bluemix_notm}} VPN for VPC refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/vpc?topic=vpc-vpn-overview&interface=ui)
 {: note}
 
-### ***9. Direct Link 2.0***
+### ***8. Direct Link 2.0***
 
 Direct Link 2.0 is a high-speed, and secure connectivity option that enables client's to establish a dedicated, always-on link between your premises and {{site.data.keyword.Bluemix_notm}}. This direct connection eliminates the need for internet-based routing, reducing latency and improving overall performance.
 
@@ -117,14 +117,14 @@ Direct Link 2.0 is available in various regions worldwide, including the United 
 For more details on the {{site.data.keyword.Bluemix_notm}} Direct Link refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/dl?topic=dl-dl-about)
 {: note}
 
-### ***10. Cloud Internet Service***
+### ***9. Cloud Internet Service***
 
 Cloud Internet Services (CIS) is a suite of managed services that helps you optimize your internet presence and improve the performance of client's AI applications. CIS  provide a secure, scalable, and reliable way to deliver your content, applications, and APIs to users worldwide.
 
 For more details on the {{site.data.keyword.Bluemix_notm}} Internet Services refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/cis?topic=cis-about-ibm-cloud-internet-services-cis)
 {: note}
 
-### ***11. Virtual Private Endpoint (VPE)***
+### ***10. Virtual Private Endpoint (VPE)***
 
 {{site.data.keyword.Bluemix_notm}} Virtual Private Endpoints (VPE) for VPC enables to connect to supported {{site.data.keyword.Bluemix_notm}}® services from the VPC network by using the IP addresses of your choosing, allocated from a subnet within your VPC.
 
