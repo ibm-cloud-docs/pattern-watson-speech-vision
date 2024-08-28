@@ -43,7 +43,7 @@ This also allows the customer to benefit from the flexibility and scalability of
 
 {: #architecture-components}
 
-![img](image/watsonx-surround-pattern-ROKS.svg){: caption="Figure 6. Deployment of ROKS in cloud" caption-side="bottom"}
+![](image/watsonx-surround-pattern-ROKS.svg){: caption="Figure 1. Deployment of ROKS in cloud" caption-side="bottom"}
 
 1. A Workload VPC Landing Zone provisioned to deploy various client workloads.
 2. The workloads are deployed across multiple availability zones to meet any high availability requirements.

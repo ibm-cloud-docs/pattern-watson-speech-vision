@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Watsonx Architecture decision 
+# Watsonx Architecture decision
 
 {: \#ai-products-watsonx}
 
@@ -31,3 +31,4 @@ watsonx.governance - a toolkit, to accelerate AI workflows that are built with r
 | Generative ai framework with LLM and external data sources | Create a Generative AI solution that can work with documents and provide better user experience. Integrates with the customer data sources | 3rd party MS Co-pilot                                                               | Watsonx.ai          | a studio for new foundation models, generative AI and machine learning; : It comprises of Watson Studio and Watson Machine Learning services that are extended with features for working with foundation models and generative AI.                                                                                                                                                                                  |
 | Watson AI database.                                       | Provide database for Generative AI                                                                                                         | IBM Watsonx.data Milvus<br />IBM Watsonx.data Presto<br />Chroma db<br />Pine Cone | Watsonx.data Milvus | Milvus from watsonx. Milvus is a vector database that stores, indexes, and manages massive embedding vectors that are developed by deep neural networks and other machine learning (ML) models. It is developed to empower embedding similarity search and AI applications. Milvus makes unstructured data search more accessible and consistent across various environments.                                      |
 | ai governance                                              | Provide governance                                                                                                                         | 3rd Party Governance opensource                                                     | Watsonx. Governance | Centralized governance to manage and monitor AI workflows that are built with responsibility, transparency and explainability.  It comprises of Open Scale, AI Factsheets and Open Pages services that are integrated and enhanced with features for working with foundation models and generative AI. Services will be rebranded with current focus on integrating and Open Scale, AI Factsheets with Open Pages |
+{: caption="Table 1. Architecture decisions for ai" caption-side="bottom"}
