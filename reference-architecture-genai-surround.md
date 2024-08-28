@@ -20,7 +20,7 @@ The following pattern covers
 
 {: #architecture-diagram}
 
-The below diagram represents the architecture for Gen AI on {{site.data.keyword.Bluemix_notm}} and reuses the [best practices](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about) for {{site.data.keyword.Bluemix_notm}} for Financial Services and [VPC reference architecture](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-about).
+The below diagram represents the architecture for watsonx on Gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision using Maximo and conversation chat with watson speech and text . The below architecture provide high level overrview of the key technologies as a part of this pattern.
 
 ![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Reference Architecture" caption-side="bottom"}
 
