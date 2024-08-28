@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2024-03-29"
+lastupdated: "2024-08-29"
 
 subcollection: pattern-watson-speech-vision
 
@@ -13,54 +13,49 @@ keywords:
 
 {: #storage-design}
 
-The following provides the details on various storage types and design for the watson speech to text, text to speech and image recognition use cases.
+The following provides the details on various storage types and design for the Watson speech to text, text to speech and image recognition use cases.
 
 ## Requirements
 
 {: #storage-requirements}
 
-For AI powered applications, it is essential to ensure that the underlying storage meets the following requirements
+For an AI-powered application, it's crucial to help ensure that the underlying storage meets the following requirements:
 
-1. High-throughput storage: Speech-to-text & Vision recognition applications generate massive amounts of audio , Video analytical data, this needs high-throughput storage that can process large volumes of data quickly.
-2. Low-latency access: To ensure real-time processing and minimize delays, the storage system must provide low-latency access to audio files.
+1. High-throughput storage: Speech to Text and vision recognition applications that generate massive amounts of audio and video analytical data. This needs high-throughput storage that can process large volumes of data quickly.
+2. Low-latency access: To help ensure real-time processing and minimize delays, our storage system must provide low-latency access to audio files.
 3. Data compression and optimization: Effective compression techniques are essential for reducing the size of audio files while maintaining their integrity.
-4. Scalability and reliability: As speech-to-text applications grow in popularity, the storage system must scale effortlessly to meet increasing demands while ensuring high availability.
+4. Scalability and reliability: As Speech to Text applications grow in popularity, our storage system must scale effortlessly to meet increasing demands while helping ensure high availability.
 5. Security and compliance: Robust security measures are essential to protect sensitive audio and text data from unauthorized access or breaches.
-6. File synchronous transfer: ability to transfer large files from customer environment to {{site.data.keyword.Bluemix_notm}}.
-7. All the storage for containers are stateless, as most of the applications data is stored in a database or in cloud object storage.
+6. File synchronous transfer: The ability to transfer large files from customer environment to {{site.data.keyword.Bluemix_notm}}.
+7. All the storage for containers is stateless, as most of the applications data is stored in DB.
 
 ## Storage design considerations
-
 {: #storage-considerations}
 
-![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 1. Storage Design" caption-side="bottom"}
+![Storage design image](image/watsonx-surround-pattern-storage.svg){: caption="Figure 10. Storage Design" caption-side="bottom"}
 
-### IBM Cloud Object Storage
+### {{site.data.keyword.Bluemix_notm}} Object Storage
+{: #cloud-ob-storage-watsonx}
 
 {{site.data.keyword.Bluemix_notm}} Object storage provides a scalable and cost-effective way to store and manage large amounts of unstructured data.
 
-1. Scalability: Store massive amounts of data with ease, as the capacity grows seamlessly with the usage.
-2. Cost-Effectiveness: Pay only for what you use, reducing storage costs and minimizing waste.
-3. High Availability: Ensure business continuity with built-in redundancy and disaster recovery capabilities.
-4. Security: Data is protected by robust security features, including encryption at rest and in transit.
-5. Easy Integration: Seamlessly integrates into existing cloud-based workflows using APIs and SDKs.
+1. Scalability: Store massive amounts of data with ease, as my capacity grows seamlessly with your needs.
+2. Cost-effectiveness: Pay only for what you use, reducing storage costs and minimizing waste.
+3. High availability: Help ensure business continuity with built-in redundancy and disaster recovery capabilities.
+4. Security: Rest assured that your data is protected by robust security features, including encryption at rest and in transit.
+5. Easy integration: Seamlessly integrate into your existing cloud-based workflows by using APIs and SDKs.
 
-For the use cases described in this document, a large amount of data needs to be stored. This requires a cost effective and reliable storage solution. {{site.data.keyword.Bluemix_notm}} Object storage can store large files, such as videos, images, and audio recordings for processing, content delivery or archival purposes.
+For this use case, there is a large volume of data that needs to be stored. This requires a cost-effective and reliable storage solution. {{site.data.keyword.Bluemix_notm}} Object storage can store large files, such as videos, images, and audio recordings, for processing, content delivery or archival purposes.
 
-### IBM Cloud Container Registry
+### {{site.data.keyword.Bluemix_notm}} Block Storage
+{: #block-storage-watsonx}
 
-{{site.data.keyword.Bluemix_notm}} Container Registry provides a highly available and scalable private image registry. This is a fully IBM managed service.
+{{site.data.keyword.Bluemix_notm}} Block Storage is a scalable and highly available persistent storage service that is designed for modern cloud-native applications. In this type of storage that stores data in fixed-size blocks, it's typically 4 KB or 8 KB in size. Each block is assigned a unique identifier (block number) and contains a specific amount of data.
 
-It includes automatic scanning of images and provides suggestions to fix potential vulnerabilities and protect the containers from being compromised.
+1. Scalability: The ability to scale up or down as needed.
+2. High availability: Ensure that your data is always available with automatic replication across multiple availability zones.
+3. Low latency: Access your data quickly with predictable and consistent performance.
+4. Security: Rest assured that your data is protected with end-to-end encryption, secure authentication, and authorization controls.
+5. Integration: Seamlessly integrate with your cloud-native applications by using frameworks and APIs.
 
-### IBM Cloud Block Storage
-
-{{site.data.keyword.Bluemix_notm}} Block Storage is a scalable and highly available persistent storage service designed for modern cloud-native applications. Data is stored in fixed-size blocks, typically 4KB or 8KB in size. Each block is assigned a unique identifier (block number) and contains a specific amount of data.
-
-1. Scalability: ability to scale up or down as needed.
-2. High availability: ensure the data is always available with automatic replication across multiple Availability Zones.
-3. Low latency: data is accessed with predictable and consistent performance.
-4. Security: data is protected with end-to-end encryption, secure authentication, and authorization controls.
-5. Integration: Seamlessly integrates with cloud-native applications using popular frameworks and APIs.
-
-In containerized applications, block storage plays a crucial role as Persistent Volumes (PVs). By leveraging block storage as Persistent Volumes in containerized applications, data persistence is ensured, stateful application management is simplified, and storage resources can be scaled as needed.
+In containerized applications, Block Storage plays a crucial role as persistent volumes. By using Block Storage as persistent volumes in containerized applications, helps ensure the data persistence, simplify stateful application management, and scale your storage resources as needed.

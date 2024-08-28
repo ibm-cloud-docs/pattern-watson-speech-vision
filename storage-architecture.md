@@ -10,11 +10,9 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for storage
-
 {: #storage-decisions}
 
-## Storage Architecture decision
-
+## Storage architecture decision
 {: #storage architecture decision}
 
 | Architecture decision                                                           | Requirement                                                                                         | Options                                                                                                                  | Decision                 | Rationale                                                                                                                                                                                                                                                                                                                  |
