@@ -13,7 +13,7 @@ keywords:
 
 {: #storage-design}
 
-The following provides the details on various storage types and design for the watsonx speech to text, text to speech and image recognition use case.
+The following provides the details on various storage types and design for the watson speech to text, text to speech and image recognition use cases.
 
 ## Requirements
 
