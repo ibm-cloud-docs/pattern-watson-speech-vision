@@ -39,7 +39,7 @@ Maximo Visual Inspection will de deployed on a separate cluster on Red Hat OpenS
 **watsonx RAG overview**
 
 watsonx RAG overview are described here, please refer to documentations on architecture, deployment on IBM cloud.
-[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern){: note}
+[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern) {: note}
 
 **IBM Maximo Visual Inspection**
 
