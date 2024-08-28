@@ -31,7 +31,7 @@ The Watson Pattern AI solution requires a range of AI components to effectively 
    1. Object tracking: following the movement of specific objects over time in a video sequence.
    2. Video analysis: detecting patterns, trends, or anomalies within a video
 
-## IBM Watsonx Services on}
+## IBM Watsonx Services on IBM Cloud
 
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on {{site.data.keyword.Bluemix_notm}}, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 

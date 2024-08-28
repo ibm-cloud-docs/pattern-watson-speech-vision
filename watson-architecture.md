@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Watsonx Architecture decision (dwarka)
+# Watsonx Architecture decision 
 
 {: \#ai-products-watsonx}
 
