@@ -56,15 +56,12 @@ watsonx RAG overview are described here, please refer to documentations on archi
 
 **IBM Maximo Visual Inspection**
 
-IBM Maximo Visual inspection is considered to analyze images and video detection.
-
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images detection and analysis" caption-side="bottom"}
+IBM Maximo Visual inspection is used to analyze images and video detection. For further information please look at the ai design consideration section
 
 **watsonx Assistant**
 
-IBM watson assistant for voice with speeh to text and text to speech
+IBM watson assistant for voice with speeh to text and text to speech. For further information please look at the ai design consideration section
 
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 3. IBM Watson assistant with Speech to Text and Text to Speech" caption-side="bottom"}
 
 ## Design concepts
 
@@ -81,7 +78,7 @@ Below is the Architecture Framework Design heatmap that covers design considerat
 * **Resiliency:** High Availability
 * **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 6. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 2. Architecture design scope" caption-side="bottom"}
 
 ## Requirements
 
@@ -129,7 +126,6 @@ The following table outlines the products or services used in the architecture f
 | Security                                                | [IAM](https://cloud.ibm.com/docs/account?topic=account-cloudaccess)                                                                                                               | {{site.data.keyword.Bluemix_notm}} Identity & Access Management                                                                                                          |
 |                                                         | [Key Protect](https://cloud.ibm.com/docs/key-protect?topic=key-protect-about)                                                                                                     | A full-service encryption solution that allows data to be secured and stored in {{site.data.keyword.Bluemix_notm}}                                                       |
 |                                                         | [BYO Bastion Host on VPC VSI](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport) | Remote access with Privileged Access Management                                                                                                                          |
-|                                                         | [App ID](https://cloud.ibm.com/docs/appid?topic=appid-getting-started)                                                                                                            | Add authentication to web and mobile apps                                                                                                                                |
 |                                                         | [Secrets Manager](https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-getting-started#getting-started)                                                               | Certificate and Secrets Management                                                                                                                                       |
 |                                                         | [Security and Compliance Center (SCC)](https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-getting-started)                                                  | Implement controls for secure data and workload deployments, and assess security and compliance posture                                                                  |
 |                                                         | [Hyper Protect Crypto Services (HPCS)](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-get-started)                                                                          | Hardware security module (HSM) and Key Management Service                                                                                                                |
