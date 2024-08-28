@@ -13,8 +13,6 @@ keywords:
 
 {: #storage-decisions}
 
-Siva please check if Sppech reqyures us to storage for audio, same is the case for maximo.
-
 ## Storage Architecture decision
 
 {: #storage architecture decision}
