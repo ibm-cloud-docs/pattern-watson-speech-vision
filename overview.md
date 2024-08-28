@@ -15,9 +15,11 @@ keywords:
 
 This watsonx conversation speech and vision pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integration with other {{site.data.keyword.Bluemix_notm}} services.
 
-It combines watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, Virtual Private Cloud (VPC), Maximo Visual Inspection, and Watson Voice Assistance to deliver AI solutions that meets Retrieval Augmentation Generation (RAG), real-time analytics, speech recognition, image, and video detection. 
+It combines IBM watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC), Maximo Visual Inspection, and IBM Watson Voice Assistant.
 
-This pattern is helpful for the enterprise customers who are focusing on introducing AI that needs to delivery Retrival Augumented Generation(RAG), speech conversation(speech to text and text to speech), image and video detection. In addition, it describes how a customer can host and run x86 on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to watsonx environment delivering all in one enterprise solution.
+It targets enterprise customers who are looking to implement an AI solution providing Retrieval Augmented Generation(RAG), speech conversation (speech to text and text to speech) and image and video analysis capabilities.
+
+In addition, it describes how a customer can host and run x86 workloads on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to watsonx environment to deliver an all in one enterprise solution.
 
 ## Industry use cases
 {: usecase-id}
@@ -34,7 +36,7 @@ Review the following use case implementation across different industries for wat
    3. Use cameras that are installed on medical equipment like MRI machines or in storage areas to capture images of devices.
    4. Apply computer vision algorithms to analyze the images and detect signs of wear, damage, or malfunction in real-time.
    5. Integrate with RAG and voice to provide a better user experience.
-   
+
 3. Chatbot-based customer support: 
    1. Implement Watson Assistant to create a conversational interface for customer support chatbots.
    2. Provide voice and RAG implementation with documents for end customer with speech-to-text and text-to-speech.
