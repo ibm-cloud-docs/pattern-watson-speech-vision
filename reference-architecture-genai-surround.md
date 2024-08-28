@@ -22,7 +22,7 @@ The following pattern covers
 
 The below diagram represents the architecture for watsonx on Gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision using Maximo and conversation chat with watson speech and text . The below architecture provide high level overrview of the key technologies as a part of this pattern.
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
 
@@ -64,7 +64,7 @@ Below is the Architecture Framework Design heatmap that covers design considerat
 * **Resiliency:** High Availability
 * **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 2. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 3. Architecture design scope" caption-side="bottom"}
 
 ## Requirements
 
@@ -120,7 +120,7 @@ The following table outlines the products or services used in the architecture f
 |                                                         | [Continuous Compliance (CC)](https://cloud.ibm.com/docs/devsecops?topic=devsecops-tutorial-cc-toolchain)                                                                          | A pipeline that continuously scans deployed artifacts and repositories                                                                                                   |
 |                                                         | [Container Registry](https://cloud.ibm.com/apidocs/container-registry)                                                                                                            | Highly available, and scalable private image registry                                                                                                                    |
 | Resiliency                                              | [VPC VSIs, VPC Block across multiple zones in two regions](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-vpc-multi-region)                               | Web, app, database high availability and disaster recovery                                                                                                               |
-| Service Management                                      | [Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor)                                                             | Apps and operational monitoring                                                                                                                                          |
+| Service Management                                      | [Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor)                                                                                                | Apps and operational monitoring                                                                                                                                          |
 |                                                         | [IBM Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started)                                                                                    | Apps and operational logs                                                                                                                                                |
 |                                                         | [Activity Tracker Event Routing](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started)                                                              | Audit logs                                                                                                                                                               |
 | Conversation                                            | [watson text to speech](/docs/text-to-speech?topic=text-to-speech-gettingStarted)                                                                                                 | watson speect to text conversation ai capability                                                                                                                         |

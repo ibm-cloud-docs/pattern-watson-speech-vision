@@ -10,9 +10,11 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
+
 {: #compute-design}
 
 ## Requirement
+
 {: #compute-requirement}
 
 The requirements for the compute aspect for this pattern focuses on the following:
@@ -23,6 +25,7 @@ The requirements for the compute aspect for this pattern focuses on the followin
 * serverless workloads on cloud.
 
 ## Compute solution architecture
+
 {: #compute-solution}
 
 Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications.
@@ -37,9 +40,10 @@ By hosting their traditional x86 or containerized  applications on {{site.data.k
 This also allows the customer to benefit from the flexibility and scalability of {{site.data.keyword.Bluemix_notm}} VPC offerings and gain easy access all the associated {{site.data.keyword.Bluemix_notm}} services.
 
 ### Architecture components
+
 {: #architecture-components}
 
-![](image/watsonx-surround-pattern-ROKS.svg){: caption="Figure 9. Deployment of ROKS in cloud" caption-side="bottom"}
+![img](image/watsonx-surround-pattern-ROKS.svg){: caption="Figure 6. Deployment of ROKS in cloud" caption-side="bottom"}
 
 1. A Workload VPC Landing Zone provisioned to deploy various client workloads.
 2. The workloads are deployed across multiple availability zones to meet any high availability requirements.
@@ -73,7 +77,7 @@ For more details on the ROKS capacity planning for various workloads refer to th
 
 9. The Red Hat OpenShift platform is integrated with {{site.data.keyword.Bluemix_notm}} Services to provide centralized cluster observability services.
 
-### {{site.data.keyword.Bluemix_notm}} Code Engine
+### IBM Cloud Code Engine
 
 {{site.data.keyword.Bluemix_notm}} Code Engine is a fully managed, serverless platform built on kubernetes designed to run event-driven functions, batch jobs or containerized applications/microservices. Code Engine can also build applications from source code.
 

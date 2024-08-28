@@ -31,7 +31,7 @@ The Watson Pattern AI solution requires a range of AI components to effectively 
    1. Object tracking: following the movement of specific objects over time in a video sequence.
    2. Video analysis: detecting patterns, trends, or anomalies within a video
 
-## IBM Watsonx Services on {{site.data.keyword.Bluemix_notm}}
+## IBM Watsonx Services on}
 
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on {{site.data.keyword.Bluemix_notm}}, Watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
@@ -49,7 +49,7 @@ https://cloud.ibm.com/docs/watson?topic=watson-about#about
 
 The **IBM® Maximo® Visual Inspection** platform, built on cognitive infrastructure, is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 7. Video and images watsonx pattern" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 4. Video and images watsonx pattern" caption-side="bottom"}
 
 Maximo Visual Inspection includes tools and interfaces for anyone who has limited skills in deep learning technologies. You can use IBM Maximo Visual Inspection to label images and videos that can be used to train and validate a model. The model can then be validated and deployed in customized solutions that demand image classification, object detection, and anomaly detection.
 
@@ -77,15 +77,15 @@ IBM watsonx Assistant for Voice offers:
 4. More information https://www.ibm.com/products/watsonx-assistant/voice
 5. additional information https://cloud.ibm.com/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant
 
-### {{site.data.keyword.Bluemix_notm}} Speech to Text service
+### Speech to Text service
 
-![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 8. Speech to Text transcription pipeline" caption-side="bottom"}
+![Watson Speech.](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 5. Speech to Text transcription pipeline" caption-side="bottom"}
 
 {{site.data.keyword.Bluemix_notm}} Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
 The service is available in multiple languages and is exposed as an http interface and a websocket interface. It can be accessed using a public or a private endpoint. [Getting started with Watson Speech to Text](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-gettingStarted)
 
-### {{site.data.keyword.Bluemix_notm}} Text to Speech service
+### Text to Speech service
 
 {{site.data.keyword.Bluemix_notm}} Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural. The service can be used in applications such as voice-automated chatbots, as well as a variety of voice-driven and screenless applications, such as tools for the disabled or visually impaired, video narration and voice over, and educational and home-automation solutions.
 

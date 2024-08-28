@@ -33,9 +33,9 @@ For AI powered applications, it is essential to ensure that the underlying stora
 
 {: #storage-considerations}
 
-![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 10. Storage Design" caption-side="bottom"}
+![img](image/watsonx-surround-pattern-storage.svg){: caption="Figure 7. Storage Design" caption-side="bottom"}
 
-### {{site.data.keyword.Bluemix_notm}} Object Storage
+### IBM Cloud Object Storage
 
 {{site.data.keyword.Bluemix_notm}} Object storage provides a scalable and cost-effective way to store and manage large amounts of unstructured data.
 
@@ -47,13 +47,13 @@ For AI powered applications, it is essential to ensure that the underlying stora
 
 For the use cases described in this document, a large amount of data needs to be stored. This requires a cost effective and reliable storage solution. {{site.data.keyword.Bluemix_notm}} Object storage can store large files, such as videos, images, and audio recordings for processing, content delivery or archival purposes.
 
-### {{site.data.keyword.Bluemix_notm}} Container Registry
+### IBM Cloud Container Registry
 
 {{site.data.keyword.Bluemix_notm}} Container Registry provides a highly available and scalable private image registry. This is a fully IBM managed service.
 
 It includes automatic scanning of images and provides suggestions to fix potential vulnerabilities and protect the containers from being compromised.
 
-### {{site.data.keyword.Bluemix_notm}} Block Storage
+### IBM Cloud Block Storage
 
 {{site.data.keyword.Bluemix_notm}} Block Storage is a scalable and highly available persistent storage service designed for modern cloud-native applications. Data is stored in fixed-size blocks, typically 4KB or 8KB in size. Each block is assigned a unique identifier (block number) and contains a specific amount of data.
 

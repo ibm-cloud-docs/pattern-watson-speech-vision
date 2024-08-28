@@ -31,7 +31,7 @@ For deploying AI applications, it's essential to design a robust and scalable ne
 
 This section details the key network design considerations for AI applications in {{site.data.keyword.Bluemix_notm}}.
 
-![](image/watson-surround-pattern-networking.svg){: caption="Figure 11. Network Design in {{site.data.keyword.Bluemix_notm}}" caption-side="bottom"}
+![img](image/watson-surround-pattern-networking.svg){: caption="Figure 8. Network Design in {{site.data.keyword.Bluemix_notm}}" caption-side="bottom"}
 
 ## Virtual private Cloud (VPC)
 
