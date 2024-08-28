@@ -31,7 +31,7 @@ For deploying AI applications, it's essential to design a robust and scalable ne
 
 This section details the key network design considerations for AI applications in {{site.data.keyword.Bluemix_notm}}.
 
-![](image/watson-surround-pattern-networking.svg){: caption="Figure 1. Network Design in {{site.data.keyword.Bluemix_notm}}" caption-side="bottom"}
+![Network Design in IBM Cloud](image/watson-surround-pattern-networking.svg){: caption="Figure 1. Network Design in {{site.data.keyword.Bluemix_notm}}" caption-side="bottom"}
 
 ## Virtual private Cloud (VPC)
 
@@ -41,9 +41,9 @@ A Virtual Private Cloud (VPC) is a logically isolated network in an {{site.data.
 
 A Management VPC is a specialized VPC that serves as the entry point for managing the {{site.data.keyword.Bluemix_notm}} resources. It provides a secure, isolated network environment for managing the cloud resources, such as:
 
-- Creating and managing VPCs
-- Configuring network routes and subnets
-- Monitoring and troubleshooting resource performance
+* Creating and managing VPCs
+* Configuring network routes and subnets
+* Monitoring and troubleshooting resource performance
 
 The Management VPC is not intended for running applications, but rather serves as the control plane for managing the cloud infrastructure.
 
@@ -51,9 +51,9 @@ The Management VPC is not intended for running applications, but rather serves a
 
 A Workload VPC is a production-grade VPC that can be used to deploy and run applications. This VPC provides a scalable, high-performance environment for running various workloads, with features such as:
 
-- Dedicated networking resources
-- Support for multiple subnets and routing configurations
-- Integration with {{site.data.keyword.Bluemix_notm}} services, such as databases and message queues
+* Dedicated networking resources
+* Support for multiple subnets and routing configurations
+* Integration with {{site.data.keyword.Bluemix_notm}} services, such as databases and message queues
 
 Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
 
@@ -63,8 +63,8 @@ A Load Balancer is responsible for distributing traffic across multiple instance
 
 {{site.data.keyword.Bluemix_notm}} Load Balancer for VPC is a managed service from {{site.data.keyword.Bluemix_notm}}. This service is available in the cloud services catalogue. Two types of load balancer for VPC are available: network load balancer (NLB) and appliacation load balancer (ALB).Some of the key features of this services are
 
-- HTTP/HTTPS traffic management (Application Load Balancer only): It can handle both HTTP and HTTPS traffic, ensuring secure communication between various application.
-- TCP/UDP load balancing (Network Load Balancer and Application Load Balancer): It support TCP and UDP traffic, making me suitable for a wide range of applications
+* HTTP/HTTPS traffic management (Application Load Balancer only): It can handle both HTTP and HTTPS traffic, ensuring secure communication between various application.
+* TCP/UDP load balancing (Network Load Balancer and Application Load Balancer): It support TCP and UDP traffic, making me suitable for a wide range of applications
 
 For more details on the {{site.data.keyword.Bluemix_notm}} Load Balancer for VPC refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 {: note}
@@ -73,7 +73,7 @@ For more details on the {{site.data.keyword.Bluemix_notm}} Load Balancer for VPC
 
 A Gateway is a set of managed services in {{site.data.keyword.Bluemix_notm}}. They act as a bridge between client applications and the outside world, allowing to securely expose APIs, manage traffic, and enforce policies.
 
-#### Transit Gateway #####
+#### Transit Gateway
 
 A Transit Gateway is a managed network service that allows to simplify the network architecture and improve security by consolidating multiple networks into a single, highly available, and scalable platform.
 
@@ -98,9 +98,9 @@ For more details on the {{site.data.keyword.Bluemix_notm}} VPN for VPC refer to 
 
 A Bastion Host is a managed Linux-based virtual machine (VM) that serves as a secure entry point for accessing and managing other {{site.data.keyword.Bluemix_notm}} resources.
 
-- It acts as a single entry point for remote access to the cloud resources, such as virtual servers, databases, or storage systems.
-- Users must authenticate with the Bastion Host using their {{site.data.keyword.Bluemix_notm}} credentials (e.g., API keys, usernames, and passwords) before gaining access to other resources.
-- The Bastion Host creates a secure network boundary between the cloud resources and external users or systems. This helps prevent unauthorized access or data exfiltration.
+* It acts as a single entry point for remote access to the cloud resources, such as virtual servers, databases, or storage systems.
+* Users must authenticate with the Bastion Host using their {{site.data.keyword.Bluemix_notm}} credentials (e.g., API keys, usernames, and passwords) before gaining access to other resources.
+* The Bastion Host creates a secure network boundary between the cloud resources and external users or systems. This helps prevent unauthorized access or data exfiltration.
 
 ### 7. Direct Link 2.0
 
