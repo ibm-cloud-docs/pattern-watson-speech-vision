@@ -57,16 +57,6 @@ A Workload VPC is a production-grade VPC that can use to deploy and run applicat
 
 Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
 
-### Edge VPC
-
-An Edge VPC is a specialized VPC that provides low-latency, high-performance networking for edge computing workloads. Edge VPCs are designed to support IoT, AI, and other latency-sensitive applications that require direct access to the cloud. Key features of an Edge VPC include:
-
-- Low-latency networking with reduced packet loss
-- Support for multiple subnets and routing configurations
-- Integration with {{site.data.keyword.Bluemix_notm}} services, such as databases and message queues
-
-Edge VPCs are ideal for deploying edge computing workloads, such as AI-powered camera systems or IoT devices that require real-time processing.
-
 ### Load Balancer
 
 A Load Balancer is responsible for distributing traffic across multiple instances of the AI application. They are designed to help in building resilient and scalable applications in {{site.data.keyword.Bluemix_notm}}.

@@ -36,19 +36,6 @@ The customer can host their workloads in cluster as needed, such as production, 
 
 Maximo Visual Inspection will de deployed on a separate cluster on Red Hat OpenShift environment, more information is provide in design considerations sections and reference section.
 
-~~**Edge VPC**
-The edge VPC is used to enhance boundary protection for the workload VPC, and allows consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org).~~
-
-~~The Edge VPC will host Application Load Balancer to meet Zonal Application requirements.{: note}~~
-
-~~Other features of the reference architecture:~~
-
-* ~~Can reside in one or more multizone regions to provide additional resiliency.~~
-* ~~Enables access to the management VPC from the application provider's enterprise environment through {{site.data.keyword.Bluemix_notm}} Virtual Private Network Gateway for VPC.~~
-* ~~Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.~~
-* ~~Connects management VPC, workload VPC, and Edge VPC by using {{site.data.keyword.Bluemix_notm}} Transit Gateway.~~
-* ~~Extends the watsonx default capabilities to voice and images by leveraging {{site.data.keyword.Bluemix_notm}} Speech to Text, Text to Speech.~~
-
 **watsonx RAG overview**
 
 watsonx RAG overview are described here, please refer to documentations on architecture, deployment on IBM cloud.
@@ -61,7 +48,6 @@ IBM Maximo Visual inspection is used to analyze images and video detection. For 
 **watsonx Assistant**
 
 IBM watson assistant for voice with speeh to text and text to speech. For further information please look at the ai design consideration section
-
 
 ## Design concepts
 
