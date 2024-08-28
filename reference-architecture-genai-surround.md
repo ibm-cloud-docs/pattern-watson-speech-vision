@@ -32,25 +32,33 @@ Provides compute, storage, and network services to enable the client or service 
 **Workload VPC**
 Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
 
-**Edge VPC**
-The edge VPC is used to enhance boundary protection for the workload VPC, and allows consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org).
+~~**Edge VPC**
+The edge VPC is used to enhance boundary protection for the workload VPC, and allows consumers to access Gen AI User Interface through the public internet. [(see here)](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-workload#consumer-provider-different-org).~~
 
-The Edge VPC will host Application Load Balancer to meet Zonal Application requirements.{: note}
+~~The Edge VPC will host Application Load Balancer to meet Zonal Application requirements.{: note}~~
 
-Other features of the reference architecture:
+~~Other features of the reference architecture:~~
 
-* Can reside in one or more multizone regions to provide additional resiliency.
-* Enables access to the management VPC from the application provider's enterprise environment through {{site.data.keyword.Bluemix_notm}} Virtual Private Network Gateway for VPC.
-* Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.
-* Connects management VPC, workload VPC, and Edge VPC by using {{site.data.keyword.Bluemix_notm}} Transit Gateway.
-* Extends the watsonx default capabilities to voice and images by leveraging {{site.data.keyword.Bluemix_notm}} Speech to Text, Text to Speech.
+* ~~Can reside in one or more multizone regions to provide additional resiliency.~~
+* ~~Enables access to the management VPC from the application provider's enterprise environment through {{site.data.keyword.Bluemix_notm}} Virtual Private Network Gateway for VPC.~~
+* ~~Provides connectivity from the consumer's enterprise environment to the workload VPC through Direct Link.~~
+* ~~Connects management VPC, workload VPC, and Edge VPC by using {{site.data.keyword.Bluemix_notm}} Transit Gateway.~~
+* ~~Extends the watsonx default capabilities to voice and images by leveraging {{site.data.keyword.Bluemix_notm}} Speech to Text, Text to Speech.~~
+
+
+
+**watsonx RAG overview**
 
 watsonx RAG overview are described here, please refer to documentations on architecture, deployment on IBM cloud.
 [RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern){: note}
 
+**IBM Maximo Visual Inspection**
+
 IBM Maximo Visual inspection is considered to analyze images and video detection.
 
 ![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 2. Video and images detection and analysis" caption-side="bottom"}
+
+**watsonx Assistant**
 
 IBM watson assistant for voice with speeh to text and text to speech
 
@@ -131,9 +139,9 @@ The following table outlines the products or services used in the architecture f
 | Service Management                                      | [{{site.data.keyword.Bluemix_notm}} Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor)                                                             | Apps and operational monitoring                                                                                                                                          |
 |                                                         | [IBM Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started)                                                                                    | Apps and operational logs                                                                                                                                                |
 |                                                         | [Activity Tracker Event Routing](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started)                                                              | Audit logs                                                                                                                                                               |
-| watson assistant                                        | watson speech to text                                                                                                                                                          | watson speect to text conversation ai capability                                                                                                                         |
-|                                                         | watson text to speech                                                                                                                                                          | watson text to speech conversation ai capability                                                                                                                         |
-| Computer Vision                                         | Maximo Visual Inspection                                                                                                                                                       | provide image and video recognition capability.                                                                                                                          |
+| [watson assistant](/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant)                                    | [watson text to speech](/docs/text-to-speech?topic=text-to-speech-gettingStarted)                                                                                                                                                         | watson speect to text conversation ai capability                                                                                                                         |
+|                                                         | [watson speech to text](/docs/speech-to-text?topic=speech-to-text-gettingStarted)                                                                                                                                                         | watson text to speech conversation ai capability                                                                                                                         |
+| [Computer Vision](https:/www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)                                        | [Maximo Visual Inspection](https:/www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)                                                                                                                                                      | provide image and video recognition capability.                                                                                                                          |
 | {: caption="Table 2. Components" caption-side="bottom"} |                                                                                                                                                                                |                                                                                                                                                                          |
 
 ## Compliance
