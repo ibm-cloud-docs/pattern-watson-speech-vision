@@ -128,8 +128,8 @@ The watsonx solution on {{site.data.keyword.Bluemix_notm}} offers an end-to-end 
 
 For more information, see the following links:
 
-1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge)
+1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge){: external}
 2. [Maximo suite overview](docs/maximo-application-suite?topic=maximo-application-suite-overview).
-3. [Deployment Catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help)
+3. [Deployment Catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help){: external}
 
  Training and fine tuning models is considered as out of scope for this reference pattern.{: note}
