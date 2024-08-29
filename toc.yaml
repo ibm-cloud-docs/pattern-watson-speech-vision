@@ -76,7 +76,3 @@ toc:
       id: reference
       topics:
       - references.md
-  - navgroup:
-      id: help
-      topics:
-      - topic: topic-10.md

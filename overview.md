@@ -35,9 +35,6 @@ Review the following use case implementation across different industries for wat
 2. Healthcare:
    1. Use watsonx to build an AI-powered application that analyzes medical images such as MRI or CT scans for disease detection and diagnosis.
    2. Integrate Maximo Visual Inspection to enable real-time image analysis and generate reports.
-   3. Use cameras that are installed on medical equipment like MRI machines or in storage areas to capture images of devices.
-   4. Apply computer vision algorithms to analyze the images and detect signs of wear, damage, or malfunction in real-time.
-   5. Integrate with RAG and voice to provide a better user experience.
 
 3. Chatbot-based customer support:
    1. Implement Watson Assistant to create a conversational interface for customer support chatbots.
@@ -45,14 +42,11 @@ Review the following use case implementation across different industries for wat
 
 4. Quality control for manufacturing:
    1. Use computer vision to inspect products as they move along a production line.
-   2. Detect defects or irregularities in real-time using AI-powered image analysis.
-   3. Provide immediate feedback to manufacturing personnel, enabling them to correct issues on the spot and reduce waste.
-   4. Integrate with RAG and voice to provide a better user experience.
+   2. Provide immediate feedback to manufacturing personnel, enabling them to correct issues on the spot and reduce waste.
 
 5. Asset inspection for oil and gas:
    1. Use unmanned aerial vehicles (UAVs) or drones equipped with cameras to capture images of oil rigs, pipelines, or other assets.
    2. Employ AI-powered image analysis to detect signs of wear, damage, or malfunction in real-time.
-   3. Integrate with RAG and voice to provide a better user experience.
 
 ## Considerations
 
@@ -79,18 +73,18 @@ The solution architecture is designed to address specific needs within enterpris
 
 ![Solution architecture](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
 
-1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on {{site.data.keyword.Bluemix_notm}}. In this location, there are corporate users connecting over a secured connection on private network
+1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on premises. In this location, there are corporate users connecting over a secured connection on private network
 2. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. This includes users who will connect public network over internet.
 3. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) and Red Hat OpenShift: Enables the deployment of traditional and containerized compute workloads while providing isolation and security for cloud-based infrastructure.
 4. Watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision and machine learning, which is designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do text retrieval and text generation and allow users to interact with documents.
 5. Enhanced user experience through Watson Speech-to-Text (STT) and Text-to-Speech (TTS): Improves the way humans interact with machines by using {{site.data.keyword.IBM_notm}} Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
 6. Maximo Visual Inspection: A visual inspection feature within Maximo deployed on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC, that enables users to capture and analyze video evidence of object or facility conditions, streamlining workflows and decision-making processes.
-7. Application runtime services: Offers a range of cloud-based services for deploying, managing, and optimizing application workloads in real-time, helping ensure optimal performance, scalability, and security across {{site.data.keyword.Bluemix_notm}} environments.
-8. Application Life-Cycle Management: A comprehensive platform for designing, building, testing, deploying, and maintaining applications throughout their entire life cycle within an {{site.data.keyword.Bluemix_notm}} environment.
+7. Application runtime services (IBM Cloud Code Engine): Offers a range of cloud-based services for deploying, managing, and optimizing application workloads in real-time, helping ensure optimal performance, scalability, and security across {{site.data.keyword.Bluemix_notm}} environments.
+8. Application Life-Cycle Management (IBM Cloud Continuous Delivery): A comprehensive platform for designing, building, testing, deploying, and maintaining applications throughout their entire life cycle within an {{site.data.keyword.Bluemix_notm}} environment.
 9. Storage: Provides scalable and secure cloud storage services to help customers efficiently store, manage, and retrieve large amounts of data across various types of workloads.
 10. Security and compliance: Offers a suite of security solutions that are designed to protect customer data in transit and at rest, helping ensure compliance with major industry standards for confidentiality, integrity, and availability.
 11. Logging and monitoring: Enables customers to collect, analyze, and visualize log data from their cloud-based applications and infrastructure, providing insights into system performance, usage patterns, and potential issues that need attention.
-12. BeSpoke Customer interface (UX): The reference architecture assumes a bespoke customer centralized user interface portal provides access to the Watson environment and other environments. There might be direct access to the Watson services but for this reference architecture, it is assumed all access happens via a custom web portal. The access to the rest of the environment can be designed as needed, but this is outside of this document design. Integration with watsonx services is managed and monitored by the customer-required portal access as this enables IAM, security access credentials, and so on.
+12. BeSpoke Customer interface (UX): The reference architecture assumes a bespoke customer centralized user interface portal provides access to the Watson environment and other environments. There might be direct access to the Watson services but for this reference architecture, it is assumed all access happens via a custom web portal. The access to the rest of the environment can be designed as needed, but this is outside of this document design.
 
 ### {{site.data.keyword.Bluemix_notm}} watsonx service
 
@@ -100,7 +94,7 @@ The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with e
 
 1. Watsonx SaaS
     1. Watson Assistant: Used for conversation flow development and web chat interface
-    2. Watson Discovery: Used to ingest documents that will be used to retrieve relevant documents
+    2. Watson Discovery: Ingest and process unstructured documents
     3. watsonx.data
     4. watsonx.governance
     5. watson.ai: RAG with Large Language Models (LLM) and train as needed
@@ -122,7 +116,7 @@ The deployment lifecycle is managed by using {{site.data.keyword.Bluemix_notm}} 
 
 {: #maximo-watsonx}
 
-This tool standardizes image scanning and document summarization, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
+This tool standardizes image and video scanning and analysis, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
 
 The watsonx solution on {{site.data.keyword.Bluemix_notm}} offers an end-to-end platform that is tailored for financial services with a focus on AI capabilities. The architecture is scalable, secure, and highly available, helping ensure that enterprises can use the latest advancements in AI without compromising on performance or reliability. With its comprehensive suite of tools and integration options, this solution stands ready to transform how financial institutions manage customer interactions, streamline claims processing, and maintain a vigilant watch against fraudulent activities.
 
