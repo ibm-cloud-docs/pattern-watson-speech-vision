@@ -11,7 +11,7 @@ keywords:
 
 {: #ad-service-management}
 
-The following sections summarize the architecture decisions for service management for the watsonx conversation and vision pattern on IBM Cloud pattern.
+The following sections summarize the architecture decisions for service management for the {{site.data.keyword.IBM_notm}} Watson Surround pattern.
 
 ## Monitoring Architecture Decisions
 
