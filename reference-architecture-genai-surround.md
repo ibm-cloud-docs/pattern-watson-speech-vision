@@ -51,7 +51,11 @@ Central to the architecture are three VPCs, which provide for separation of conc
 
 {: #watsonx-rag}
 
-watsonx RAG overview is described here, please refer to documentations on architecture, deployment on {{site.data.keyword.Bluemix_notm}}. For more information, see [RAG Pattern](/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern).
+Retrieval augmented generation (RAG) is an architectural pattern that enables foundation models to produce factually correct outputs for specialized or proprietary topics that were not part of the model's training data.
+
+watsonx RAG overview is described here, please refer to documentations on architecture, deployment on {{site.data.keyword.Bluemix_notm}}.
+
+ [RAG Pattern](/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern){ :note}
 
 ### IBM Maximo Visual Inspection
 
