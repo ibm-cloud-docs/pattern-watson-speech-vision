@@ -60,7 +60,7 @@ A workload VPC is a production-grade VPC that can be used to deploy and run appl
 
 Multiple Workload VPCs can be created to support different environments or applications, such as development, testing, and production.
 
-### Load balancer
+### Application Load balancer
 
 {: #load-balancer}
 
@@ -68,13 +68,7 @@ A load balancer is responsible for distributing traffic across multiple instance
 
 For more information, see [About IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-about-ibm-cloud-load-balancer)
 
-### Gateway services
-
-{: #gateway-services}
-
-A gateway is a set of managed services in {{site.data.keyword.Bluemix_notm}}. They act as a bridge between client applications and the outside world, allowing them to securely expose APIs, manage traffic, and enforce policies.
-
-#### Transit Gateway
+### Transit Gateway
 
 {: #transit-gateway}
 
@@ -102,7 +96,7 @@ A bastion host is a managed Linux-based virtual machine (VM) that serves as a se
 
 {: #direct-link}
 
-Direct Link 2.0 is a high-speed, and secure connectivity option that enables the client to establish a dedicated, always-on link between on-premises environments and {{site.data.keyword.Bluemix_notm}}. 
+Direct Link 2.0 is a high-speed, and secure connectivity option that enables the client to establish a dedicated, always-on link between on-premises environments and {{site.data.keyword.Bluemix_notm}}.
 
 For more information, see [About IBM Cloud Direct Link](https://cloud.ibm.com/docs/dl?topic=dl-dl-about).
 

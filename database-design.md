@@ -13,23 +13,17 @@ keywords:
 
 {: #database-design}
 
+## Database requirements
+
+{: #database-design-requirements}
+
 The requirements for the database aspect for this pattern focus on the following:
 
 * The database is required for customers x86 workloads on the cloud.
 * The database is required for container workloads.
 * The database is required for AI including RAG, chat, and image and video analysis.
 
-## Database design considerations
-
-{: #database-design-considerations}
-
-In this section we cover two database aspects
-
-* Enterprise generic database
-* [AI database](/docs/watsonxdata?topic=watsonxdata-getting-started).
-  * Milvus
-
-### Enterprise application databases considerations.
+## Enterprise application databases considerations.
 
 {: #enterprise-app-databases}
 
@@ -46,25 +40,25 @@ The Enterprise or bespoke applications require a backend database  to store vari
 - Backup and recovery: The database must provide robust backup and recovery mechanisms to help ensure business continuity if unexpected failures or errors occur.
 - Compliance: The database must comply with relevant industry regulations and standards, such as GDPR, HIPAA, PCI-DSS, and SOX.
 
-#### IBM Cloud PostgreSQL
+### IBM Cloud PostgreSQL
 
 {: #postgresql-databases}
 
 The database for PostgreSQL service provides a managed PostgreSQL database that can be used to store and retrieve data for the applications. This service allows you to easily deploy, manage, and scale your PostgreSQL databases without worrying about the underlying infrastructure. For more information, see [Getting started with Databases for PostgreSQL](/docs/databases-for-postgresql). This pattern considers utilizing PostgreSQL for the environment.
 
-#### IBM Cloud Cloudant
+### IBM Cloud Cloudant
 
 {: #ibm-cloudant}
 
-{{site.data.keyword.cloudantfull}} is a fully managed JSON document database that offers independent serverless scaling of provisioned throughput capacity and storage. {{site.data.keyword.cloudant_short_notm}} is compatible with Apache CouchDB and accessible through a simple to use HTTPS API for web, mobile, and IoT applications. For more information, see [Getting started with IBM Cloudant](/docs/Cloudant).
+{{site.data.keyword.cloudantfull}} is a fully managed JSON document database that offers independent serverless scaling of provisioned throughput capacity and storage. This is a NOSQL database required for storing sessions for application which are stateless in nature.{{site.data.keyword.cloudant_short_notm}} is compatible with Apache CouchDB and accessible through a simple to use HTTPS API for web, mobile, and IoT applications. For more information, see [Getting started with IBM Cloudant](/docs/Cloudant).
 
-### Design considerations for Vector databases
+## Design considerations for Vector databases
 
 {: #vector-databases}
 
 Enterprises are increasingly favoring the [retrieval augmented generation (RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){: external} approach in generative AI workflows for its faster time-to-market, efficient inference, and reliable output, particularly in key use cases such as customer care, HR, and talent. RAG helps ensure that the model is linked to the most current, reliable facts and that users have access to the model’s sources, so that its claims can be checked for accuracy. RAG is core to the ability to anchor large language models in trusted data to reduce model hallucinations.
 
-#### IBM watsonx.data with Milvus
+### IBM watsonx.data with Milvus
 
 {: #watsonx-milvus}
 

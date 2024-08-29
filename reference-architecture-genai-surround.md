@@ -53,13 +53,13 @@ Central to the architecture are three VPCs, which provide for separation of conc
 
 watsonx RAG overview is described here, please refer to documentations on architecture, deployment on {{site.data.keyword.Bluemix_notm}}. For more information, see [RAG Pattern](/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern).
 
-### } Maximo Visual Inspection
+### IBM Maximo Visual Inspection
 
 {: #architecture-diagram-maximo}
 
 {{site.data.keyword.IBM_notm}} Maximo Visual Inspection is used to analyze images and video detection. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
-### watsonx Assistant
+### IBM watsonx Assistant
 
 {: #architecture-diagram-watsonx-assistant}
 

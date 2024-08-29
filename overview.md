@@ -103,7 +103,7 @@ The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with e
     2. Watson Discovery: Used to ingest documents that will be used to retrieve relevant documents
     3. watsonx.data
     4. watsonx.governance
-    5. watson.ai: RAG with LLM and train as neede
+    5. watson.ai: RAG with Large Language Models (LLM) and train as needed
     6. Watson Orchestrate: workflows and integration (Dedicated) if needed.
 
 ### Conversational user experience with watsonx Assistant for voice
