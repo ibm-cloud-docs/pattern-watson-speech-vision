@@ -13,7 +13,7 @@ keywords:
 
 {: #ai-products-watsonx}
 
-The following are the Artificial Intelligence design considerations for the {{site.data.keyword.IBM}} Watson Surround pattern, covering conversational speech to text and text to speech and computer vision.
+The following are the Artificial Intelligence design considerations for the the speech and vision recognition with RAG AI pattern pattern, covering conversational speech to text and text to speech and computer vision.
 
 ## Requirements
 

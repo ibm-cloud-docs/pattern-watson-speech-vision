@@ -20,8 +20,7 @@ content-type: reference-architecture
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# IBM Watson Surround
-
+# Speech and vision recognition with RAG AI 
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
@@ -34,7 +33,6 @@ This reference architecture summarizes the best practices for a watsonx gen AI d
 3. {{site.data.keyword.IBM_notm}} Maximo Visual Inspection for image and video detection
 
 ## Architecture diagram
-
 {: #architecture-diagram}
 
 The following diagram represents the architecture for watsonx on gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision by using Maximo and conversation chat with Watson speech and text.
@@ -48,7 +46,6 @@ Central to the architecture are three VPCs, which provide for separation of conc
   The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the Red Hat OpenShift environment. For more information, see the design considerations and reference sections.
 
 ### watsonx Retrieval-Augmented Generation (RAG)
-
 {: #watsonx-rag}
 
 Retrieval augmented generation (RAG) is an architectural pattern that enables foundation models to produce factually correct outputs for specialized or proprietary topics that were not part of the model's training data.
@@ -58,19 +55,16 @@ watsonx RAG overview is described here, please refer to documentations on archit
  [RAG Pattern](/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern){ :note}
 
 ### IBM Maximo Visual Inspection
-
 {: #architecture-diagram-maximo}
 
 {{site.data.keyword.IBM_notm}} Maximo Visual Inspection is used to analyze images and video detection. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
 ### IBM watsonx Assistant
-
 {: #architecture-diagram-watsonx-assistant}
 
 {{site.data.keyword.IBM_notm}} watsonx Assistant for voice with speech to text and text to speech. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
 ## Design concepts
-
 {: #design-concepts}
 
 The Architecture Framework Design heatmap covers design considerations and architecture decisions for the following aspects and domains:
@@ -87,7 +81,6 @@ The Architecture Framework Design heatmap covers design considerations and archi
 ![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 2. Architecture design scope heatmap" caption-side="bottom"}
 
 ## Requirements
-
 {: #requirements}
 
 The following table outlines the requirements for the {{site.data.keyword.IBM_notm}} Watson Surround architecture.
@@ -106,7 +99,6 @@ The following table outlines the requirements for the {{site.data.keyword.IBM_no
 | {: caption="Table 1. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 ## Components
-
 {: #components}
 
 The following table outlines the products or services used in the architecture for each aspect.
@@ -151,7 +143,6 @@ The following table outlines the products or services used in the architecture f
 | {: caption="Table 2. Components" caption-side="bottom"} |                                                                                                                                                                                |                                                                                                                                                                          |
 
 ## Compliance
-
 {: #compliance}
 
 * CI / CD / CC Pipelines: The Continuous Integration (CI), Continuous Deployment (CD), and Continuous Compliance (CC) pipelines, referred to as [DevSecOps Application Lifecycle Management](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-devsecops-alm-e1c16cac-7ea8-413f-a819-67e3a3251e44-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjcmVmZXJlbmNlX2FyY2hpdGVjdHVyZQ%3D%3D) are used to deploy the application, check for vulnerabilities, and ensure auditability. Below are some of important compliance features of DevSecOps Application Lifecycle Management:

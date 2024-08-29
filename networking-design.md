@@ -13,7 +13,7 @@ keywords:
 
 {: #networking-design}
 
-The following are the network design decisions for the {{site.data.keyword.IBM}} Watson Surround pattern.
+The following are the network design decisions for the speech and vision recognition with RAG AI pattern.
 
 ## Requirements
 

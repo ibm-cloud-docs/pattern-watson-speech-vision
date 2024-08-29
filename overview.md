@@ -14,7 +14,7 @@ keywords:
 
 {: overview-watsonx-speech}
 
-This watsonx conversation speech and vision pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integrating it with other {{site.data.keyword.Bluemix_notm}} services.
+The speech and vision recognition with RAG AI pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integrating it with other {{site.data.keyword.Bluemix_notm}} services.
 
 It combines IBM watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC), Maximo Visual Inspection, and IBM Watson Voice Assistant.
 

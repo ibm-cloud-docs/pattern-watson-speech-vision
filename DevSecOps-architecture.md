@@ -12,7 +12,7 @@ keywords:
 # Architecture decisions for the DevOps pipeline
 {: #devops-architecture}
 
-The following are the architecture decisions to implement CI/CD pipelines for the DevOps process for the {{site.data.keyword.IBM}} Watson Surround pattern.
+The following are the architecture decisions to implement CI/CD pipelines for the DevOps process for the speech and vision recognition with RAG AI pattern.
 
 ## Security architecture decision
 {: #ad-devops}

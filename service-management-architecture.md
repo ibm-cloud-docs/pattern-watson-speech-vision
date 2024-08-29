@@ -8,19 +8,11 @@ subcollection: pattern-watson-speech-vision
 keywords:
 ---
 # Architecture decisions for service management
-
 {: #ad-service-management}
 
-The following sections summarize the architecture decisions for service management for the {{site.data.keyword.IBM_notm}} Watson Surround pattern.
-
-## Monitoring Architecture Decisions
-
-{: #architecture decisions for monitoring}
-
-The following summarize the architecture decisions for service management for the {{site.data.keyword.IBM_notm}} Watson Surround pattern.
+The following sections summarize the architecture decisions for service management for the speech and vision recognition with RAG AI pattern.
 
 ## Architecture decisions for watsonx, Watson Assistant for Voice, and Maximo Visual Inspection monitoring
-
 {: #monitoring}
 
 | Architecture decision                                                       | Requirement                                                                                                      | Option                                           | Decision       | Rationale                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -32,7 +24,6 @@ The following summarize the architecture decisions for service management for th
 {: caption="Table 1. Architecture decisions for AI monitoring" caption-side="bottom"}
 
 ## Architecture decisions for monitoring
-
 {: #monitoring}
 
 | Architecture decision                                                    | Requirement                                                                                    | Option                                                                | Decision                    | Rationale                                                                                                                                                                                                                                      |
@@ -42,7 +33,6 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 2. Architecture decisions for monitoring" caption-side="bottom"} |                                                                                                          |                                                                                 |                                       |                                                                                                                                                                                                                                                          |
 
 ## Architecture decisions for logging
-
 {: #logging}
 
 | Architecture decision                                                 | Requirement                                                                                       | Option                                                                    | Decision                           | Rationale                                                                                                                                         |
@@ -53,7 +43,6 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 3. Architecture decisions for logging" caption-side="bottom"} |                                                                                                             |                                                                                     |                                              |                                                                                                                                                             |
 
 ## Architecture decisions for auditing
-
 {: #auditing}
 
 | Architecture decision                                                  | Requirement                                                                          | Option                                                        | Decision                                  | Rationale                                                                                                                                                                          |
@@ -62,7 +51,6 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 4. Architecture decisions for auditing" caption-side="bottom"} |                                                                                                |                                                                         |                                                     |                                                                                                                                                                                              |
 
 ## Architecture decisions for alerting
-
 {: #alerting}
 
 | Architecture decision                                                  | Requirement                                                                                                                 | Option                                                   | Decision                                                  | Rationale                                                                                                                                                                                                                                                      |

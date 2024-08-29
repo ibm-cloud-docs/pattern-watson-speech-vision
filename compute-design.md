@@ -13,7 +13,7 @@ keywords:
 
 {: #compute-design}
 
-The following are the compute design considerations for the {{site.data.keyword.IBM}} Watson Surround pattern.
+The following are the compute design considerations for the speech and vision recognition with RAG AI pattern.
 
 ## Requirement
 

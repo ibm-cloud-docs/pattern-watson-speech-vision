@@ -11,7 +11,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # References
-
 {: references-id}
 
 1.  [IBM AI RAG Architecture](https://www.ibm.com/architectures/hybrid/genai-rag){: external}
