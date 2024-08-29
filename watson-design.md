@@ -81,7 +81,7 @@ This reference pattern does not describe training and fine-tuning of models, tha
 
 {{site.data.keyword.Bluemix_notm}} Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
-![Watson Speech](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 8. Speech to Text transcription pipeline" caption-side="bottom"}
+![Watson Speech](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 2. Speech to Text transcription pipeline" caption-side="bottom"}
 
 The service is available in multiple languages and is exposed as an 'http' interface and a WebSocket interface. It can be accessed by using a public or a private endpoint. For more information, see [Getting started with Watson Speech to Text](/docs/speech-to-text?topic=speech-to-text-gettingStarted).
 

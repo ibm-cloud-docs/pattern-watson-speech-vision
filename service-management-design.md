@@ -12,7 +12,7 @@ keywords:
 # Service management design considerations
 {: #service}
 
-The following summarizes the storage management design considerations for {{site.data.keyword.IBM}} Watson Surround.
+The following summarizes the service management design considerations for {{site.data.keyword.IBM}} Watson Surround.
 
 ## Requirements
 {: #service-management-requirements}
@@ -29,7 +29,7 @@ The following summarizes the storage management design considerations for {{site
 
 Review the key design considerations for service management
 
-### Management and monitoring
+### IBM Cloud Management and monitoring
 {: #management-monitoring}
 
 The recommended approach for multi-cluster management and monitoring is to use {{site.data.keyword.Bluemix_notm}} tools that include {{site.data.keyword.IBM_notm}} Log Analysis and {{site.data.keyword.Bluemix_notm}} Monitoring. This approach enables application cluster metrics log aggregation and central management within {{site.data.keyword.Bluemix_notm}}.
