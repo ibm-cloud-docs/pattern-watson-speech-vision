@@ -21,10 +21,10 @@ The following are the compute design decisions for the {{site.data.keyword.IBM}}
 
 The requirements for the compute aspect for this pattern focus on the following:
 
-* The compute required hosting x86 workloads on Cloud.
+* The compute required to host x86 workloads on Cloud.
 * The compute required to host container workloads.
 * Development pipeline to allow customer developer to write, integrate and test code including delivering via a secured pipeline.
-* serverless workloads on cloud.
+* Serverless workloads on cloud.
 
 ## Compute solution architecture
 
@@ -45,22 +45,20 @@ This also allows the customer to benefit from the flexibility and scalability of
 
 ![Deployment of Red Hat OpenShift in cloud](image/watsonx-surround-pattern-ROKS.svg){: caption="Figure 1. Deployment of Red Hat OpenShift in cloud" caption-side="bottom"}
 
-1. A workload VPC landing zone that's provisioned to deploy various client workloads.
-2. The workloads are deployed across multiple availability zones to meet any high availability requirements.
-3. The subnet ACL in each zone is to define rules for controlling inbound and outbound traffic with in a VPC.
-4. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service.
-5. - a minimum of 6 worker nodes are equally distributed across three availability zones.
-   - By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
+1. A workload VPC landing zone provisioned to deploy various client workloads.
+2. Workloads are deployed across multiple availability zones to meet any high availability requirements.
+3. Network ACL in each zone define rules controlling inbound and outbound traffic within a VPC.
+4. Any containerized workloads are deployed on the Red Hat OpenShift on VPC service.
+   * a minimum of 6 worker nodes are equally distributed across three availability zones.
+   * By default, the cluster is provisioned with a VPC security group and a cluster-level security group.
    * Control plane nodes and components are managed by {{site.data.keyword.Bluemix_notm}} in Red Hat OpenShift Kubernetes service on {{site.data.keyword.Bluemix_notm}}.
-   * The GenAI applications are deployed as microservices and expoed through OpenShift routes, making them easier to integrate with other systems or services.
+   * The AI applications are deployed as microservices and exposed through OpenShift routes, making them easier to integrate with other systems or services.
    * Separate worker pools are created within the clusters for the application and storage workloads.
    * The worker pool node size and quantity are determined based on the resource requirements for the application and storage workloads.
-6. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
-7. Any containerised workloads are deployed on the Red Hat OpenShift on VPC service
-8. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
-9. The Virtual Private Endpoint (VPE) enables to access {{site.data.keyword.Bluemix_notm}} services, like cloud storage or databases without having to route traffic through the internet.
-10. An application load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
-11. {{site.data.keyword.Bluemix_notm}} Code Engine is used for any serverless workloads.
+5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
+6. Virtual Private Endpoints (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
+7. An application load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
+8. {{site.data.keyword.Bluemix_notm}} Code Engine is used for any serverless workloads.
 
 ### IBM Cloud Code Engine
 

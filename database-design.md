@@ -56,7 +56,7 @@ The database for PostgreSQL service provides a managed PostgreSQL database that 
 
 {: #vector-databases}
 
-Enterprises are increasingly favoring the [retrieval augmented generation (RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){: external} approach in generative AI workflows for its faster time-to-market, efficient inference, and reliable output, particularly in key use cases such as customer care, HR, and talent. RAG helps ensure that the model is linked to the most current, reliable facts and that users have access to the model’s sources, so that its claims can be checked for accuracy. RAG is core to the ability to anchor large language models in trusted data to reduce model hallucinations.
+Enterprises are increasingly favoring the [retrieval augmented generation (RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){: external} approach in generative AI workflows for its faster time-to-market, efficient inference, and reliable output, particularly in key use cases such as customer care, HR and talent. RAG helps ensure that the model is linked to the most current, reliable facts and that users have access to the model’s sources, so that its claims can be checked for accuracy. RAG is core to the ability to anchor large language models in trusted data to reduce model hallucinations.
 
 ### IBM watsonx.data with Milvus
 
