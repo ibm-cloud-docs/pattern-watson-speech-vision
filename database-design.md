@@ -46,6 +46,12 @@ The Enterprise or bespoke applications require a backend database  to store vari
 
 The database for PostgreSQL service provides a managed PostgreSQL database that can be used to store and retrieve data for the applications. This service allows you to easily deploy, manage, and scale your PostgreSQL databases without worrying about the underlying infrastructure. For more information, see [Getting started with Databases for PostgreSQL](/docs/databases-for-postgresql). This pattern considers utilizing PostgreSQL for the environment.
 
+### IBM Cloud Elasticsearch
+
+{:#ibm-elasticsearch}
+
+[Elasticsearch](https://www.elastic.co/elasticsearch) is an open source search and analytics engine based on the Apache Lucene library. This is used to store vector representations  also known as embeddings created by using machine learning algorithms.
+
 ### IBM Cloud Cloudant
 
 {: #ibm-cloudant}
