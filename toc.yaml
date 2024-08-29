@@ -12,8 +12,8 @@ toc:
     content-type: deployment
     href: /docs/pattern-watson-speech-vision
     path: pattern-watson-speech-vision
-    description: watsonx conversation and vision on IBM Cloud.
-    label: watsonx conversation and vision on IBM Cloud
+    description: IBM Watson Surround
+    label: BM Watson Surround
   entries:
   - navgroup:
       id: overview
@@ -34,7 +34,7 @@ toc:
           label: Design considerations
           topics:
           - topic: watson-design.md
-            navtitle: ai 
+            navtitle: AI 
           - topic: compute-design.md
             navtitle: Compute
           - topic: storage-design.md
@@ -50,12 +50,12 @@ toc:
           - topic: resiliency-design.md
             navtitle: Resiliency
           - topic: service-management-design.md
-            navtitle: Service Management
+            navtitle: Service management
       - topicgroup:
           label: Architecture decisions
           topics:
           - topic: watson-architecture.md
-            navtitle: ai 
+            navtitle: AI
           - topic: compute-architecture.md
             navtitle: Compute
           - topic: storage-architecture.md
@@ -71,7 +71,7 @@ toc:
           - topic: resiliency-architecture.md
             navtitle: Resiliency          
           - topic: service-management-architecture.md
-            navtitle: Service Management 
+            navtitle: Service management 
   - navgroup:
       id: reference
       topics:

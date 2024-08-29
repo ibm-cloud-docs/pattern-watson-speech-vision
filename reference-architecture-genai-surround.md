@@ -1,83 +1,94 @@
-# watsonx conversational and vision AI reference architecture
+---
 
+copyright:
+  years: 2024
+lastupdated: "2024-08-28"
+
+subcollection: genai-pattern
+
+keywords:
+
+authors:
+  - name: Dwarkanath Rao, Bertrand-David Cleret
+
+version: 1.0
+
+deployment-url:
+
+docs: /docs/pattern-watson-speech-vision
+
+content-type: reference-architecture
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# {{site.data.keyword.IBM_notm}} Watson Surround
 {: #genai-pattern}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
+AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding gen AI and its infrastructure is vital for navigating its complex landscape.
+This reference architecture summarizes the best practices for a watsonx gen AI deployment on {{site.data.keyword.Bluemix_notm}}, focusing on augmenting the standard watsonx offering with {{site.data.keyword.Bluemix_notm}} speech to text, text to speech, and computer vision capabilities. The IBM Watson Surround pattern covers the following items:
 
-
-AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape.
-
-This reference architecture summarizes the best practices for Watsonx Gen AI Pattern deployment on {{site.data.keyword.Bluemix_notm}}, focusing on augmenting the standard Watsonx offering  with {{site.data.keyword.Bluemix_notm}} speech to text/text to speech and computer vision capabilities.
-
-The following pattern covers
-
-1. IBM watsonx RAG overview.
-2. IBM watson assistant with Speech to Text and Text to Speech
-3. IBM Maximo Visual Inspection for image and vide detection.
+1. {{site.data.keyword.IBM_notm}} watsonx RAG overview
+2. {{site.data.keyword.IBM_notm}} Watson Assistant with Speech to Text and Text to Speech
+3. {{site.data.keyword.IBM_notm}} Maximo Visual Inspection for image and video detection
 
 ## Architecture diagram
-
 {: #architecture-diagram}
 
-The below diagram represents the architecture for watsonx on Gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision using Maximo and conversation chat with watson speech and text . The below architecture provide high level overrview of the key technologies as a part of this pattern.
+The following diagram represents the architecture for watsonx on gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision by using Maximo and conversation chat with Watson speech and text.
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 2. Reference Architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Watson Surround reference architecture" caption-side="bottom"}
 
-Central to the architecture are three VPCs, which provide for separation of concerns between provider management functionality and consumer workloads.
+Central to the architecture are three VPCs, which provide for separation of concerns between provider management functions and consumer workloads.
+  * Management VPC: Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
+  * Workload VPC: Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
+The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the Red Hat OpenShift environment. For more information, see the design considerations and reference sections.
 
-**Management VPC**
-Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
+### watsonx Retrieval-Augmented Generation (RAG)
+{: #watsonx-rag} 
 
-**Workload VPC**
-Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
+watsonx RAG overview is described here, please refer to documentations on architecture, deployment on {{site.data.keyword.Bluemix_notm}}. For more information, see [RAG Pattern](/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern).
 
-The customer can host their workloads in cluster as needed, such as production, non-production cluster, test and Dev etc.
+### {{site.data.keyword.IBM_notm}} Maximo Visual Inspection
+{: #architecture-diagram-maximo}
 
-Maximo Visual Inspection will de deployed on a separate cluster on Red Hat OpenShift environment, more information is provide in design considerations sections and reference section.
+{{site.data.keyword.IBM_notm}} Maximo Visual Inspection is used to analyze images and video detection. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
-**watsonx RAG overview**
+### watsonx Assistant
+{: #architecture-diagram-watsonx-assistant}
 
-watsonx RAG overview are described here, please refer to documentations on architecture, deployment on IBM cloud.
-[RAG Pattern](https://cloud.ibm.com/docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern) {: note}
-
-**IBM Maximo Visual Inspection**
-
-IBM Maximo Visual inspection is used to analyze images and video detection. For further information please look at the ai design consideration section
-
-**watsonx Assistant**
-
-IBM watson assistant for voice with speeh to text and text to speech. For further information please look at the ai design consideration section
+{{site.data.keyword.IBM_notm}} watsonx Assistant for voice with speech to text and text to speech. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx). 
 
 ## Design concepts
-
 {: #design-concepts}
 
-Below is the Architecture Framework Design heatmap that covers design considerations and architecture decisions for the following aspects and domains:
+The Architecture Framework Design heatmap covers design considerations and architecture decisions for the following aspects and domains:
 
-* **Data:** Artifical Intelligence
-* **Compute:** Virtual Servers, Containers, Serverless
-* **Storage:** Primary Storage, Backup
-* **Networking:** Enterprise Connectivity, Load Balancing, Domain Name Services
-* **Security:** Data Security, Identity & Access, Application Security, Infrastructure & Endpoints, Governance, Risk & Compliance
-* **DevOps:** Build & Test, Delivery Pipeline, Code Repository
-* **Resiliency:** High Availability
-* **Service Management:** Monitoring, Logging, Auditing / tracking, Automated Deployment
+* Data: Artificial Intelligence
+* Compute: Virtual Servers, Containers, Serverless
+* Storage: Primary Storage, Backup
+* Networking: Enterprise Connectivity, Load Balancing, Domain Name Services
+* Security: Data Security, Identity & Access, Application Security, Infrastructure & Endpoints, Governance, Risk & Compliance
+* DevOps: Build & Test, Delivery Pipeline, Code Repository
+* Resiliency: High Availability
+* Service Management: Monitoring, Logging, Auditing, and tracking, and Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 3. Architecture design scope" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 2. Architecture design scope heatmap" caption-side="bottom"}
 
 ## Requirements
-
 {: #requirements}
 
-The following table outlines the requirements that are addressed in this architecture.
+The following table outlines the requirements for the {{site.data.keyword.IBM_notm}} Watson Surround architecture.
 
 | Aspect                                                    | Requirements                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Compute                                                   | Provide properly isolated compute resources with adequate compute capacity for the applications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Storage                                                   | Provide storage that meets the application and database performance requirements.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Networking                                                | Deploy workloads in isolated environment and enforce information flow policies. \n Provide secure, encrypted connectivity to the cloud’s private network for management purposes. \n Distribute incoming application requests across available compute resources.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Security                                                  | Ensure all operator actions are executed securely through a bastion host. \n Protect the boundaries of the application against denial-of-service and application-layer attacks. \n Encrypt all application data in transit and at rest to protect from unauthorized disclosure. \n Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \n Encrypt all data using customer managed keys to meet regulatory compliance requirements for additional security and customer control. \n Protect secrets through their entire lifecycle and secure them using access control measures. \n Firewalls must be restrictively configured to prevent all traffic, both inbound and outbound, except that which is required, documented, and approved. |
+| Networking                                                | Deploy workloads in an isolated environment and enforce information flow policies. \n Provide secure, encrypted connectivity to the cloud’s private network for management purposes. \n Distribute incoming application requests across available compute resources.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Security                                                  | Ensure that all operator actions are run securely through a bastion host. \n Protect the boundaries of the application against denial-of-service and application-layer attacks. \n Encrypt all application data in transit and at rest to protect from unauthorized disclosure. \n Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \n Encrypt all data using customer managed keys to meet regulatory compliance requirements for additional security and customer control. \n Protect secrets through their entire lifecycle and secure them using access control measures. \n Firewalls must be restrictively configured to prevent all traffic, both inbound and outbound, except that which is required, documented, and approved. |
 | DevOps                                                    | Delivering software and services at the speed the market demands requires teams to iterate and experiment rapidly. They must deploy new versions frequently, driven by feedback and data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Resiliency                                                | Support application availability targets and business continuity policies. \n Ensure availability of the application in the event of planned and unplanned outages. \n Backup application data to enable recovery in the event of unplanned outages. \n Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Service Management                                        | Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \n Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize down time. \n Monitor audit logs to track changes and detect potential security problems. \n Provide a mechanism to identify and send notifications about issues found in audit logs.                                                                                                                                                                                                                                                                                                                     |
@@ -132,17 +143,9 @@ The following table outlines the products or services used in the architecture f
 
 {: #compliance}
 
-**CI / CD / CC Pipelines** `<br>`
-The Continuous Integration (CI), Continuous Deployment (CD), and Continuous Compliance (CC) pipelines, referred to as [DevSecOps Application Lifecycle Management](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-devsecops-alm-e1c16cac-7ea8-413f-a819-67e3a3251e44-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjcmVmZXJlbmNlX2FyY2hpdGVjdHVyZQ%3D%3D) are used to deploy the application, check for vulnerabilities, and ensure auditability. Below are some of important compliance features of DevSecOps Application Lifecycle Management:
-
-* **Vulnerability Scans**
-  Vulnerability scans involve using specialized tools to look for security vulnerabilities in the code. This is crucial to identify and fix potential security issues before they become a problem in production.
-* **Sign Build Artifacts** `<br>`
-  The code is compiled and built into software or application artifacts (like executable files or libraries). These artifacts are then digitally signed to ensure their authenticity and integrity.
-* **Evidence Gathering** `<br>`
-  This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. It helps in tracing back and understanding what happened at different stages of development.
-* **Evidence Locker** `<br>`
-  This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. This helps in tracing back and understanding what happened at different stages of development.
-
-**Security and Compliance Center (SCC)** `<br>`
-This reference architecture utilizes the Security and Compliance Center (SCC) which defines policy as code, implements controls for secure data and workload deployments and assess security and compliance posture. For this reference architecture two profiles are used. The [{{site.data.keyword.Bluemix_notm}} Framework for Financial Services](https://cloud.ibm.com/docs/framework-financial-services-controls?topic=framework-financial-services-controls-overview) and **AI ICT Guardrails**. A profile is a grouping of controls that can be evaluated for compliance.
+* CI / CD / CC Pipelines: The Continuous Integration (CI), Continuous Deployment (CD), and Continuous Compliance (CC) pipelines, referred to as [DevSecOps Application Lifecycle Management](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-devsecops-alm-e1c16cac-7ea8-413f-a819-67e3a3251e44-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjcmVmZXJlbmNlX2FyY2hpdGVjdHVyZQ%3D%3D) are used to deploy the application, check for vulnerabilities, and ensure auditability. Below are some of important compliance features of DevSecOps Application Lifecycle Management: 
+  * Vulnerability Scans: Vulnerability scans involve using specialized tools to look for security vulnerabilities in the code. This is crucial to identify and fix potential security issues before they become a problem in production.
+  * Sign Build Artifacts: The code is compiled and built into software or application artifacts (like executable files or libraries). These artifacts are then digitally signed to ensure their authenticity and integrity.
+  * Evidence Gathering: This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. It helps in tracing back and understanding what happened at different stages of development.
+  * **Evidence Locker: This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. This helps in tracing back and understanding what happened at different stages of development.
+* Security and Compliance Center (SCC): This reference architecture utilizes the Security and Compliance Center which defines policy as code, implements controls for secure data and workload deployments, and assess security and compliance posture. For this reference architecture two profiles are used, the [{{site.data.keyword.Bluemix_notm}} Framework for Financial Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-overview) and AI ICT Guardrails. A profile is a grouping of controls that can be evaluated for compliance.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: 2024-08-28
+lastupdated: 2024-08-29
 
 subcollection: pattern-watson-speech-vision
 
