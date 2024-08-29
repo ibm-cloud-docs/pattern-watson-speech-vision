@@ -90,15 +90,15 @@ The solution architecture is designed to address specific needs within enterpris
 
 {: watsonx-service description}
 
-watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology for retrieving relevant documents and information from vast datasets. This includes vector databases like Milvus, customer applications that are hosted on ROKS and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
+IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on ROKS and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
 
 1. Watsonx SaaS
-    1. Watson Assistant: Used for conversation flow development and web chat interface
+    1. watsonx Assistant: Used for conversation flow development and web chat interface
     2. Watson Discovery: Ingest and process unstructured documents
-    3. watsonx.data
-    4. watsonx.governance
+    3. watsonx.data: Enables you to scale analytics and AI with all your data.
+    4. watsonx.governance: Direct, manage and monitor the artificial intelligence activities
     5. watsonx.ai: RAG with Large Language Models (LLM) and train as needed
-    6. Watson Orchestrate: workflows and integration (Dedicated) if needed.
+    6. watsonx Orchestrate: workflows and integration (Dedicated) if needed.
 
 ### Conversational user experience with watsonx Assistant for voice
 
