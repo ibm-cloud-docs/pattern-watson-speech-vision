@@ -13,7 +13,7 @@ toc:
     href: /docs/pattern-watson-speech-vision
     path: pattern-watson-speech-vision
     description: IBM Watson Surround
-    label: BM Watson Surround
+    label: IBM Watson Surround
   entries:
   - navgroup:
       id: overview
