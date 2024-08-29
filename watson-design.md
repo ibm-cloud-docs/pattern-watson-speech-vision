@@ -32,7 +32,7 @@ The Watson pattern AI solution requires a range of AI components to effectively 
 
 ## IBM watsonx Services on IBM Cloud
 
-{: #watson-services}
+{: #watsonx-services}
 
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on {{site.data.keyword.Bluemix_notm}}, watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
 
@@ -73,7 +73,7 @@ This reference pattern does not describe training and fine-tuning of models, tha
 {{site.data.keyword.IBM_notm}} watsonx Assistant for Voice offers:
 
 1. Advanced artificial intelligence technology that blends large speech models (LSMs) voice recognition, speech to text, and NLU capabilities.
-2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment. For more information, see [watsonx Assistant for Voice](https://www.ibm.com/products/watsonx-assistant/voice) and [watsonx Assistant](/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant).
+2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment. For more information, see [watsonx Assistant for Voice](https://www.ibm.com/products/watsonx-assistant/voice){: external} and [watsonx Assistant](/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant).
 
 ### Speech to Text service
 

@@ -35,7 +35,7 @@ For deploying AI applications, it's essential to design a robust and scalable ne
 
 The following section details the key network design considerations for AI applications in {{site.data.keyword.Bluemix_notm}}.
 
-![Network Design in IBM Cloud](image/watson-surround-pattern-networking.svg){: caption="Figure 1. Network Design in {{site.data.keyword.Bluemix_notm}}" caption-side="bottom"}
+![Network design](image/watson-surround-pattern-networking.svg "Network design"){: caption="Figure 1. Network design for Watson Surround" caption-side="bottom"}
 
 ## Virtual private Cloud (VPC)
 

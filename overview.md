@@ -71,7 +71,7 @@ This pattern is built on the following key technologies:
 
 The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with chat capability for speech and voice interaction with a bespoke client application to deal with documents ingestion and also provide image and video analysis capability for various functional and non functional requirements. This is achieved by using watsonx.ai deployed in a SaaS model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem:
 
-![Solution architecture](image/Overview-Pattern.svg){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
+![Solution architecture](image/Overview-Pattern.svg "Solution architecture"){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
 
 1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on premises. In this location, there are corporate users connecting over a secured connection on private network
 2. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. This includes users who will connect public network over internet.
@@ -90,14 +90,14 @@ The solution architecture is designed to address specific needs within enterpris
 
 {: watsonx-service description}
 
-The watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology for retrieving relevant documents and information from vast datasets. This includes vector databases like Milvus and customer applications that are hosted on ROKS and watsonx.governance, which is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx AI components.
+watsonx as a service on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology for retrieving relevant documents and information from vast datasets. This includes vector databases like Milvus, customer applications that are hosted on ROKS and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
 
 1. Watsonx SaaS
     1. Watson Assistant: Used for conversation flow development and web chat interface
     2. Watson Discovery: Ingest and process unstructured documents
     3. watsonx.data
     4. watsonx.governance
-    5. watson.ai: RAG with Large Language Models (LLM) and train as needed
+    5. watsonx.ai: RAG with Large Language Models (LLM) and train as needed
     6. Watson Orchestrate: workflows and integration (Dedicated) if needed.
 
 ### Conversational user experience with watsonx Assistant for voice

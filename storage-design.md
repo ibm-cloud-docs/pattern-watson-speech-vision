@@ -32,7 +32,7 @@ For an AI-powered application, it's crucial to help ensure that the underlying s
 ## Storage design considerations
 {: #storage-considerations}
 
-![Storage design image](image/watsonx-surround-pattern-storage.svg){: caption="Figure 10. Storage Design" caption-side="bottom"}
+![Storage design](image/watsonx-surround-pattern-storage.svg "Storage design"){: caption="Figure 10. Storage Design for Watson Surround" caption-side="bottom"}
 
 ### {{site.data.keyword.Bluemix_notm}} Object Storage
 {: #cloud-ob-storage-watsonx}

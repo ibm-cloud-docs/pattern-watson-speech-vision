@@ -8,26 +8,31 @@ subcollection: pattern-watson-speech-vision
 keywords:
 ---
 # Architecture decisions for service management
+
 {: #ad-service-management}
 
 The following sections summarize the architecture decisions for service management for the watsonx conversation and vision pattern on IBM Cloud pattern.
 
 ## Monitoring Architecture Decisions
+
 {: #architecture decisions for monitoring}
 
 The following summarize the architecture decisions for service management for the {{site.data.keyword.IBM_notm}} Watson Surround pattern.
 
-## Architecture decisions for watsonx, voice assistant, and Maximo Visual Inspection monitoring
+## Architecture decisions for watsonx, Watson Assistant for Voice, and Maximo Visual Inspection monitoring
+
 {: #monitoring}
 
 | Architecture decision                                                       | Requirement                                                                                                      | Option                                           | Decision       | Rationale                                                                                                                                                                                                                                                                                                                                                                                                |
 | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Manage and monitor watsonx                                                           | Model management monitoring Dashboards Alerting and Notifications  Model  Risk Analysis Security Auditing Model Versioning | - {{site.data.keyword.Bluemix_notm}} Monitoring \n - Bring Your Own monitoring tool | Watson governance        | Centralized governance to manage and monitor AI workflows that are built with responsibility, transparency, and explainability. It consists of Open Scale, AI Factsheets, and Open Pages services that are integrated and enhanced with features for working with foundation models and generative AI. Services are rebranded with current focus on integrating and Open Scale, AI Factsheets with Open Pages |
+| Manage and monitor watsonx                                                           | Model management, monitoring dashboards, alerting and notifications, model risk analysis, security auditing, model versioning | - {{site.data.keyword.Bluemix_notm}} monitoring \n - Bring Your Own monitoring tool | watsonx.governance        | Centralized governance to manage and monitor AI workflows that are built with responsibility, transparency, and explainability. It consists of Open Scale, AI Factsheets, and Open Pages services that are integrated and enhanced with features for working with foundation models and generative AI. Services are rebranded with current focus on integrating and Open Scale, AI Factsheets with Open Pages |
 | Manage and monitor Speech to Text and Text to Speech                                  | Manage and monitor Speech to Text and Text to Speech.                                                                      | - Whisper, Assembly AI, Microsoft Voice services          | Watson Rest API          | {{site.data.keyword.Bluemix_notm}} services for better integration. Use WebSocket APIs for real-time transcription and interim results. Low-latency modes can be enabled for faster response times. This might slightly reduce accuracy.                                                                                                                                                                                              |
 | Manage and monitor image and video analysis                                           | Manage and monitor image and video AI analysis, including security, analysis, and detection as needed.                      | Bring your own                                             | Maximo Visual Inspection | Use Maximo Visual Inspection management and monitoring capabilities to manage the environment.                                                                                                                                                                                                                                                                                                                    |
-| {: caption="Table 1. Architecture decisions for AI monitoring" caption-side="bottom"} |                                                                                                                            |                                                            |                          |                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+{: caption="Table 1. Architecture decisions for AI monitoring" caption-side="bottom"}
 
 ## Architecture decisions for monitoring
+
 {: #monitoring}
 
 | Architecture decision                                                    | Requirement                                                                                    | Option                                                                | Decision                    | Rationale                                                                                                                                                                                                                                      |
@@ -37,6 +42,7 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 2. Architecture decisions for monitoring" caption-side="bottom"} |                                                                                                          |                                                                                 |                                       |                                                                                                                                                                                                                                                          |
 
 ## Architecture decisions for logging
+
 {: #logging}
 
 | Architecture decision                                                 | Requirement                                                                                       | Option                                                                    | Decision                           | Rationale                                                                                                                                         |
@@ -47,6 +53,7 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 3. Architecture decisions for logging" caption-side="bottom"} |                                                                                                             |                                                                                     |                                              |                                                                                                                                                             |
 
 ## Architecture decisions for auditing
+
 {: #auditing}
 
 | Architecture decision                                                  | Requirement                                                                          | Option                                                        | Decision                                  | Rationale                                                                                                                                                                          |
@@ -55,10 +62,12 @@ The following summarize the architecture decisions for service management for th
 | {: caption="Table 4. Architecture decisions for auditing" caption-side="bottom"} |                                                                                                |                                                                         |                                                     |                                                                                                                                                                                              |
 
 ## Architecture decisions for alerting
+
 {: #alerting}
 
 | Architecture decision                                                  | Requirement                                                                                                                 | Option                                                   | Decision                                                  | Rationale                                                                                                                                                                                                                                                      |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Operational alerts                                                               | Provide a mechanism to identify and send notifications about operational issues that are found across application and infrastructure. | {{site.data.keyword.Bluemix_notm}} Monitoring, {{site.data.keyword.Bluemix_notm}} Logging, and Event Notifications    | {{site.data.keyword.Bluemix_notm}} Monitoring, {{site.data.keyword.Bluemix_notm}} Logging, and Event Notifications    | {{site.data.keyword.Bluemix_notm}} Monitoring and {{site.data.keyword.Bluemix_notm}} Logging support the configuration of alerts to detect operational issues and send notifications to targeted channels. \n Event Notifications are used to route the alert events to service destinations to automate response actions. |
 | Audit alerts                                                                     | Provide a mechanism to identify and send notifications about issues that are found in audit logs.                                     | {{site.data.keyword.Bluemix_notm}} Activity Tracker, {{site.data.keyword.IBM_notm}} Monitoring, and Event Notifications | {{site.data.keyword.Bluemix_notm}} Activity Tracker, IBM Monitoring, and Event Notifications | {{site.data.keyword.IBM_notm}} Activity Tracker supports the configuration of alerts to detect audit issues and send notifications to targeted channels.\\n Event notifications are used to route the alert events to service destinations to automate response actions.                            |
-| {: caption="Table 5. Architecture decisions for alerting" caption-side="bottom"} |                                                                                                                                       |                                                                     |                                                                     |                                                                                                                                                                                                                                                                          |
+
+{: caption="Table 5. Architecture decisions for alerting" caption-side="bottom"}
