@@ -30,7 +30,7 @@ The Watson pattern AI solution requires a range of AI components to effectively 
    1. Object tracking: Following the movement of specific objects over time in a video sequence.
    2. Video analysis: Detecting patterns, trends, or anomalies within a video.
 
-## IBM watsonx Services on}
+## IBM watsonx Services on IBM Cloud
 
 {: #watson-services}
 
@@ -39,9 +39,9 @@ Watsonx is IBM's next-generation AI and data platform that is designed to help b
 Key Components of watsonx on {{site.data.keyword.Bluemix_notm}}:
 
 1. watsonx.ai: This is the core AI engine within watsonx, focused on enabling AI model development and deployment. It provides pre-built, foundation models as well as tools for training custom AI models.
-2. watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data. It offers integrated data management, allowing for seamless access to data across hybrid cloud environments. Watsonx.data provides data preparation tools, governance, and connectors to a wide range of data sources.
-3. watsonx.governance: This tool helps ensure AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries. Watsonx.governance helps businesses help ensure their AI models remain fair, unbiased, and compliant throughout their lifecycle.
-4. IBM watsonx Assistant for Voice:
+2. watsonx.data: This component is IBM's AI-optimized data store designed for scalability and governed access to both structured and unstructured data.
+3. watsonx.governance: This tool helps ensure AI systems are transparent, accountable, and trustworthy. It helps with model auditing, bias detection, explainability, and compliance tracking, making it essential for regulated industries.
+4. IBM watsonx Assistant for Voice: Conversational capabilities for speech and text.
 
 For more information, see [Getting started with Watson and IBM Cloud](/docs/watson?topic=watson-about#about).
 {: note}
@@ -56,7 +56,7 @@ The {{site.data.keyword.IBM_notm}} Maximo Visual Inspection platform that's buil
 
 Maximo Visual Inspection includes tools and interfaces for anyone with limited skills in deep learning technologies. You can use {{site.data.keyword.IBM_notm}}. Maximo Visual Inspection can be customized and deployed that demand image classification, object detection, and anomaly detection.
 
-Maximo Visual Inspection Edge is a web-based application that you can integrate with Maximo Visual Inspection to perform AI-based inspections at the edge. Maximo Visual Inspection Edge uses data sets and trained models that are stored in Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources. You specify the data sets where you want to store the processed images so that models can be refined and retrained.
+Maximo Visual Inspection Edge is a web-based application that you can integrate with Maximo Visual Inspection to perform AI-based inspections at the edge. Maximo Visual Inspection Edge uses data sets and trained models that are stored in Maximo Visual Inspection. In Maximo Visual Inspection Edge, you create inspections that process images from input sources.
 
 For more information, see the following links:
 
@@ -75,7 +75,7 @@ This reference pattern does not describe training and fine-tuning of models, tha
 1. Advanced artificial intelligence technology that blends large speech models (LSMs) voice recognition, speech to text, and NLU capabilities.
 2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment. For more information, see [watsonx Assistant for Voice](https://www.ibm.com/products/watsonx-assistant/voice) and [watsonx Assistant](/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant).
 
-### } Speech to Text service
+### Speech to Text service
 
 {: #speech-text-service}
 
@@ -85,7 +85,7 @@ This reference pattern does not describe training and fine-tuning of models, tha
 
 The service is available in multiple languages and is exposed as an 'http' interface and a WebSocket interface. It can be accessed by using a public or a private endpoint. For more information, see [Getting started with Watson Speech to Text](/docs/speech-to-text?topic=speech-to-text-gettingStarted).
 
-### } Text to Speech service
+### Text to Speech service
 
 {: #text-to-speech}
 
