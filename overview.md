@@ -63,7 +63,7 @@ This pattern is built on the following key technologies:
 7. {{site.data.keyword.Bluemix_notm}} VPC VSI: A virtual server instance for running custom workloads on {{site.data.keyword.Bluemix_notm}}.
 8. {{site.data.keyword.Bluemix_notm}} Development Pipelines: A continuous integration and continuous delivery (CI/CD) toolchain for automating software development workflows.
 9. Code Engine as-a-Service: A cloud-based service that enables rapid application development and deployment that uses containerized applications.
-10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services(ROKS) on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
+10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
 
 ## Solution architecture
 
@@ -90,7 +90,7 @@ The solution architecture is designed to address specific needs within enterpris
 
 {: watsonx-service description}
 
-IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on ROKS and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
+IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on Red Hat OpenShift and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
 
 1. Watsonx SaaS
     1. watsonx Assistant: Used for conversation flow development and web chat interface

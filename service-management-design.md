@@ -19,7 +19,7 @@ The following summarizes the service management design considerations for the sp
 
 - Manage and monitor AI
 - Enable logging and alerting to DevOps tools
-- Manage and monitor IBM Cloud VPC VSI workloads
+- Manage and monitor {{site.data.keyword.Bluemix_notm}} VPC VSI workloads
 - Manage and monitor container workloads on {{site.data.keyword.Bluemix_notm}}
 - Provide infrastructure and platform logs and audit
 - Manage and monitor models
@@ -60,7 +60,7 @@ You can use {{site.data.keyword.Bluemix_notm}} Monitoring to monitor the perform
 
 Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather information about the traffic entering or leaving VPC. Flow logs are stored in an {{site.data.keyword.Bluemix_notm}} Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations. For more information, see [Flow logs](https://cloud.ibm.com/docs/vpc?topic=vpc-flow-logs).
 
-### IBM Cloud watsonx management capabilities
+### {{site.data.keyword.Bluemix_notm}} watsonx management capabilities
 {: #watsonx-capabilities-management}
 
 - Model management: watsonx governance allows you to manage multiple AI models within a single platform, making it easier to track model performance, update models, and retire old versions.
@@ -75,10 +75,10 @@ Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather informa
 ### IBM Watson voice assistant
 {: watson-voice-assistant-managment}
 
-- leverages IBM Cloud speech to text and text to speech services.
-- Speech detection features: You can use speech handling through trigger events when speech starts, monitor pauses by using silence detectors, and handle timeouts during streaming.
+- Uses {{site.data.keyword.Bluemix_notm}} Speech to Text and Text to Speech services.
+- Speech detection features: You can use speech handling through triggering events when speech starts, monitor pauses by using silence detectors, and handle timeouts during streaming.
 - Real-time updates: Use WebSocket APIs for real-time transcription and interim results. Low-latency modes can be enabled for faster response times, although this may slightly reduce accuracy.
-- Background suppression and sensitivity: Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality [IBM Watson speech features](/docs/speech-to-text?topic=speech-to-text-service-features) and [IBM Watson getting started](/docs/services/speech-to-text?topic=speech-to-text-gettingStarted).
+- Background suppression and sensitivity: Adjust parameters for background noise suppression and speech detector sensitivity to manage noisy environments or varying speech quality. For more information, see [IBM Watson speech features](/docs/speech-to-text?topic=speech-to-text-service-features) and [IBM Watson getting started](/docs/services/speech-to-text?topic=speech-to-text-gettingStarted).
 
 For more information, see the following:
 

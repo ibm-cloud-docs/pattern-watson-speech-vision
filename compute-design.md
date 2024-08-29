@@ -43,7 +43,7 @@ This also allows the customer to benefit from the flexibility and scalability of
 
 {: #architecture-components}
 
-![Compute design](image/watsonx-surround-pattern-ROKS.svg "Compute design"){: caption="Figure 1. Compute design for Watson Surround" caption-side="bottom"}
+![Compute design](image/watsonx-surround-pattern-Red Hat OpenShift.svg "Compute design"){: caption="Figure 1. Compute design for Watson Surround" caption-side="bottom"}
 
 1. A workload VPC landing zone provisioned to deploy various client workloads.
 2. Workloads are deployed across multiple availability zones to meet any high availability requirements.
