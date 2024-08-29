@@ -13,7 +13,10 @@ keywords:
 
 {: #security-ai}
 
+The security design section outlines the strategies and mechanisms to protect the system from threats and vulnerabilities.
+
 ## Requirements
+{: #security-ai-requirements}
 
 To ensure the security of the AI solution as a whole, the following components must be taken into account:
 
@@ -22,6 +25,7 @@ To ensure the security of the AI solution as a whole, the following components m
 - security for AI environment for conversation and vision.
 
 ## AI security considerations
+{: #security-ai-considerations}
 
 The requirements for the {{site.data.keyword.IBM_notm}} Watson Surround pattern should include the following considerations:
 
