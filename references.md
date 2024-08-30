@@ -14,8 +14,8 @@ keywords:
 {: #references-id}
 
 1. [IBM AI RAG Architecture](https://www.ibm.com/architectures/hybrid/genai-rag){: external}
-2. [Reference Retrieval Augmented Generation Pattern](//docs/pattern-genai-rag%3ftopic=pattern-genai-rag-genai-pattern)
-3. [Introduction to {{site.data.keyword.conversationshort}}](//docs/watson-assistant%3ftopic=watson-assistant-welcome-new-assistant)
+2. [Reference Retrieval Augmented Generation Pattern](//docs/pattern-genai-rag?topic=pattern-genai-rag-genai-pattern)
+3. [Introduction to {{site.data.keyword.conversationshort}}](//https://www.ibm.com/products/watsonx-assistant)
 4. [watsonx discovery use cases](http://ibm.com/products/watson-discovery/use-cases){: external}
 5. [watsonx.ai](http://ibm.com/products/watsonx-ai){: external}
 6. [watsonx.data](//docs/watsonxdata)

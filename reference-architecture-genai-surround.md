@@ -53,12 +53,14 @@ Retrieval augmented generation (RAG) is an architectural pattern that enables fo
 ### IBM Maximo Visual Inspection
 {: #architecture-diagram-maximo}
 
-{{site.data.keyword.IBM_notm}} Maximo Visual Inspection is used to analyze images and video detection. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
+{{site.data.keyword.IBM_notm}} Maximo Visual Inspection is used to analyze images and video detection.Maximo Visual Inspection includes tools and interfaces for anyone with limited skills in deep learning technologies. You can use IBM. Maximo Visual Inspection can be customized and deployed that demand image classification, object detection, and anomaly detection. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
 ### IBM watsonx Assistant
 {: #architecture-diagram-watsonx-assistant}
 
-{{site.data.keyword.IBM_notm}} watsonx Assistant for voice with speech to text and text to speech. For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
+{{site.data.keyword.IBM_notm}} watsonx Assistant for voice with speech to text and text to speech.
+IBM® watsonx™ Assistant, focused on using actions to build customer conversations, is designed to make it simple enough for anyone to build a virtual assistant. Building, testing, publishing, and analyzing your assistant can all now be done in one simple and intuitive interface.
+For more information, see [AI design considerations](/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx).
 
 ## Design concepts
 {: #design-concepts}
