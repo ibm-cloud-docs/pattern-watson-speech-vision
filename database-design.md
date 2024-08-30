@@ -23,7 +23,7 @@ The requirements for the database aspect for the speech and vision recognition w
 * The database is required for container workloads.
 * The database is required for AI including RAG, chat, and image and video analysis.
 
-## Enterprise application databases considerations.
+## Enterprise application databases considerations
 {: #enterprise-app-databases}
 
 The Enterprise or bespoke applications require a backend database  to store various entity data and their relations. Some of the essential aspects that an enterprise application would require include:

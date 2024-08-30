@@ -17,7 +17,7 @@ The speech and vision recognition with RAG AI pattern provides an overview and a
 
 It combines IBM watsonx with {{site.data.keyword.openshiftlong_notm}}, {{site.data.keyword.vpc_full}} (VPC), Maximo Visual Inspection, and IBM {{site.data.keyword.conversationshort}} for Voice.
 
-It targets enterprise customers who are looking to implement an AI solution providing Retrieval Augmented Generation(RAG), speech conversation (speech to text and text to speech) and image and video analysis capabilities.
+It targets enterprise customers who are looking to implement an AI solution providing Retrieval Augmented Generation(RAG), speech conversation (Speech to Text and Text to Speech) and image and video analysis capabilities.
 
 In addition, it describes how a customer can host and run x86 workloads on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.redhat_openshift_notm}} VPC close to the watsonx environment to deliver an all in one enterprise solution.
 
