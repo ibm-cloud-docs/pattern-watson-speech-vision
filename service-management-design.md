@@ -73,7 +73,7 @@ Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather informa
 - Integration with other {{site.data.keyword.IBM_notm}} tools: Seamlessly integrate watsonx with other IBM tools like Cloud Pak, Watson Studio, and other customer management environment.
 
 ### IBM Watson voice assistant
-{: watson-voice-assistant-managment}
+{: #watson-voice-assistant-managment}
 
 - Uses {{site.data.keyword.Bluemix_notm}} Speech to Text and Text to Speech services.
 - Speech detection features: You can use speech handling through triggering events when speech starts, monitor pauses by using silence detectors, and handle timeouts during streaming.

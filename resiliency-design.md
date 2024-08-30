@@ -46,12 +46,12 @@ For instance, it can consist in a network or application load balancer distribul
 In a multi-zone region {{site.data.keyword.redhat_openshift_notm}} deployment, the {{site.data.keyword.redhat_openshift_notm}} master and worker nodes are spread across 3 availability zones, making the {{site.data.keyword.redhat_openshift_notm}} containerized workloads highly available by default.
 
 ### High Availability for {{site.data.keyword.Bluemix_notm}} Databases for PostgreSQL
-
 {: #ha-considerations-postgre}
 
 Databases for PostgreSQL deployments contain a cluster with two data members, a leader and a replica. Both members contain a copy of the data by using asynchronous replication, with a distributed consensus mechanism to maintain cluster state and handle failovers. If the leader becomes unreachable, the cluster initiates a failover, and the replica is promoted to leader. The replica rejoins the cluster and your cluster continues to operate normally. Additional read replicas can be added in a different availability zone in the same region or in a different region to further increase high availability.
 
 ### High Availability for {{site.data.keyword.Bluemix_notm}} Databases for Elasticsearch
+{: #ha-considerations-elasticsearch}
 
 Databases for Elasticsearch provides replication, fail-over, and high-availability features to protect your databases and data from infrastructure maintenance, upgrades, and failures. Deployments contain a cluster with three data nodes where any node can be the primary node. If one data member becomes unreachable, your cluster continues to operate normally. If more nodes go down and the cluster can't maintain a quorum, it becomes read-only to protect your data. The cluster resumes normal operations when the nodes are recovered or new nodes are added.
 

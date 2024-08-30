@@ -10,11 +10,9 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Watsonx architecture decision
-
 {: #ai-products-watsonx-decisions}
 
 ## Architecture decisions for watsonx
-
 {: #ai-products-watsonx-architecture}
 
 {{site.data.keyword.IBM_notm}} watsonx is {{site.data.keyword.IBM_notm}}'s AI and data platform with three core components and a set of AI assistants that are designed to help to scale and accelerate the impact of AI with trusted data across businesses.
