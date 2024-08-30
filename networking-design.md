@@ -98,6 +98,7 @@ For more information, see [About IBM Cloud Internet Services](/docs/cis?topic=ci
 
 ### Virtual Private Endpoint (VPE)
 {: #cloud-vpe}
+
 IBM Cloud Virtual Private Endpoints (VPE) for VPC enables to connect to supported IBM Cloud services from the VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC.
 
 For more information, see [About virtual private endpoint gateways](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe).
