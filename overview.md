@@ -11,7 +11,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Overview
-
 {: overview-watsonx-speech}
 
 The speech and vision recognition with RAG AI pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integrating it with other {{site.data.keyword.Bluemix_notm}} services.
@@ -23,7 +22,6 @@ It targets enterprise customers who are looking to implement an AI solution prov
 In addition, it describes how a customer can host and run x86 workloads on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to the watsonx environment to deliver an all in one enterprise solution.
 
 ## Industry use cases
-
 {: usecase-id}
 
 Review the following use case implementation across different industries for watsonx and Maximo Visual Inspection with Watson voice assistant:
@@ -49,7 +47,6 @@ Review the following use case implementation across different industries for wat
    2. Employ AI-powered image analysis to detect signs of wear, damage, or malfunction in real-time.
 
 ## Considerations
-
 {: #considerations-watson-speech}
 
 This pattern is built on the following key technologies:
@@ -66,7 +63,6 @@ This pattern is built on the following key technologies:
 10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
 
 ## Solution architecture
-
 {: solution-overview}
 
 The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with chat capability for speech and voice interaction with a bespoke client application to deal with documents ingestion and also provide image and video analysis capability for various functional and non functional requirements. This is achieved by using watsonx.ai deployed in a SaaS model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem:
@@ -87,7 +83,6 @@ The solution architecture is designed to address specific needs within enterpris
 12. BeSpoke Customer interface (UX): The reference architecture assumes a bespoke customer centralized user interface portal provides access to the Watson environment and other environments. There might be direct access to the Watson services but for this reference architecture, it is assumed all access happens via a custom web portal. The access to the rest of the environment can be designed as needed, but this is outside of this document design.
 
 ### {{site.data.keyword.Bluemix_notm}} watsonx service
-
 {: watsonx-service description}
 
 IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on Red Hat OpenShift and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
@@ -101,19 +96,16 @@ IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with exter
     6. watsonx Orchestrate: workflows and integration (Dedicated) if needed.
 
 ### Conversational user experience with watsonx Assistant for voice
-
 {: #user-experience-overview}
 
 Using {{site.data.keyword.IBM_notm}} Watson Speech technology, the solution offers a sophisticated user interface that supports multiple languages, helping ensure accessibility and convenience for users across different regions and linguistic backgrounds. The speech-to-text (STT) and text-to-speech (TTS) functions are hosted as services on {{site.data.keyword.Bluemix_notm}} and consumed in this pattern.
 
 ### DevOps pipeline
-
 {: #devops-watsonx}
 
 The deployment lifecycle is managed by using {{site.data.keyword.Bluemix_notm}} pipeline for automating development processes and {{site.data.keyword.Bluemix_notm}} registry for managing container images across different environments.
 
 ### Maximo Visual Inspection
-
 {: #maximo-watsonx}
 
 This tool standardizes image and video scanning and analysis, providing a consistent method for processing visual data within the claims process. It simplifies the extraction of relevant information from various sources, enhancing productivity and accuracy in claim handling.
