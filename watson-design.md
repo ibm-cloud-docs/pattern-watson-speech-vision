@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: [2024-08-30]
+lastupdated: "2024-08-30"
 
 subcollection: pattern-watson-speech-vision
 
@@ -60,7 +60,7 @@ For more information, see the following links:
 
 1. [Maximo Visual Inspection](https://www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge){: external}.
 2. [Maximo suite overview](/docs/maximo-application-suite?topic=maximo-application-suite-overview).
-3. [Deployment catalog Tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help){: external}.
+3. [Deployment catalog tile](https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-mas-fc308868-e530-4605-884e-e1b3f50b3b66-global#help){: external}.
 
 This reference pattern does not describe training and fine-tuning of models, that's out of scope for this reference pattern.{: note}
 
