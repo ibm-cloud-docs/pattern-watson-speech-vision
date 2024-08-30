@@ -43,7 +43,7 @@ Central to the architecture are three VPCs, which provide for separation of conc
 
 * Management VPC: Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
 * Workload VPC: Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
-  The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the {{site.data.keyword.redhat_openshift_notm}} environment. For more information, see the design considerations and reference sections.
+The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the {{site.data.keyword.redhat_openshift_notm}} environment. For more information, see the design considerations and reference sections.
 
 ### watsonx Retrieval-Augmented Generation (RAG)
 {: #watsonx-rag}
@@ -145,5 +145,5 @@ The following table outlines the products or services used in the architecture f
   * Vulnerability Scans: Vulnerability scans involve using specialized tools to look for security vulnerabilities in the code. This is crucial to identify and fix potential security issues before they become a problem in production.
   * Sign Build Artifacts: The code is compiled and built into software or application artifacts (like executable files or libraries). These artifacts are then digitally signed to ensure their authenticity and integrity.
   * Evidence Gathering: This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. It helps in tracing back and understanding what happened at different stages of development.
-  * **Evidence Locker: This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. This helps in tracing back and understanding what happened at different stages of development.
+  * Evidence Locker: This involves collecting and storing evidence of the development process, such as commit logs, build logs, and other relevant data. This helps in tracing back and understanding what happened at different stages of development.
 * Security and Compliance Center (SCC): This reference architecture utilizes the Security and Compliance Center which defines policy as code, implements controls for secure data and workload deployments, and assess security and compliance posture. For this reference architecture two profiles are used, the [{{site.data.keyword.Bluemix_notm}} Framework for Financial Services](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-overview) and AI ICT Guardrails. A profile is a grouping of controls that can be evaluated for compliance.
