@@ -52,8 +52,9 @@ This also allows the customer to benefit from the flexibility and scalability of
    * Separate worker pools are created within the clusters for the application and storage workloads.
    * The worker pool node size and quantity are determined based on the resource requirements for the application and storage workloads.
 
-For more details on the {{site.data.keyword.redhat_openshift_notm}} capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
+   For more details on the {{site.data.keyword.redhat_openshift_notm}} capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
 {: note}
+
 5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
 6. Virtual Private Endpoints (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
 7. An application load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
