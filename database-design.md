@@ -49,10 +49,10 @@ The database for PostgreSQL service provides a managed PostgreSQL database that 
 
 [Elasticsearch](https://www.elastic.co/elasticsearch){: external} is an open source search and analytics engine based on the Apache Lucene library. This is used to store vector representations  also known as embeddings created by using machine learning algorithms.
 
-### IBM Cloud Cloudant
+### {{site.data.keyword.cloudantfull}}
 {: #ibm-cloudant}
 
-{{site.data.keyword.cloudantfull}} is a fully managed JSON document database that offers independent serverless scaling of provisioned throughput capacity and storage. This is a NOSQL database required for storing sessions for application which are stateless in nature.{{site.data.keyword.cloudant_short_notm}} is compatible with Apache CouchDB and accessible through a simple to use HTTPS API for web, mobile, and IoT applications. For more information, see [Getting started with IBM Cloudant](/docs/Cloudant).
+{{site.data.keyword.cloudantfull}} is a fully managed JSON document database that offers independent serverless scaling of provisioned throughput capacity and storage. This is a NOSQL database required for storing sessions for application which are stateless in nature. {{site.data.keyword.cloudant_short_notm}} is compatible with Apache CouchDB and accessible through a simple to use HTTPS API for web, mobile, and IoT applications. For more information, see [Getting started with IBM Cloudant](/docs/Cloudant).
 
 ## Design considerations for Vector databases
 {: #vector-databases}

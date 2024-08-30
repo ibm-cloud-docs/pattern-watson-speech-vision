@@ -19,10 +19,10 @@ The following are the compute design considerations for the speech and vision re
 
 The requirements for the compute aspect for this pattern focus on the following:
 
-* The compute required to host x86 workloads on Cloud.
-* The compute required to host container workloads.
-* Development pipeline to allow customer developer to write, integrate and test code including delivering via a secured pipeline.
-* Serverless workloads on cloud.
+* The compute required to host x86 workloads on cloud
+* The compute required to host container workloads
+* Development pipeline to allow customer developer to write, integrate and test code including delivering via a secured pipeline
+* Serverless workloads on cloud
 
 ## Compute solution architecture
 {: #compute-solution}
