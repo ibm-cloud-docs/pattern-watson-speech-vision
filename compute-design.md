@@ -56,7 +56,7 @@ For more details on the {{site.data.keyword.redhat_openshift_notm}} capacity pla
 {: note}
 
 5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
-6. Virtual Private Endpoints (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
+6. {{site.data.keyword.vpe_fullt}}s (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
 7. An application load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. {{site.data.keyword.Bluemix_notm}} Code Engine is used for any serverless workloads.
 
