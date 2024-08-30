@@ -10,13 +10,11 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
-
 {: #compute-design}
 
 The following are the compute design considerations for the speech and vision recognition with RAG AI pattern.
 
 ## Requirement
-
 {: #compute-requirement}
 
 The requirements for the compute aspect for this pattern focus on the following:
@@ -27,7 +25,6 @@ The requirements for the compute aspect for this pattern focus on the following:
 * Serverless workloads on cloud.
 
 ## Compute solution architecture
-
 {: #compute-solution}
 
 Customers who want to take advantage of the extended watsonx capabilities should also consider how to integrate these capabilities with their existing applications. By hosting their traditional x86 or containerized  applications on {{site.data.keyword.Bluemix_notm}} virtual private cloud (VPC) VSIs or containers running on Red Hat OpenShift on VPC, latency between IBM watsonx services and the customer is minimized, increasing the performances and responsiveness of the customer's application.
@@ -40,7 +37,6 @@ Customers who want to take advantage of the extended watsonx capabilities should
 This also allows the customer to benefit from the flexibility and scalability of {{site.data.keyword.Bluemix_notm}} VPC offerings and gain easy access all the associated {{site.data.keyword.Bluemix_notm}} services.
 
 ### Architecture components
-
 {: #architecture-components}
 
 ![Compute design](image/watsonx-surround-pattern-Red Hat OpenShift.svg "Compute design"){: caption="Figure 1. Compute design for Watson Surround" caption-side="bottom"}
@@ -65,7 +61,6 @@ For more details on the Red Hat OpenShift capacity planning for various workload
 8. {{site.data.keyword.Bluemix_notm}} Code Engine is used for any serverless workloads.
 
 ### IBM Cloud Code Engine
-
 {: #ibm-code-engine}
 
 {{site.data.keyword.Bluemix_notm}} Code Engine is a fully managed, serverless platform built on Kubernetes designed to run event-driven functions, batch jobs, or containerized applications and microservices. Code Engine can also build applications from source code. Code Engine resources (application, jobs and functions) are organized in projects which are regional.

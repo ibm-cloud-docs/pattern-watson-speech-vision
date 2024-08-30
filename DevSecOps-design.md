@@ -10,6 +10,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Requirements
+{: #devops-requirement}
 
 * Automation of the application build, test, and deployment process
 * Reduced manual effort during deploymeny and risk of human error
@@ -17,12 +18,12 @@ keywords:
 * Improved quality and reliability of software applications
 
 ## DevOps tools
-
 {: #devops-design}
 
 {{site.data.keyword.Bluemix_notm}} offers a comprehensive suite of DevOps tools designed to streamline the development, deployment, and management of applications. Here are some key DevOps tools available on {{site.data.keyword.Bluemix_notm}}.
 
 ### Continuous Integration
+{: #devops-ci}
 
 Continuous Integration (CI) in {{site.data.keyword.Bluemix_notm}} refers to the practice of automatically building, testing, and verifying the quality of software code changes as soon as they are committed to a repository.
 
@@ -30,6 +31,7 @@ For details about Continuous Integration refer to this [section in {{site.data.k
 {: note}
 
 ### Continuous Delivery
+{: #devops-cd}
 
 * Toolchains:
 
@@ -42,6 +44,7 @@ For getting started with {{site.data.keyword.Bluemix_notm}} Continuous Delivery 
 {: note}
 
 ### Container Registry
+{: #devops-registry}
 
 {{site.data.keyword.Bluemix_notm}} Container Registry is a managed container registry service that allows you to store, manage, and deploy container images, such as Docker images, in a secure and scalable manner.
 
@@ -49,6 +52,7 @@ For details about {{site.data.keyword.Bluemix_notm}} Container Registry refer to
 {: note}
 
 ### DevOps Insights
+{: #devops-insight}
 
 * DevOps Insights provides data-driven insights into your code quality and the health of your DevOps processes. It aggregates data from various tools (like Git, Jenkins, and SonarQube) to give you a comprehensive view of your project's status and performance, enabling better decision-making and improving software quality.
 
@@ -56,6 +60,7 @@ For working {{site.data.keyword.Bluemix_notm}} DevOps Insights refer to this [se
 {: note}
 
 ### Tekton Pipelines
+{: #devops-pipeline}
 
 * Tekton is an open-source framework for creating cloud-native CI/CD pipelines. Integrated with {{site.data.keyword.Bluemix_notm}} Continuous Delivery, it allows you to define and run pipelines that automate the building, testing, and deploying of applications.
 
