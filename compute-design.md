@@ -39,7 +39,7 @@ This also allows the customer to benefit from the flexibility and scalability of
 ### Architecture components
 {: #architecture-components}
 
-![Compute design](image/watsonx-surround-pattern-{{site.data.keyword.redhat_openshift_notm}}.svg "Compute design"){: caption="Figure 1. Compute design for Watson Surround" caption-side="bottom"}
+![Compute design](image/watsonx-surround-pattern-ROKS.svg "Compute design"){: caption="Figure 1. Compute design for Watson Surround" caption-side="bottom"}
 
 1. A workload VPC landing zone provisioned to deploy various client workloads.
 2. Workloads are deployed across multiple availability zones to meet any high availability requirements.
@@ -54,9 +54,8 @@ This also allows the customer to benefit from the flexibility and scalability of
 
 For more details on the {{site.data.keyword.redhat_openshift_notm}} capacity planning for various workloads refer to this [section in IBM Cloud Docs](https://cloud.ibm.com/docs/pattern-webapp-openshift-vpc?topic=pattern-webapp-openshift-vpc-compute-design#sizing-your-environment)
 {: note}
-
 5. Virtual Server Instances (VSIs) offer a powerfull way to deploy, manage, and scale your applications in {{site.data.keyword.Bluemix_notm}}.
-6. {{site.data.keyword.vpe_fullt}}s (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
+6. Virtual Private Endpoints (VPE) enables private access to {{site.data.keyword.Bluemix_notm}} services, like {{site.data.keyword.Bluemix_notm}} object storage or databases without having to route traffic through the internet.
 7. An application load balancer balances the incoming traffic across the availability zones and ensures that the cloud based applications are highly available, scalable and performant.
 8. {{site.data.keyword.Bluemix_notm}} Code Engine is used for any serverless workloads.
 

@@ -96,11 +96,11 @@ Cloud Internet Services (CIS) is a suite of managed services that helps you opti
 
 For more information, see [About IBM Cloud Internet Services](/docs/cis?topic=cis-about-ibm-cloud-internet-services-cis).
 
-### {{site.data.keyword.vpe_fullt}} (VPE)
+### Virtual Private Endpoint (VPE)
 {: #cloud-vpe}
 
-IBM Cloud {{site.data.keyword.vpe_fullt}}s (VPE) for VPC enables to connect to supported IBM Cloud services from the VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC.
+IBM Cloud Virtual Private Endpoints (VPE) for VPC enables to connect to supported IBM Cloud services from the VPC network by using the IP addresses of your choosing, which is allocated from a subnet within your VPC.
 
-For more information, see [About {{site.data.keyword.vpe_fullt}} gateways](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe).
+For more information, see [About Virtual Private Endpoint gateways](https://cloud.ibm.com/docs/vpc?topic=vpc-about-vpe).
 
-In this pattern, the {{site.data.keyword.vpe_fullt}} service is used to connect with various IBM Cloud services like DBaaS, watsonx services, Maximo SaaS, and others.
+In this pattern, the Virtual Private Endpoint service is used to connect with various IBM Cloud services like DBaaS, watsonx services, Maximo SaaS, and others.
