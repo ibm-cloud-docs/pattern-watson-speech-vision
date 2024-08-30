@@ -18,7 +18,7 @@ keywords:
 To ensure the resiliency of the solution, the following components must be taken into account:
 
 - Custom applications running on {{site.data.keyword.Bluemix_notm}} VPC's VSIs
-- Custom applications running on Red Hat OpenShift containers
+- Custom applications running on {{site.data.keyword.redhat_openshift_notm}} containers
 - Custom functions,applications, and jobs running on {{site.data.keyword.Bluemix_notm}} Code Engine
 - The SaaS services, particularly the AI related SaaS services such as watsonx, {{site.data.keyword.Bluemix_notm}} Speech to Text, Text to Speech and the data they hold
 
@@ -28,7 +28,7 @@ To ensure the resiliency of the solution, the following components must be taken
 ### High Availability for IBM Watsonx services and Software as a Service (SaaS) services
 {: #ha-considerations-ibm-watsonx}
 
-IBM Watson services, such as watsonx.ai, watsonx.data, watson Assistant for voice as well as {{site.data.keyword.Bluemix_notm}} Speech to Text, {{site.data.keyword.Bluemix_notm}} Text to Speech  are highly available services by default with no single point of failure. This is achieved by leveraging {{site.data.keyword.Bluemix_notm}} multi-zone regions.
+IBM Watson services, such as watsonx.ai, watsonx.data, {{site.data.keyword.conversationshort}} for voice as well as {{site.data.keyword.Bluemix_notm}} Speech to Text, {{site.data.keyword.Bluemix_notm}} Text to Speech  are highly available services by default with no single point of failure. This is achieved by leveraging {{site.data.keyword.Bluemix_notm}} multi-zone regions.
 
 More generally, every {{site.data.keyword.Bluemix_notm}} SaaS general availability (GA) offering is highly available with an SLA of 99.99%.
 
@@ -40,10 +40,10 @@ More generally, every {{site.data.keyword.Bluemix_notm}} SaaS general availabili
 If cross availability zone high availability zone is needed, a more advanced design would be needed.
 For instance, it can consist in a network or application load balancer distribuling traffic to VPC virtual server instances located in different availability zones of a VPC multi-zone region. Note that if the application running on the virtual server instances are not stateless, some kind of data synchronization mechanism will be needed between the virtual server instances.
 
-### High Availability for Red Hat OpenShift
+### High Availability for {{site.data.keyword.redhat_openshift_notm}}
 {: #ha-considerations-roks}
 
-In a multi-zone region Red Hat OpenShift deployment, the Red Hat OpenShift master and worker nodes are spread across 3 availability zones, making the Red Hat OpenShift containerized workloads highly available by default.
+In a multi-zone region {{site.data.keyword.redhat_openshift_notm}} deployment, the {{site.data.keyword.redhat_openshift_notm}} master and worker nodes are spread across 3 availability zones, making the {{site.data.keyword.redhat_openshift_notm}} containerized workloads highly available by default.
 
 ### High Availability for {{site.data.keyword.Bluemix_notm}} Databases for PostgreSQL
 

@@ -15,11 +15,11 @@ keywords:
 
 The speech and vision recognition with RAG AI pattern provides an overview and a foundation for building an enterprise artificial intelligence (AI) environment by using the watsonx architecture as the core for AI and integrating it with other {{site.data.keyword.Bluemix_notm}} services.
 
-It combines IBM watsonx with {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift, {{site.data.keyword.Bluemix_notm}} Virtual Private Cloud (VPC), Maximo Visual Inspection, and IBM Watson Voice Assistant.
+It combines IBM watsonx with {{site.data.keyword.openshiftlong_notm}}, {{site.data.keyword.vpc_full}} (VPC), Maximo Visual Inspection, and IBM {{site.data.keyword.conversationshort}} for Voice.
 
 It targets enterprise customers who are looking to implement an AI solution providing Retrieval Augmented Generation(RAG), speech conversation (speech to text and text to speech) and image and video analysis capabilities.
 
-In addition, it describes how a customer can host and run x86 workloads on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift VPC close to the watsonx environment to deliver an all in one enterprise solution.
+In addition, it describes how a customer can host and run x86 workloads on {{site.data.keyword.Bluemix_notm}} VPC and container workloads on {{site.data.keyword.Bluemix_notm}} {{site.data.keyword.redhat_openshift_notm}} VPC close to the watsonx environment to deliver an all in one enterprise solution.
 
 ## Industry use cases
 {: #usecase-id}
@@ -27,7 +27,7 @@ In addition, it describes how a customer can host and run x86 workloads on {{sit
 Review the following use case implementation across different industries for watsonx and Maximo Visual Inspection with Watson voice assistant:
 
 1. Financial and insurance claims enhancement:
-   1. Use Maximo Visual Inspection with {{site.data.keyword.Bluemix_notm}} VPC and Red Hat OpenShift to develop an insurance claim system.
+   1. Use Maximo Visual Inspection with {{site.data.keyword.Bluemix_notm}} VPC and {{site.data.keyword.redhat_openshift_notm}} to develop an insurance claim system.
    2. Analyze video feeds to detect anomalies, help in claims processing, and generate reports for approver. Help users to provide a proper search, RAG, and voice interaction with documents, images, videos.
 
 2. Healthcare:
@@ -35,7 +35,7 @@ Review the following use case implementation across different industries for wat
    2. Integrate Maximo Visual Inspection to enable real-time image analysis and generate reports.
 
 3. Chatbot-based customer support:
-   1. Implement Watson Assistant to create a conversational interface for customer support chatbots.
+   1. Implement {{site.data.keyword.conversationshort}} to create a conversational interface for customer support chatbots.
    2. Provide voice and RAG implementation with documents for end customer with speech-to-text and text-to-speech.
 
 4. Quality control for manufacturing:
@@ -52,15 +52,15 @@ Review the following use case implementation across different industries for wat
 This pattern is built on the following key technologies:
 
 1. Watsonx: A software-as-a-service (SaaS) offering for building AI-powered applications.
-2. Watson Assistant: A cloud-based AI platform for developing conversational interfaces like speech-to-text and text-to-speech.
+2. {{site.data.keyword.conversationshort}}: A cloud-based AI platform for developing conversational interfaces like speech-to-text and text-to-speech.
 3. watsonx.data: A managed data service that enables secure and scalable data storage.
 4. watsonx.governance: A set of tools for managing and governing watson-powered AI solutions.
 5. watsonx.ai: A portfolio of AI technologies, including natural language processing (NLP), machine learning (ML), and computer vision (CV).
-6. {{site.data.keyword.Bluemix_notm}} VPC Red Hat OpenShift: A cloud-based infrastructure service that enables scalable and secure deployment of applications.
+6. {{site.data.keyword.Bluemix_notm}} VPC {{site.data.keyword.redhat_openshift_notm}}: A cloud-based infrastructure service that enables scalable and secure deployment of applications.
 7. {{site.data.keyword.Bluemix_notm}} VPC VSI: A virtual server instance for running custom workloads on {{site.data.keyword.Bluemix_notm}}.
 8. {{site.data.keyword.Bluemix_notm}} Development Pipelines: A continuous integration and continuous delivery (CI/CD) toolchain for automating software development workflows.
 9. Code Engine as-a-Service: A cloud-based service that enables rapid application development and deployment that uses containerized applications.
-10. Maximo Visual Inspection on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
+10. Maximo Visual Inspection on {{site.data.keyword.redhat_openshift_notm}} Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC : An AI-powered inspection solution for detecting defects in images and videos.
 
 ## Solution architecture
 {: #solution-overview}
@@ -71,10 +71,10 @@ The solution architecture is designed to address specific needs within enterpris
 
 1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on premises. In this location, there are corporate users connecting over a secured connection on private network
 2. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. This includes users who will connect public network over internet.
-3. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) and Red Hat OpenShift: Enables the deployment of traditional and containerized compute workloads while providing isolation and security for cloud-based infrastructure.
+3. Compute on {{site.data.keyword.Bluemix_notm}} through Virtual Private Cloud (VPC) and {{site.data.keyword.redhat_openshift_notm}}: Enables the deployment of traditional and containerized compute workloads while providing isolation and security for cloud-based infrastructure.
 4. Watson services: A set of cognitive computing capabilities, such as natural language processing, computer vision and machine learning, which is designed to help organizations solve complex problems through AI-powered insights. Provides Retrieval Augmentation Generation (RAG) to do text retrieval and text generation and allow users to interact with documents.
 5. Enhanced user experience through Watson Speech-to-Text (STT) and Text-to-Speech (TTS): Improves the way humans interact with machines by using {{site.data.keyword.IBM_notm}} Watson's Speech-to-Text (STT) and Text-to-Speech (TTS) capabilities for more natural language-based interfaces.
-6. Maximo Visual Inspection: A visual inspection feature within Maximo deployed on Red Hat OpenShift Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC, that enables users to capture and analyze video evidence of object or facility conditions, streamlining workflows and decision-making processes.
+6. Maximo Visual Inspection: A visual inspection feature within Maximo deployed on {{site.data.keyword.redhat_openshift_notm}} Kubernetes Services on {{site.data.keyword.Bluemix_notm}} VPC, that enables users to capture and analyze video evidence of object or facility conditions, streamlining workflows and decision-making processes.
 7. Application runtime services (IBM Cloud Code Engine): Offers a range of cloud-based services for deploying, managing, and optimizing application workloads in real-time, helping ensure optimal performance, scalability, and security across {{site.data.keyword.Bluemix_notm}} environments.
 8. Application Life-Cycle Management (IBM Cloud Continuous Delivery): A comprehensive platform for designing, building, testing, deploying, and maintaining applications throughout their entire life cycle within an {{site.data.keyword.Bluemix_notm}} environment.
 9. Storage: Provides scalable and secure cloud storage services to help customers efficiently store, manage, and retrieve large amounts of data across various types of workloads.
@@ -85,7 +85,7 @@ The solution architecture is designed to address specific needs within enterpris
 ### {{site.data.keyword.Bluemix_notm}} watsonx service
 {: #watsonx-service description}
 
-IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on Red Hat OpenShift and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
+IBM watsonx services on {{site.data.keyword.Bluemix_notm}} integrates with external data sources to provide a more comprehensive client experience by using RAG technology. This includes vector databases like Milvus, customer applications that are hosted on {{site.data.keyword.redhat_openshift_notm}} and watsonx.governance. watsonx.governance is a key function of the Watson offering allowing a proper administrative control over the utilization and management of watsonx.ai components.
 
 1. Watsonx SaaS
     1. watsonx Assistant: Used for conversation flow development and web chat interface

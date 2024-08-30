@@ -12,7 +12,7 @@ keywords:
 
 The following sections summarize the architecture decisions for service management for the speech and vision recognition with RAG AI pattern.
 
-## Architecture decisions for watsonx, Watson Assistant for Voice, and Maximo Visual Inspection monitoring
+## Architecture decisions for watsonx, {{site.data.keyword.conversationshort}} for Voice, and Maximo Visual Inspection monitoring
 {: #monitoring}
 
 | Architecture decision                                                       | Requirement                                                                                                      | Option                                           | Decision       | Rationale                                                                                                                                                                                                                                                                                                                                                                                                |

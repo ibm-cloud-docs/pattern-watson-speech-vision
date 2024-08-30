@@ -29,7 +29,7 @@ AI holds the promise to transform life and business but raises concerns around t
 This reference architecture summarizes the best practices for a watsonx gen AI deployment on {{site.data.keyword.Bluemix_notm}}, focusing on augmenting the standard watsonx offering with {{site.data.keyword.Bluemix_notm}} speech to text, text to speech, and computer vision capabilities. The IBM Watson Surround pattern covers the following items:
 
 1. {{site.data.keyword.IBM_notm}} watsonx RAG overview
-2. {{site.data.keyword.IBM_notm}} Watson Assistant with Speech to Text and Text to Speech
+2. {{site.data.keyword.IBM_notm}} {{site.data.keyword.conversationshort}} with Speech to Text and Text to Speech
 3. {{site.data.keyword.IBM_notm}} Maximo Visual Inspection for image and video detection
 
 ## Architecture diagram
@@ -43,7 +43,7 @@ Central to the architecture are three VPCs, which provide for separation of conc
 
 * Management VPC: Provides compute, storage, and network services to enable the client or service provider's administrators to monitor, operate, and maintain the environment.
 * Workload VPC: Provides compute, storage, and network services to support hosted applications and operations that deliver services to the consumer.
-  The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the Red Hat OpenShift environment. For more information, see the design considerations and reference sections.
+  The customer can host their workloads in the cluster as needed, such as a production, nonproduction, test, and dev cluster. Maximo Visual Inspection is deployed on a separate cluster on the {{site.data.keyword.redhat_openshift_notm}} environment. For more information, see the design considerations and reference sections.
 
 ### watsonx Retrieval-Augmented Generation (RAG)
 {: #watsonx-rag}
@@ -114,7 +114,7 @@ The following table outlines the products or services used in the architecture f
 |                                                         | [Milvus](https://cloud.ibm.com/docs/watsonxdata?topic=watsonxdata-adding-milvus-service)                                                                                          | A vector database that stores, indexes, and manages massive embedding vectors that are developed by deep neural networks and other machine learning (ML) models.         |
 | Compute                                                 | [Virtual Servers for VPC](https://cloud.ibm.com/docs/vpc?topic=vpc-about-advanced-virtual-servers&interface=ui)                                                                   | Web, App, and database servers                                                                                                                                           |
 |                                                         | [Code Engine](https://cloud.ibm.com/docs/codeengine?topic=codeengine-about)                                                                                                       | Abstracts the operational burden of building, deploying, and managing workloads in Kubernetes so that developers can focus on what matters most to them: the source code |
-|                                                         | [Red Hat OpenShift Kubernetes Service (ROKS)](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)                                                               | A managed offering to create your own cluster of compute hosts where you can deploy and manage containerized apps on {{site.data.keyword.Bluemix_notm}}                  |
+|                                                         | [{{site.data.keyword.redhat_openshift_notm}} Kubernetes Service (ROKS)](https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started)                                                               | A managed offering to create your own cluster of compute hosts where you can deploy and manage containerized apps on {{site.data.keyword.Bluemix_notm}}                  |
 | Storage                                                 | [Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage)                                                     | Web app static content, backups, logs (application, operational, and audit logs)                                                                                         |
 |                                                         | [VPC Block Storage](https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-block)                                                                                               | Web app storage if needed                                                                                                                                                |
 | Networking                                              | [VPC Virtual Private Network (VPN)](https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-getting-started)                                                                           | Remote access to manage resources in private network                                                                                                                     |

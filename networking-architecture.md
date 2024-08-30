@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture decisions for networking for watsonx VPC, Red Hat OpenShift, and Watson Assistance for Voice 
+# Architecture decisions for networking for watsonx VPC, {{site.data.keyword.redhat_openshift_notm}}, and Watson Assistance for Voice 
 {: #networking}
 
 The below architectural decision table shows the critial choices that shapes the networking design and their functionality of various components for the speech and vision recognition with RAG AI pattern.
