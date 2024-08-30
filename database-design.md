@@ -12,6 +12,8 @@ keywords:
 # Database design
 {: #database-design}
 
+The following are the database design considerations for the speech and vision recognition with RAG AI pattern.
+
 ## Database requirements
 {: #database-design-requirements}
 
