@@ -11,7 +11,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # References
-{: references-id}
+{: #references-id}
 
 1. [IBM AI RAG Architecture](https://www.ibm.com/architectures/hybrid/genai-rag){: external}
 2. [Reference Retrieval Augmented Generation Pattern](//docs/pattern-genai-rag%3ftopic=pattern-genai-rag-genai-pattern)
