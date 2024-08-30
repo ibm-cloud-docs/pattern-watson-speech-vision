@@ -25,8 +25,8 @@ content-type: reference-architecture
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
-AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding gen AI and its infrastructure is vital for navigating its complex landscape.
-This reference architecture summarizes the best practices for a watsonx gen AI deployment on {{site.data.keyword.Bluemix_notm}}, focusing on augmenting the standard watsonx offering with {{site.data.keyword.Bluemix_notm}} Speech to Text, text to speech, and computer vision capabilities. The IBM Watson Surround pattern covers the following items:
+AI holds the promise to transform life and business but raises concerns around trust, security, and regulatory compliance. Understanding Gen AI and its infrastructure is vital for navigating its complex landscape.
+This reference architecture summarizes the best practices for a watsonx Gen AI deployment on {{site.data.keyword.Bluemix_notm}}, focusing on augmenting the standard watsonx offering with {{site.data.keyword.Bluemix_notm}} Speech to Text, text to speech, and computer vision capabilities. The IBM Watson Surround pattern covers the following items:
 
 1. {{site.data.keyword.IBM_notm}} watsonx RAG overview
 2. {{site.data.keyword.IBM_notm}} {{site.data.keyword.conversationshort}} with Speech to Text and Text to Speech
@@ -35,7 +35,7 @@ This reference architecture summarizes the best practices for a watsonx gen AI d
 ## Architecture diagram
 {: #architecture-diagram}
 
-The following diagram represents the architecture for watsonx on gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision by using Maximo and conversation chat with Watson speech and text.
+The following diagram represents the architecture for watsonx on Gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision by using Maximo and conversation chat with Watson speech and text.
 
 ![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Watson Surround reference architecture" caption-side="bottom"}
 
@@ -112,7 +112,7 @@ The following table outlines the products or services used in the architecture f
 |                                                         | [Milvus](/docs/watsonxdata?topic=watsonxdata-adding-milvus-service)                                                                                          | A vector database that stores, indexes, and manages massive embedding vectors that are developed by deep neural networks and other machine learning (ML) models.         |
 | Compute                                                 | [Virtual Servers for VPC](/docs/vpc?topic=vpc-about-advanced-virtual-servers&interface=ui)                                                                   | Web, App, and database servers                                                                                                                                           |
 |                                                         | [Code Engine](/docs/codeengine?topic=codeengine-about)                                                                                                       | Abstracts the operational burden of building, deploying, and managing workloads in Kubernetes so that developers can focus on what matters most to them: the source code |
-|                                                         | [{{site.data.keyword.redhat_openshift_notm}} Kubernetes Service (ROKS)](/docs/openshift?topic=openshift-getting-started)                                                               | A managed offering to create your own cluster of compute hosts where you can deploy and manage containerized apps on {{site.data.keyword.Bluemix_notm}}                  |
+|                                                         | [{{site.data.keyword.redhat_openshift_notm}} Kubernetes Service](/docs/openshift?topic=openshift-getting-started)                                                               | A managed offering to create your own cluster of compute hosts where you can deploy and manage containerized apps on {{site.data.keyword.Bluemix_notm}}                  |
 | Storage                                                 | [Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage)                                                     | Web app static content, backups, logs (application, operational, and audit logs)                                                                                         |
 |                                                         | [VPC Block Storage](/docs/openshift?topic=openshift-vpc-block)                                                                                               | Web app storage if needed                                                                                                                                                |
 | Networking                                              | [VPC Virtual Private Network (VPN)](/docs/iaas-vpn?topic=iaas-vpn-getting-started)                                                                           | Remote access to manage resources in private network                                                                                                                     |

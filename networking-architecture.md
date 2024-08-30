@@ -9,10 +9,10 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Architecture decisions for networking for watsonx VPC, {{site.data.keyword.redhat_openshift_notm}}, and Watson Assistance for Voice 
-{: #networking}
+# Architecture decisions for networking
+{: #networking-decision}
 
-The below architectural decision table shows the critial choices that shapes the networking design and their functionality of various components for the speech and vision recognition with RAG AI pattern.
+The following are the architectural decision for for watsonx VPC, {{site.data.keyword.redhat_openshift_notm}}, and Watson Assistance for Voice. The table outlines critial choices that shapes the networking design and their functionality of various components for the speech and vision recognition with RAG AI pattern.
 
 | Architecture decision                                                | Requirement                                                                                                                                            | Options                                                                                                                                                | Decision                                         | Rationale                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

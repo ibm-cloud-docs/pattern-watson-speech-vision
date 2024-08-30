@@ -12,6 +12,8 @@ keywords:
 # Resiliency design
 {: #resiliency-design-id}
 
+The following are the resiliency design considerations for the speech and vision recognition with RAG AI pattern.
+
 ## Requirements
 {: #resiliency-requirements}
 

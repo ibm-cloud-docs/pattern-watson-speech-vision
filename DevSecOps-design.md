@@ -9,7 +9,12 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Requirements
+# DevSecOps design
+{: #devsecops-design}
+
+The following are the DevSecOps design considerations for the speech and vision recognition with RAG AI pattern.
+
+## Requirements
 {: #devops-requirement}
 
 * Automation of the application build, test, and deployment process
@@ -54,7 +59,7 @@ For details about {{site.data.keyword.Bluemix_notm}} Container Registry refer to
 ### DevOps Insights
 {: #devops-insight}
 
-* DevOps Insights provides data-driven insights into your code quality and the health of your DevOps processes. It aggregates data from various tools (like Git, Jenkins, and SonarQube) to give you a comprehensive view of your project's status and performance, enabling better decision-making and improving software quality.
+DevOps Insights provides data-driven insights into your code quality and the health of your DevOps processes. It aggregates data from various tools (like Git, Jenkins, and SonarQube) to give you a comprehensive view of your project's status and performance, enabling better decision-making and improving software quality.
 
 For working {{site.data.keyword.Bluemix_notm}} DevOps Insights refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-di_working)
 {: note}
@@ -62,7 +67,7 @@ For working {{site.data.keyword.Bluemix_notm}} DevOps Insights refer to this [se
 ### Tekton Pipelines
 {: #devops-pipeline}
 
-* Tekton is an open-source framework for creating cloud-native CI/CD pipelines. Integrated with {{site.data.keyword.Bluemix_notm}} Continuous Delivery, it allows you to define and run pipelines that automate the building, testing, and deploying of applications.
+Tekton is an open-source framework for creating cloud-native CI/CD pipelines. Integrated with {{site.data.keyword.Bluemix_notm}} Continuous Delivery, it allows you to define and run pipelines that automate the building, testing, and deploying of applications.
 
 For working {{site.data.keyword.Bluemix_notm}} Tekton Pipelines refer to this [section in {{site.data.keyword.Bluemix_notm}} Docs](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-tekton-pipelines&interface=ui)
 {: note}
