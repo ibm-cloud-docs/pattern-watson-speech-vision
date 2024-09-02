@@ -29,7 +29,7 @@ The following summarizes the service management design considerations for the sp
 
 Review the key design considerations for service management
 
-### {{site.data.keyword.IBM_notm}} Logs
+### {{site.data.keyword.IBM_notm}}  Cloud Logs
 {: #log-analysis}
 
 You can use {{site.data.keyword.IBM_notm}} Logs to add log management capabilities:
