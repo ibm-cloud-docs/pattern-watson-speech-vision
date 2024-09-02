@@ -10,11 +10,13 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Service management design considerations
+
 {: #service}
 
 The following summarizes the service management design considerations for the speech and vision recognition with RAG AI pattern.
 
 ## Requirements
+
 {: #service-management-requirements}
 
 - Manage and monitor AI
@@ -25,11 +27,13 @@ The following summarizes the service management design considerations for the sp
 - Manage and monitor models
 
 ## Design considerations
+
 {: #monitoring-considerations}
 
 Review the key design considerations for service management
 
-### {{site.data.keyword.IBM_notm}} Logs
+### } Cloud Logs
+
 {: #log-analysis}
 
 You can use {{site.data.keyword.IBM_notm}} Logs to add log management capabilities:
@@ -41,7 +45,8 @@ You can use {{site.data.keyword.IBM_notm}} Logs to add log management capabiliti
 - Highly available, scalable, and compliant with industry security standards.
 - Integrated with {{site.data.keyword.Bluemix_notm}} IAM for user access management.
 
-### {{site.data.keyword.Bluemix_notm}} Monitoring
+### } Monitoring
+
 {: #ibm-cloud-monitoring}
 
 The recommended approach for multi-cluster management and monitoring is to use {{site.data.keyword.Bluemix_notm}} tools that include {{site.data.keyword.IBM_notm}} Log Analysis and {{site.data.keyword.Bluemix_notm}} Monitoring. This approach enables application cluster metrics log aggregation and central management within {{site.data.keyword.Bluemix_notm}}.
@@ -56,11 +61,13 @@ You can use {{site.data.keyword.Bluemix_notm}} Monitoring to monitor the perform
 - Integrated with {{site.data.keyword.Bluemix_notm}} IAM for user access management.
 
 ### Flow logs for VPC clusters
+
 {: #flow-logs}
 
 Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather information about the traffic entering or leaving VPC. Flow logs are stored in an {{site.data.keyword.Bluemix_notm}} Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations. For more information, see [Flow logs](https://cloud.ibm.com/docs/vpc?topic=vpc-flow-logs).
 
-### {{site.data.keyword.Bluemix_notm}} watsonx management capabilities
+### } watsonx management capabilities
+
 {: #watsonx-capabilities-management}
 
 - Model management: watsonx governance allows you to manage multiple AI models within a single platform, making it easier to track model performance, update models, and retire old versions.
@@ -73,6 +80,7 @@ Configure {{site.data.keyword.Bluemix_notm}} Flow Logs for VPC to gather informa
 - Integration with other {{site.data.keyword.IBM_notm}} tools: Seamlessly integrate watsonx with other IBM tools like Cloud Pak, Watson Studio, and other customer management environment.
 
 ### IBM Watson voice assistant
+
 {: #watson-voice-assistant-managment}
 
 - Uses {{site.data.keyword.Bluemix_notm}} Speech to Text and Text to Speech services.
