@@ -10,13 +10,11 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # watsonx design considerations
-
 {: #ai-products-watsonx}
 
 The following are the Artificial Intelligence design considerations for the speech and vision recognition with RAG AI pattern, covering conversational Speech to Text and Text to Speech and computer vision.
 
 ## Requirements
-
 {: #ai-products-watsonx-requirements}
 
 The Watson pattern AI solution requires a range of AI components to effectively process and analyze various types of data inputs. These requirements are designed to meet specific business needs, including Retrieval-Augmented Generation (RAG), Chat (voice and text interaction), image detection, and video detection.
@@ -33,7 +31,6 @@ The Watson pattern AI solution requires a range of AI components to effectively 
    2. Video analysis: Detecting patterns, trends, or anomalies within a video.
 
 ## IBM watsonx services on IBM Cloud
-
 {: #watsonx-services}
 
 Watsonx is IBM's next-generation AI and data platform that is designed to help businesses build, train, deploy, and scale AI models and applications, particularly in enterprise settings. Available on {{site.data.keyword.Bluemix_notm}}, watsonx offers a suite of integrated tools and services that streamline the AI lifecycle—from data preparation to model training, deployment, and ongoing optimization.
@@ -49,7 +46,6 @@ For more information, see [Getting started with Watson and IBM Cloud](/docs/wats
 {: note}
 
 ## Maximo Visual Inspection
-
 {: #maximo-inspection}
 
 The {{site.data.keyword.IBM_notm}} Maximo Visual Inspection platform that's built on cognitive infrastructure is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
@@ -69,7 +65,6 @@ For more information, see the following links:
 This reference pattern does not describe training and fine-tuning of models, that's out of scope for this reference pattern.{: note}
 
 ## IBM watsonx Assistant for Voice
-
 {: #watsonx-assistant-voice}
 
 {{site.data.keyword.IBM_notm}} watsonx Assistant for Voice offers:
@@ -78,7 +73,6 @@ This reference pattern does not describe training and fine-tuning of models, tha
 2. Expressive voices designed to respond to customer requests in natural human-like speech with ability to understand expressions and analyze conversation sentiment. For more information, see [watsonx Assistant for Voice](https://www.ibm.com/products/watsonx-assistant/voice){: external} and [watsonx Assistant](/docs/watson-assistant?topic=watson-assistant-welcome-new-assistant).
 
 ### Speech to Text service
-
 {: #speech-text-service}
 
 {{site.data.keyword.Bluemix_notm}} Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
@@ -88,7 +82,6 @@ This reference pattern does not describe training and fine-tuning of models, tha
 The service is available in multiple languages and is exposed as an 'http' interface and a WebSocket interface. It can be accessed by using a public or a private endpoint. For more information, see [Getting started with Watson Speech to Text](/docs/speech-to-text?topic=speech-to-text-gettingStarted).
 
 ### Text to Speech service
-
 {: #text-to-speech}
 
 {{site.data.keyword.Bluemix_notm}} Text to Speech service converts written text to natural-sounding speech. The service streams the synthesized audio back with minimal delay. The audio uses appropriate cadence and intonation for its language and dialect to provide voices that are smooth and natural.
