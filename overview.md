@@ -67,7 +67,7 @@ This pattern is built on the following key technologies:
 
 The solution architecture is designed to address specific needs within enterprise customer who need AI RAG, with chat capability for speech and voice interaction with a bespoke client application to deal with documents ingestion and also provide image and video analysis capability for various functional and non functional requirements. This is achieved by using watsonx.ai deployed in a SaaS model. This architecture encompasses several key components that work together seamlessly to provide an end-to-end AI solution for enterprise clients. The following are the core elements of this ecosystem:
 
-![Solution architecture](image/Overview-Pattern.svg "Solution architecture"){: caption="Figure 1. Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
+![Solution architecture](image/Overview-Pattern.svg "Solution architecture"){: caption="Functional overview of the watsonx AI and {{site.data.keyword.Bluemix_notm}} surround environment." caption-side="bottom"}
 
 1. Customer data center location: A physical or virtual data center where customers can host their own infrastructure on premises. In this location, there are corporate users connecting over a secured connection on private network
 2. Users: The individuals who are using applications, services, and data hosted in an {{site.data.keyword.Bluemix_notm}} environment. This includes users who will connect public network over internet.

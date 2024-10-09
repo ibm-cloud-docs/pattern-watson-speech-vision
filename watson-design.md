@@ -50,7 +50,7 @@ For more information, see [Getting started with Watson and IBM Cloud](/docs/wats
 
 The {{site.data.keyword.IBM_notm}} Maximo Visual Inspection platform that's built on cognitive infrastructure is a new generation of video and image analysis platforms. The platform offers built-in deep learning models that learn to analyze images and video streams for classification, object detection, and anomaly detection.
 
-![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Figure 1. Video and images watsonx pattern" caption-side="bottom"}
+![Visual Inspection for image and Video.](image/functional-flows-architecture-image-classification-on-ibmcloud.svg "Image and Video analysis"){: caption="Video and images watsonx pattern" caption-side="bottom"}
 
 Maximo Visual Inspection includes tools and interfaces for anyone with limited skills in deep learning technologies. You can use {{site.data.keyword.IBM_notm}}. Maximo Visual Inspection can be customized and deployed that demands image classification, object detection, and anomaly detection.
 
@@ -77,7 +77,7 @@ This reference pattern does not describe training and fine-tuning of models, tha
 
 {{site.data.keyword.Bluemix_notm}} Speech to Text service converts the human voice into the written word. The service uses deep-learning artificial intelligence to apply knowledge of grammar, language structure, and the composition of audio and voice signals to accurately transcribe human speech. It can be used in applications such as voice-automated chatbots, analytic tools for customer-service call centers, and multi-media transcription, among many others.
 
-![Watson Speech](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Figure 2. Speech to Text transcription pipeline" caption-side="bottom"}
+![Watson Speech](image/functional-flows-speech-to-text-transcription-pipeline-with-labels.svg "Watson Speech"){: caption="Speech to Text transcription pipeline" caption-side="bottom"}
 
 The service is available in multiple languages and is exposed as an 'http' interface and a WebSocket interface. It can be accessed by using a public or a private endpoint. For more information, see [Getting started with Watson Speech to Text](/docs/speech-to-text?topic=speech-to-text-gettingStarted).
 
