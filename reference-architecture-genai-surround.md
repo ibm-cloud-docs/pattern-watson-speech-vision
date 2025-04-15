@@ -37,7 +37,7 @@ This reference architecture summarizes the best practices for a watsonx Gen AI d
 
 The following diagram represents the architecture for watsonx on Gen AI on {{site.data.keyword.Bluemix_notm}} with computer vision by using Maximo and conversation chat with Watson speech and text.
 
-![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Figure 1. Watson Surround reference architecture" caption-side="bottom"}
+![Architecture.](image/ref-arch-watsonx-surround.svg "Architecture"){: caption="Watson Surround reference architecture" caption-side="bottom"}
 
 Central to the architecture are three VPCs, which provide for separation of concerns between provider management functions and consumer workloads.
 
@@ -76,7 +76,7 @@ The Architecture Framework Design heatmap covers design considerations and archi
 * Resiliency: High Availability
 * Service Management: Monitoring, Logging, Auditing, and tracking, and Automated Deployment
 
-![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Figure 2. Architecture design scope heatmap" caption-side="bottom"}
+![heatmap](image/heat-map-watson-speech-vision.svg "Heatmap"){: caption="Architecture design scope heatmap" caption-side="bottom"}
 
 ## Requirements
 {: #requirements}
@@ -94,7 +94,7 @@ The following table outlines the requirements for the {{site.data.keyword.IBM_no
 | Service Management                                        | Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \n Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize down time. \n Monitor audit logs to track changes and detect potential security problems. \n Provide a mechanism to identify and send notifications about issues found in audit logs.                                                                                                                                                                                                                                                                                                                     |
 | Speech conversation                                       | Provide chat interface and Speech to Text and Text to Speech capability.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | AI Computer vision                                        | Provide image and video recoginition and detection capability.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-{: caption="Table 1. Requirements" caption-side="bottom"}
+{: caption="Requirements" caption-side="bottom"}
 
 ## Components
 {: #components}
@@ -138,7 +138,7 @@ The following table outlines the products or services used in the architecture f
 | Conversation                                            | [Watson Text to Speech](/docs/text-to-speech?topic=text-to-speech-gettingStarted)                                                                                                 | Watson Speech to Text conversation AI capability                                                                                                                         |
 |                                                         | [Watson Speech to Text](/docs/speech-to-text?topic=speech-to-text-gettingStarted)                                                                                                 | Watson Text to Speech conversation AI capability                                                                                                                         |
 | Computer Vision                                         | [Maximo Visual Inspection](https:/www.ibm.com/docs/en/mas-cd/maximo-vi/continuous-delivery?topic=maximo-visual-inspection-edge){: external}                                                   | Provide image and video recognition capability.                                                                                                                          |
-{: caption="Table 2. Components" caption-side="bottom"}
+{: caption="Components" caption-side="bottom"}
 
 ## Compliance
 {: #compliance}

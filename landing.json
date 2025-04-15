@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "title": "Watson Speech and Vision",
+  "introduction": "Watson Speech and Vision",
+  "product_page": "https://ibm.com/cloud/solution-page",
+  "deployment_url": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-deployment",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-overview-watsonx-speech"
+      },
+      {
+        "title": "Reference architecture",
+        "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-genai-pattern"
+      },
+      {
+        "title": "Watsonx design considerations",
+        "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-ai-products-watsonx"
+      },
+      {
+        "title": "Related resources",
+        "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-references-id"
+      }
+    ]
+  },
+
+  "section_architectures": [
+    {
+      "title": "Speech and vision recognition with RAG AI",
+      "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-genai-pattern",
+      "deployable": true
+    }
+  ]
+}
