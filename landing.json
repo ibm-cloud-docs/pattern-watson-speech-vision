@@ -3,7 +3,7 @@
   "title": "Watson Speech and Vision",
   "introduction": "Watson Speech and Vision",
   "product_page": "https://ibm.com/cloud/solution-page",
-  "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
+  "deployment_url": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-deployment",
   "section_topics": {
     "links": [
       {
