@@ -1,13 +1,7 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
----
 toc:
   properties:
     subcollection: pattern-watson-speech-vision
-    # industry: industry-value
     use-case: Public cloud
-   # compliance: compliance-value
     audience: solution
     content-type: deployment
     href: /docs/pattern-watson-speech-vision
@@ -34,7 +28,7 @@ toc:
           label: Design considerations
           topics:
           - topic: watson-design.md
-            navtitle: AI 
+            navtitle: AI
           - topic: compute-design.md
             navtitle: Compute
           - topic: storage-design.md
@@ -69,9 +63,9 @@ toc:
           - topic: DevSecOps-architecture.md
             navtitle: DevOps
           - topic: resiliency-architecture.md
-            navtitle: Resiliency          
+            navtitle: Resiliency
           - topic: service-management-architecture.md
-            navtitle: Service management 
+            navtitle: Service management
   - navgroup:
       id: deploy
       topics:
