@@ -24,12 +24,11 @@
       }
     ]
   },
-
   "section_architectures": [
     {
       "title": "Speech and vision recognition with RAG AI",
       "href": "/docs/pattern-watson-speech-vision?topic=pattern-watson-speech-vision-genai-pattern",
-      "deployable": true
+      "deployable": false
     }
   ]
 }
